@@ -2,12 +2,12 @@ digraph ar2dtool_diagram {
 rankdir=LR;
 size="1501"
 node [shape = rectangle, color="orange"]; "base:ABI" "base:Receive" "base:Function" "base:Input" "base:Component" "base:Constructor" "base:Fallback" "base:StateMutability" "base:Event" "base:Error" "base:Output" ; /*classes style*/
-	"base:" -> "http://purl.org/NET/rdflicense/cc-by4.0" [ label = ":creator" ];
+	"base:" -> "http://purl.org/NET/rdflicense/cc-by4.0" [ label = ":license" ];
 	"base:" -> "base:" [ label = "owl:versionIRI" ];
 	"NULL" -> "base:anonymous" [ label = "owl:onProperty" ];
+	"NULL" -> "base:name" [ label = "owl:onProperty" ];
 	"NULL" -> "xsd:boolean" [ label = "owl:onDataRange" ];
 	"NULL" -> "base:indexed" [ label = "owl:onProperty" ];
-	"NULL" -> "base:name" [ label = "owl:onProperty" ];
 	"NULL" -> "xsd:string" [ label = "owl:onDataRange" ];
 	"NULL" -> "base:type" [ label = "owl:onProperty" ];
 	"base:Component" -> "base:Component" [ label = "base:hasComponent" ];

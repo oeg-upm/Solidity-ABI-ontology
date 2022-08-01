@@ -1,8 +1,10 @@
 <https://w3id.org/def/SolidityABI#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <https://w3id.org/def/SolidityABI#> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/def/SolidityABI#> .
-<https://w3id.org/def/SolidityABI#> <http://purl.org/dc/terms/creator> <http://purl.org/NET/rdflicense/cc-by4.0> .
 <https://w3id.org/def/SolidityABI#> <http://purl.org/dc/terms/creator> "Juan Cano-Benito" .
-<https://w3id.org/def/SolidityABI#> <http://www.w3.org/2000/01/rdf-schema#label> "EthOn extension" .
+<https://w3id.org/def/SolidityABI#> <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/cc-by4.0> .
+<https://w3id.org/def/SolidityABI#> <http://www.w3.org/2000/01/rdf-schema#comment> "This ontology models the ABI from a Solidity contract" .
+<https://w3id.org/def/SolidityABI#> <http://www.w3.org/2000/01/rdf-schema#label> "Solidity ABI Ontology" .
+<https://w3id.org/def/SolidityABI#> <http://www.w3.org/2002/07/owl#versionInfo> "1.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 # 
 # 
 # #################################################################

@@ -9,9 +9,11 @@
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/def/SolidityABI#">
         <owl:versionIRI rdf:resource="https://w3id.org/def/SolidityABI#"/>
-        <terms:creator rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
         <terms:creator>Juan Cano-Benito</terms:creator>
-        <rdfs:label>EthOn extension</rdfs:label>
+        <terms:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
+        <rdfs:comment>This ontology models the ABI from a Solidity contract</rdfs:comment>
+        <rdfs:label>Solidity ABI Ontology</rdfs:label>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
     </owl:Ontology>
     
 
