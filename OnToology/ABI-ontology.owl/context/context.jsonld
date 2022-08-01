@@ -1,0 +1,101 @@
+{
+  "@context" : {
+    "implementsFallback" : {
+      "@id" : "https://w3id.org/def/SolidityABI#implementsFallback",
+      "@type" : "@id"
+    },
+    "implementsFunction" : {
+      "@id" : "https://w3id.org/def/SolidityABI#implementsFunction",
+      "@type" : "@id"
+    },
+    "Constructor" : {
+      "@id" : "https://w3id.org/def/SolidityABI#Constructor"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "Fallback" : {
+      "@id" : "https://w3id.org/def/SolidityABI#Fallback"
+    },
+    "anonymous" : {
+      "@id" : "https://w3id.org/def/SolidityABI#anonymous"
+    },
+    "hasOutput" : {
+      "@id" : "https://w3id.org/def/SolidityABI#hasOutput",
+      "@type" : "@id"
+    },
+    "indexed" : {
+      "@id" : "https://w3id.org/def/SolidityABI#indexed"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "implementsConstructor" : {
+      "@id" : "https://w3id.org/def/SolidityABI#implementsConstructor",
+      "@type" : "@id"
+    },
+    "Event" : {
+      "@id" : "https://w3id.org/def/SolidityABI#Event"
+    },
+    "implementsEvent" : {
+      "@id" : "https://w3id.org/def/SolidityABI#implementsEvent",
+      "@type" : "@id"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "name" : {
+      "@id" : "https://w3id.org/def/SolidityABI#name"
+    },
+    "hasInput" : {
+      "@id" : "https://w3id.org/def/SolidityABI#hasInput",
+      "@type" : "@id"
+    },
+    "Input" : {
+      "@id" : "https://w3id.org/def/SolidityABI#Input"
+    },
+    "ABI" : {
+      "@id" : "https://w3id.org/def/SolidityABI#ABI"
+    },
+    "type" : {
+      "@id" : "https://w3id.org/def/SolidityABI#type"
+    },
+    "Component" : {
+      "@id" : "https://w3id.org/def/SolidityABI#Component"
+    },
+    "Output" : {
+      "@id" : "https://w3id.org/def/SolidityABI#Output"
+    },
+    "Error" : {
+      "@id" : "https://w3id.org/def/SolidityABI#Error"
+    },
+    "Function" : {
+      "@id" : "https://w3id.org/def/SolidityABI#Function"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "implementsReceive" : {
+      "@id" : "https://w3id.org/def/SolidityABI#implementsReceive",
+      "@type" : "@id"
+    },
+    "implementsError" : {
+      "@id" : "https://w3id.org/def/SolidityABI#implementsError",
+      "@type" : "@id"
+    },
+    "hasMutability" : {
+      "@id" : "https://w3id.org/def/SolidityABI#hasMutability",
+      "@type" : "@id"
+    },
+    "hasComponent" : {
+      "@id" : "https://w3id.org/def/SolidityABI#hasComponent",
+      "@type" : "@id"
+    },
+    "Receive" : {
+      "@id" : "https://w3id.org/def/SolidityABI#Receive"
+    },
+    "StateMutability" : {
+      "@id" : "https://w3id.org/def/SolidityABI#StateMutability"
+    }
+  }
+}

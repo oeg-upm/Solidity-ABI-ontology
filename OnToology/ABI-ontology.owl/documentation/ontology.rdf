@@ -1,0 +1,465 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/def/SolidityABI#"
+     xml:base="https://w3id.org/def/SolidityABI"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https://w3id.org/def/SolidityABI#">
+        <owl:versionIRI rdf:resource="https://w3id.org/def/SolidityABI#"/>
+        <terms:creator rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
+        <terms:creator>Juan Cano-Benito</terms:creator>
+        <rdfs:label>EthOn extension</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/def/SolidityABI#hasComponent -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/SolidityABI#hasComponent">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityABI#Component"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityABI#Input"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityABI#Output"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/SolidityABI#Component"/>
+        <rdfs:label>has Component</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityABI#hasInput -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/SolidityABI#hasInput">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityABI#Constructor"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityABI#Error"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityABI#Event"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityABI#Function"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityABI#Receive"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/SolidityABI#Input"/>
+        <rdfs:label>has Input</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityABI#hasMutability -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/SolidityABI#hasMutability">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityABI#Constructor"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityABI#Fallback"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityABI#Function"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityABI#Receive"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/SolidityABI#StateMutability"/>
+        <rdfs:label>has Mutability</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityABI#hasOutput -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/SolidityABI#hasOutput">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityABI#Function"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityABI#Receive"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/SolidityABI#Output"/>
+        <rdfs:label>has Output</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityABI#implementsConstructor -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/SolidityABI#implementsConstructor">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityABI#ABI"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/SolidityABI#Constructor"/>
+        <rdfs:label>implements Constructor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityABI#implementsError -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/SolidityABI#implementsError">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityABI#ABI"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/SolidityABI#Error"/>
+        <rdfs:label>implements Error</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityABI#implementsEvent -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/SolidityABI#implementsEvent">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityABI#ABI"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/SolidityABI#Event"/>
+        <rdfs:label>implements Event</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityABI#implementsFallback -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/SolidityABI#implementsFallback">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityABI#ABI"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/SolidityABI#Fallback"/>
+        <rdfs:label>implements Fallback</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityABI#implementsFunction -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/SolidityABI#implementsFunction">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityABI#ABI"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/SolidityABI#Function"/>
+        <rdfs:label>implements Function</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityABI#implementsReceive -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/SolidityABI#implementsReceive">
+        <rdfs:domain rdf:resource="https://w3id.org/def/SolidityABI#ABI"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/SolidityABI#Receive"/>
+        <rdfs:label>implements Receive</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/def/SolidityABI#anonymous -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/SolidityABI#anonymous">
+        <rdfs:label>anonymous</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityABI#indexed -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/SolidityABI#indexed">
+        <rdfs:comment>true if the field is part of the log’s topics, false if it one of the log’s data segment.</rdfs:comment>
+        <rdfs:label>indexed</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityABI#name -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/SolidityABI#name">
+        <rdfs:label>name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/SolidityABI#type -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/SolidityABI#type">
+        <rdfs:label>type</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/def/SolidityABI#ABI -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/SolidityABI#ABI">
+        <rdfs:label>ABI</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SolidityABI#Component -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/SolidityABI#Component">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/SolidityABI#name"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/SolidityABI#type"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Component</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SolidityABI#Constructor -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/SolidityABI#Constructor">
+        <rdfs:label>Constructor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SolidityABI#Error -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/SolidityABI#Error">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/SolidityABI#name"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Error</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SolidityABI#Event -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/SolidityABI#Event">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/SolidityABI#anonymous"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/SolidityABI#name"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SolidityABI#Fallback -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/SolidityABI#Fallback">
+        <rdfs:label>Fallback</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SolidityABI#Function -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/SolidityABI#Function">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/SolidityABI#name"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Function</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SolidityABI#Input -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/SolidityABI#Input">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/SolidityABI#indexed"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/SolidityABI#name"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/SolidityABI#type"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Input</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SolidityABI#Output -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/SolidityABI#Output">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/SolidityABI#name"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/SolidityABI#type"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Output</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SolidityABI#Receive -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/SolidityABI#Receive">
+        <rdfs:label>Receive</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/SolidityABI#StateMutability -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/SolidityABI#StateMutability">
+        <rdfs:label>State mutability</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/def/SolidityABI#nonpayable -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/SolidityABI#nonpayable">
+        <rdf:type rdf:resource="https://w3id.org/def/SolidityABI#StateMutability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/SolidityABI#payable -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/SolidityABI#payable">
+        <rdf:type rdf:resource="https://w3id.org/def/SolidityABI#StateMutability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/SolidityABI#pure -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/SolidityABI#pure">
+        <rdf:type rdf:resource="https://w3id.org/def/SolidityABI#StateMutability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/SolidityABI#view -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/SolidityABI#view">
+        <rdf:type rdf:resource="https://w3id.org/def/SolidityABI#StateMutability"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+
