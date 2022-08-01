@@ -8,9 +8,11 @@
 
 <https://w3id.org/def/SolidityABI#> rdf:type owl:Ontology ;
                                      owl:versionIRI <https://w3id.org/def/SolidityABI#> ;
-                                     <http://purl.org/dc/terms/creator> <http://purl.org/NET/rdflicense/cc-by4.0> ,
-                                                                        "Juan Cano-Benito" ;
-                                     rdfs:label "EthOn extension" .
+                                     <http://purl.org/dc/terms/creator> "Juan Cano-Benito" ;
+                                     <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/cc-by4.0> ;
+                                     rdfs:comment "This ontology models the ABI from a Solidity contract" ;
+                                     rdfs:label "Solidity ABI Ontology" ;
+                                     owl:versionInfo 1.0 .
 
 #################################################################
 #    Annotation properties
