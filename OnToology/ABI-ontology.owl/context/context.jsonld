@@ -11,6 +11,9 @@
     "Constructor" : {
       "@id" : "https://w3id.org/def/SolidityABI#Constructor"
     },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
     "license" : {
       "@id" : "http://purl.org/dc/terms/license"
     },

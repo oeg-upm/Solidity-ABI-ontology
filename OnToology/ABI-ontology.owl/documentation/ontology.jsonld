@@ -151,15 +151,23 @@
   "@id" : "https://w3id.org/def/SolidityABI#",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/terms/creator" : [ {
-    "@id" : "http://purl.org/NET/rdflicense/cc-by4.0"
-  }, {
     "@value" : "Juan Cano-Benito"
   } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "http://purl.org/NET/rdflicense/cc-by4.0"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This ontology models the ABI from a Solidity contract"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "EthOn extension"
+    "@value" : "Solidity ABI Ontology"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
     "@id" : "https://w3id.org/def/SolidityABI#"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "1.0"
   } ]
 }, {
   "@id" : "https://w3id.org/def/SolidityABI#ABI",
