@@ -1,0 +1,551 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdf:type owl:Ontology
+ ] .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/ns/shacl#class
+<http://www.w3.org/ns/shacl#class> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/shacl#datatype
+<http://www.w3.org/ns/shacl#datatype> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/shacl#name
+<http://www.w3.org/ns/shacl#name> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/shacl#nodeKind
+<http://www.w3.org/ns/shacl#nodeKind> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/shacl#path
+<http://www.w3.org/ns/shacl#path> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/shacl#pattern
+<http://www.w3.org/ns/shacl#pattern> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/shacl#property
+<http://www.w3.org/ns/shacl#property> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/shacl#targetClass
+<http://www.w3.org/ns/shacl#targetClass> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/def/astrea#contains
+<https://w3id.org/def/astrea#contains> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/def/astrea#generatedShapesFrom
+<https://w3id.org/def/astrea#generatedShapesFrom> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/def/astrea#message
+<https://w3id.org/def/astrea#message> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/def/astrea#statusCode
+<https://w3id.org/def/astrea#statusCode> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.w3.org/ns/shacl#NodeShape
+<http://www.w3.org/ns/shacl#NodeShape> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/shacl#PropertyShape
+<http://www.w3.org/ns/shacl#PropertyShape> rdf:type owl:Class .
+
+
+###  https://w3id.org/def/astrea#ReportEntry
+<https://w3id.org/def/astrea#ReportEntry> rdf:type owl:Class .
+
+
+###  https://w3id.org/def/astrea#ShapeReport
+<https://w3id.org/def/astrea#ShapeReport> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://astrea.linkeddata.es/report
+<http://astrea.linkeddata.es/report> rdf:type owl:NamedIndividual ,
+                                              <https://w3id.org/def/astrea#ShapeReport> ;
+                                     <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#a874a85a011651b4eee08f2e9367d1fd> ,
+                                                                            <https://astrea.linkeddata.es/shapes#aa3c4aa40c72ab6ae95cbc715794f634> ,
+                                                                            <https://astrea.linkeddata.es/shapes#ad19c161531d7a23e7f23ba32c8319d3> ,
+                                                                            <https://astrea.linkeddata.es/shapes#b246fef5d5761cd907fd3f9b1d695a99> ,
+                                                                            <https://astrea.linkeddata.es/shapes#b2fb19d597e0f7a4873bbdbbc931866c> ,
+                                                                            <https://astrea.linkeddata.es/shapes#bb4890292f27d3e20d9506a0a4c073d9> ,
+                                                                            <https://astrea.linkeddata.es/shapes#c6956a8731c9fbdce2d942c0a609f136> ,
+                                                                            <https://astrea.linkeddata.es/shapes#c883a0a00638501fa527e8f2513bcfd7> ,
+                                                                            <https://astrea.linkeddata.es/shapes#d2b02573271c31753dc7bda84ebfff11> ,
+                                                                            <https://astrea.linkeddata.es/shapes#d703817ff62d2a0c6922402eaa77fc87> ,
+                                                                            <https://astrea.linkeddata.es/shapes#e37b1e46180c2a24eb6f950776ae4567> ,
+                                                                            <https://astrea.linkeddata.es/shapes#ea2967b1c2b5c85299189c1b7b96c6bb> ,
+                                                                            <https://astrea.linkeddata.es/shapes#0ab78461645c39a386f670d8c33e216a> ,
+                                                                            <https://astrea.linkeddata.es/shapes#00464405c961ddcb8f3c7d13bd85907f> ,
+                                                                            <https://astrea.linkeddata.es/shapes#0540f65d2015d28f7285325bfc46c7a7> ,
+                                                                            <https://astrea.linkeddata.es/shapes#1b15702dc05d3cd2114b7959d324ef2c> ,
+                                                                            <https://astrea.linkeddata.es/shapes#1b436c48231dd2a1dcceb66453003222> ,
+                                                                            <https://astrea.linkeddata.es/shapes#1ed3b8c2dee7578a0dd33b58cc8540f8> ,
+                                                                            <https://astrea.linkeddata.es/shapes#15e35c4f5d76944a5343206929e8ed9a> ,
+                                                                            <https://astrea.linkeddata.es/shapes#20e8f8c22738bc9cf8f1e07a77ed306f> ,
+                                                                            <https://astrea.linkeddata.es/shapes#26f15b8fbf03722814248e75246c9012> ,
+                                                                            <https://astrea.linkeddata.es/shapes#302cf9443a7e6cae3f5abe764bf0b646> ,
+                                                                            <https://astrea.linkeddata.es/shapes#3189f6c9c7d8ccce27e4a44b4a1259e4> ,
+                                                                            <https://astrea.linkeddata.es/shapes#32a608d30bca1f895a3fc3d44f5dbd25> ,
+                                                                            <https://astrea.linkeddata.es/shapes#32d07b1cca899624a6cbbdd99407c96a> ,
+                                                                            <https://astrea.linkeddata.es/shapes#352d45ad6858ee0dd8f5cfe88547fb77> ,
+                                                                            <https://astrea.linkeddata.es/shapes#37f21f4d9a48333773238b4236b1bce4> ,
+                                                                            <https://astrea.linkeddata.es/shapes#475fa1092fff7b497880b49ad05805fb> ,
+                                                                            <https://astrea.linkeddata.es/shapes#5ae7c9d9270248d008f7cf915859ac67> ,
+                                                                            <https://astrea.linkeddata.es/shapes#510b8202c6f59a12ca3eb03297ff31fc> ,
+                                                                            <https://astrea.linkeddata.es/shapes#7ac9f0c697b1bb0304ec8c10df80ff03> ,
+                                                                            <https://astrea.linkeddata.es/shapes#7f95b30435ac6f8b3e4e9e226bb81bb2> ,
+                                                                            <https://astrea.linkeddata.es/shapes#82493bf73c1519c2354fbe61e11c3f44> ,
+                                                                            <https://astrea.linkeddata.es/shapes#83987f8cac361f2e109a9fb26f32d0c1> ,
+                                                                            <https://astrea.linkeddata.es/shapes#9c3d21213fc76342abd4247b4bc3ce9e> ,
+                                                                            <https://astrea.linkeddata.es/shapes#9f45cab8ffb3d24c3fe1d3bf186f56a3> ,
+                                                                            <https://astrea.linkeddata.es/shapes#91a7977c9476702a2515786eaa8852ad> ,
+                                                                            <https://astrea.linkeddata.es/shapes#916d99f941b7307505bec78e99f3dc88> ,
+                                                                            <https://astrea.linkeddata.es/shapes#96b320c31cd3fd8ada9379f2c7608460> ;
+                                     <https://w3id.org/def/astrea#generatedShapesFrom> <https://astrea.linkeddata.es/report/0620946147> .
+
+
+###  https://astrea.linkeddata.es/report/0620946147
+<https://astrea.linkeddata.es/report/0620946147> rdf:type owl:NamedIndividual ,
+                                                          <https://w3id.org/def/astrea#ReportEntry> ;
+                                                 <https://w3id.org/def/astrea#message> "Shapes generated with no errors" ;
+                                                 <https://w3id.org/def/astrea#statusCode> "200"^^xsd:int .
+
+
+###  https://astrea.linkeddata.es/shapes#a874a85a011651b4eee08f2e9367d1fd
+<https://astrea.linkeddata.es/shapes#a874a85a011651b4eee08f2e9367d1fd> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       rdfs:label "indexed" ;
+                                                                       <http://www.w3.org/ns/shacl#datatype> xsd:boolean ;
+                                                                       <http://www.w3.org/ns/shacl#name> "indexed" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <http://w3id.org/def/SolidityABI/indexed> ;
+                                                                       <http://www.w3.org/ns/shacl#pattern> "true|false|0|1" .
+
+
+###  https://astrea.linkeddata.es/shapes#aa3c4aa40c72ab6ae95cbc715794f634
+<https://astrea.linkeddata.es/shapes#aa3c4aa40c72ab6ae95cbc715794f634> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       rdfs:label "type component" ;
+                                                                       <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+                                                                       <http://www.w3.org/ns/shacl#name> "type component" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <http://w3id.org/def/SolidityABI/typeComponent> ;
+                                                                       <http://www.w3.org/ns/shacl#pattern> ".*" .
+
+
+###  https://astrea.linkeddata.es/shapes#ad19c161531d7a23e7f23ba32c8319d3
+<https://astrea.linkeddata.es/shapes#ad19c161531d7a23e7f23ba32c8319d3> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#NodeShape> ;
+                                                                       rdfs:label "Input Event" ;
+                                                                       <http://www.w3.org/ns/shacl#name> "Input Event" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+                                                                       <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#a874a85a011651b4eee08f2e9367d1fd> ;
+                                                                       <http://www.w3.org/ns/shacl#targetClass> <http://w3id.org/def/SolidityABI/InputEvent> .
+
+
+###  https://astrea.linkeddata.es/shapes#b246fef5d5761cd907fd3f9b1d695a99
+<https://astrea.linkeddata.es/shapes#b246fef5d5761cd907fd3f9b1d695a99> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#NodeShape> ;
+                                                                       rdfs:label "Output Parameter" ;
+                                                                       <http://www.w3.org/ns/shacl#name> "Output Parameter" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+                                                                       <http://www.w3.org/ns/shacl#targetClass> <http://w3id.org/def/SolidityABI/OutputParameter> .
+
+
+###  https://astrea.linkeddata.es/shapes#b2fb19d597e0f7a4873bbdbbc931866c
+<https://astrea.linkeddata.es/shapes#b2fb19d597e0f7a4873bbdbbc931866c> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#NodeShape> ;
+                                                                       rdfs:label "State Mutability" ;
+                                                                       <http://www.w3.org/ns/shacl#name> "State Mutability" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+                                                                       <http://www.w3.org/ns/shacl#targetClass> <http://w3id.org/def/SolidityABI/StateMutability> .
+
+
+###  https://astrea.linkeddata.es/shapes#bb4890292f27d3e20d9506a0a4c073d9
+<https://astrea.linkeddata.es/shapes#bb4890292f27d3e20d9506a0a4c073d9> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#NodeShape> ;
+                                                                       rdfs:label "contract Implementation" ;
+                                                                       <http://www.w3.org/ns/shacl#name> "contract Implementation" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+                                                                       <http://www.w3.org/ns/shacl#targetClass> <http://w3id.org/def/SolidityOntology/contractImplementation> .
+
+
+###  https://astrea.linkeddata.es/shapes#c6956a8731c9fbdce2d942c0a609f136
+<https://astrea.linkeddata.es/shapes#c6956a8731c9fbdce2d942c0a609f136> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#NodeShape> ;
+                                                                       rdfs:label "Constructor" ;
+                                                                       <http://www.w3.org/ns/shacl#name> "Constructor" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+                                                                       <http://www.w3.org/ns/shacl#targetClass> <http://w3id.org/def/SolidityABI/Constructor> .
+
+
+###  https://astrea.linkeddata.es/shapes#c883a0a00638501fa527e8f2513bcfd7
+<https://astrea.linkeddata.es/shapes#c883a0a00638501fa527e8f2513bcfd7> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#NodeShape> ;
+                                                                       rdfs:label "Method" ;
+                                                                       <http://www.w3.org/ns/shacl#name> "Method" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+                                                                       <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#0540f65d2015d28f7285325bfc46c7a7> ,
+                                                                                                             <https://astrea.linkeddata.es/shapes#32d07b1cca899624a6cbbdd99407c96a> ,
+                                                                                                             <https://astrea.linkeddata.es/shapes#83987f8cac361f2e109a9fb26f32d0c1> ,
+                                                                                                             <https://astrea.linkeddata.es/shapes#91a7977c9476702a2515786eaa8852ad> ,
+                                                                                                             <https://astrea.linkeddata.es/shapes#96b320c31cd3fd8ada9379f2c7608460> ;
+                                                                       <http://www.w3.org/ns/shacl#targetClass> <http://w3id.org/def/SolidityABI/Method> .
+
+
+###  https://astrea.linkeddata.es/shapes#d2b02573271c31753dc7bda84ebfff11
+<https://astrea.linkeddata.es/shapes#d2b02573271c31753dc7bda84ebfff11> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#NodeShape> ;
+                                                                       rdfs:label "Parameter" ;
+                                                                       <http://www.w3.org/ns/shacl#name> "Parameter" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+                                                                       <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#32a608d30bca1f895a3fc3d44f5dbd25> ,
+                                                                                                             <https://astrea.linkeddata.es/shapes#37f21f4d9a48333773238b4236b1bce4> ,
+                                                                                                             <https://astrea.linkeddata.es/shapes#5ae7c9d9270248d008f7cf915859ac67> ,
+                                                                                                             <https://astrea.linkeddata.es/shapes#82493bf73c1519c2354fbe61e11c3f44> ;
+                                                                       <http://www.w3.org/ns/shacl#targetClass> <http://w3id.org/def/SolidityABI/Parameter> .
+
+
+###  https://astrea.linkeddata.es/shapes#d703817ff62d2a0c6922402eaa77fc87
+<https://astrea.linkeddata.es/shapes#d703817ff62d2a0c6922402eaa77fc87> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#NodeShape> ;
+                                                                       rdfs:label "Component" ;
+                                                                       <http://www.w3.org/ns/shacl#name> "Component" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+                                                                       <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#aa3c4aa40c72ab6ae95cbc715794f634> ,
+                                                                                                             <https://astrea.linkeddata.es/shapes#20e8f8c22738bc9cf8f1e07a77ed306f> ,
+                                                                                                             <https://astrea.linkeddata.es/shapes#26f15b8fbf03722814248e75246c9012> ,
+                                                                                                             <https://astrea.linkeddata.es/shapes#352d45ad6858ee0dd8f5cfe88547fb77> ;
+                                                                       <http://www.w3.org/ns/shacl#targetClass> <http://w3id.org/def/SolidityABI/Component> .
+
+
+###  https://astrea.linkeddata.es/shapes#e37b1e46180c2a24eb6f950776ae4567
+<https://astrea.linkeddata.es/shapes#e37b1e46180c2a24eb6f950776ae4567> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#NodeShape> ;
+                                                                       rdfs:label "Function" ;
+                                                                       <http://www.w3.org/ns/shacl#name> "Function" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+                                                                       <http://www.w3.org/ns/shacl#targetClass> <http://w3id.org/def/SolidityABI/Function> .
+
+
+###  https://astrea.linkeddata.es/shapes#ea2967b1c2b5c85299189c1b7b96c6bb
+<https://astrea.linkeddata.es/shapes#ea2967b1c2b5c85299189c1b7b96c6bb> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       rdfs:label "has error" ;
+                                                                       <http://www.w3.org/ns/shacl#class> <http://w3id.org/def/SolidityABI/Error> ;
+                                                                       <http://www.w3.org/ns/shacl#name> "has error" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <http://w3id.org/def/SolidityABI/hasError> .
+
+
+###  https://astrea.linkeddata.es/shapes#0ab78461645c39a386f670d8c33e216a
+<https://astrea.linkeddata.es/shapes#0ab78461645c39a386f670d8c33e216a> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       rdfs:label "has event input" ;
+                                                                       <http://www.w3.org/ns/shacl#class> <http://w3id.org/def/SolidityABI/InputEvent> ;
+                                                                       <http://www.w3.org/ns/shacl#name> "has event input" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <http://w3id.org/def/SolidityABI/hasEventInput> .
+
+
+###  https://astrea.linkeddata.es/shapes#00464405c961ddcb8f3c7d13bd85907f
+<https://astrea.linkeddata.es/shapes#00464405c961ddcb8f3c7d13bd85907f> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       rdfs:label "has error input" ;
+                                                                       <http://www.w3.org/ns/shacl#class> <http://w3id.org/def/SolidityABI/InputParameter> ;
+                                                                       <http://www.w3.org/ns/shacl#name> "has error input" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <http://w3id.org/def/SolidityABI/hasErrorInput> .
+
+
+###  https://astrea.linkeddata.es/shapes#0540f65d2015d28f7285325bfc46c7a7
+<https://astrea.linkeddata.es/shapes#0540f65d2015d28f7285325bfc46c7a7> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       rdfs:label "name method" ;
+                                                                       <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+                                                                       <http://www.w3.org/ns/shacl#name> "name method" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <http://w3id.org/def/SolidityABI/nameMethod> ;
+                                                                       <http://www.w3.org/ns/shacl#pattern> ".*" .
+
+
+###  https://astrea.linkeddata.es/shapes#1b15702dc05d3cd2114b7959d324ef2c
+<https://astrea.linkeddata.es/shapes#1b15702dc05d3cd2114b7959d324ef2c> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       rdfs:label "has event" ;
+                                                                       <http://www.w3.org/ns/shacl#class> <http://w3id.org/def/SolidityABI/Event> ;
+                                                                       <http://www.w3.org/ns/shacl#name> "has event" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <http://w3id.org/def/SolidityABI/hasEvent> .
+
+
+###  https://astrea.linkeddata.es/shapes#1b436c48231dd2a1dcceb66453003222
+<https://astrea.linkeddata.es/shapes#1b436c48231dd2a1dcceb66453003222> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       rdfs:label "has code" ;
+                                                                       <http://www.w3.org/ns/shacl#class> <http://w3id.org/def/SolidityOntology/contractImplementation> ;
+                                                                       <http://www.w3.org/ns/shacl#name> "has code" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <http://w3id.org/def/SolidityABI/hasCode> .
+
+
+###  https://astrea.linkeddata.es/shapes#1ed3b8c2dee7578a0dd33b58cc8540f8
+<https://astrea.linkeddata.es/shapes#1ed3b8c2dee7578a0dd33b58cc8540f8> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       rdfs:label "has function" ;
+                                                                       <http://www.w3.org/ns/shacl#class> <http://w3id.org/def/SolidityABI/Method> ;
+                                                                       <http://www.w3.org/ns/shacl#name> "has function" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <http://w3id.org/def/SolidityABI/hasFunction> .
+
+
+###  https://astrea.linkeddata.es/shapes#15e35c4f5d76944a5343206929e8ed9a
+<https://astrea.linkeddata.es/shapes#15e35c4f5d76944a5343206929e8ed9a> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#NodeShape> ;
+                                                                       rdfs:label "Input Parameter" ;
+                                                                       <http://www.w3.org/ns/shacl#name> "Input Parameter" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+                                                                       <http://www.w3.org/ns/shacl#targetClass> <http://w3id.org/def/SolidityABI/InputParameter> .
+
+
+###  https://astrea.linkeddata.es/shapes#20e8f8c22738bc9cf8f1e07a77ed306f
+<https://astrea.linkeddata.es/shapes#20e8f8c22738bc9cf8f1e07a77ed306f> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       rdfs:label "internal type component" ;
+                                                                       <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+                                                                       <http://www.w3.org/ns/shacl#name> "internal type component" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <http://w3id.org/def/SolidityABI/internalTypeComponent> ;
+                                                                       <http://www.w3.org/ns/shacl#pattern> ".*" .
+
+
+###  https://astrea.linkeddata.es/shapes#26f15b8fbf03722814248e75246c9012
+<https://astrea.linkeddata.es/shapes#26f15b8fbf03722814248e75246c9012> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       rdfs:label "has sub component" ;
+                                                                       <http://www.w3.org/ns/shacl#class> <http://w3id.org/def/SolidityABI/Component> ;
+                                                                       <http://www.w3.org/ns/shacl#name> "has sub component" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <http://w3id.org/def/SolidityABI/hasSubComponent> .
+
+
+###  https://astrea.linkeddata.es/shapes#302cf9443a7e6cae3f5abe764bf0b646
+<https://astrea.linkeddata.es/shapes#302cf9443a7e6cae3f5abe764bf0b646> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       rdfs:label "is anonymous" ;
+                                                                       <http://www.w3.org/ns/shacl#datatype> xsd:boolean ;
+                                                                       <http://www.w3.org/ns/shacl#name> "is anonymous" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <http://w3id.org/def/SolidityABI/isAnonymous> ;
+                                                                       <http://www.w3.org/ns/shacl#pattern> "true|false|0|1" .
+
+
+###  https://astrea.linkeddata.es/shapes#3189f6c9c7d8ccce27e4a44b4a1259e4
+<https://astrea.linkeddata.es/shapes#3189f6c9c7d8ccce27e4a44b4a1259e4> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#NodeShape> ;
+                                                                       rdfs:label "Receive" ;
+                                                                       <http://www.w3.org/ns/shacl#name> "Receive" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+                                                                       <http://www.w3.org/ns/shacl#targetClass> <http://w3id.org/def/SolidityABI/Receive> .
+
+
+###  https://astrea.linkeddata.es/shapes#32a608d30bca1f895a3fc3d44f5dbd25
+<https://astrea.linkeddata.es/shapes#32a608d30bca1f895a3fc3d44f5dbd25> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       rdfs:label "name parameter" ;
+                                                                       <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+                                                                       <http://www.w3.org/ns/shacl#name> "name parameter" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <http://w3id.org/def/SolidityABI/nameParameter> ;
+                                                                       <http://www.w3.org/ns/shacl#pattern> ".*" .
+
+
+###  https://astrea.linkeddata.es/shapes#32d07b1cca899624a6cbbdd99407c96a
+<https://astrea.linkeddata.es/shapes#32d07b1cca899624a6cbbdd99407c96a> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       rdfs:label "has method output" ;
+                                                                       <http://www.w3.org/ns/shacl#class> <http://w3id.org/def/SolidityABI/OutputParameter> ;
+                                                                       <http://www.w3.org/ns/shacl#name> "has method output" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <http://w3id.org/def/SolidityABI/hasMethodOutput> .
+
+
+###  https://astrea.linkeddata.es/shapes#352d45ad6858ee0dd8f5cfe88547fb77
+<https://astrea.linkeddata.es/shapes#352d45ad6858ee0dd8f5cfe88547fb77> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       rdfs:label "name component" ;
+                                                                       <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+                                                                       <http://www.w3.org/ns/shacl#name> "name component" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <http://w3id.org/def/SolidityABI/nameComponent> ;
+                                                                       <http://www.w3.org/ns/shacl#pattern> ".*" .
+
+
+###  https://astrea.linkeddata.es/shapes#37f21f4d9a48333773238b4236b1bce4
+<https://astrea.linkeddata.es/shapes#37f21f4d9a48333773238b4236b1bce4> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       rdfs:label "type parameter" ;
+                                                                       <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+                                                                       <http://www.w3.org/ns/shacl#name> "type parameter" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <http://w3id.org/def/SolidityABI/typeParameter> ;
+                                                                       <http://www.w3.org/ns/shacl#pattern> ".*" .
+
+
+###  https://astrea.linkeddata.es/shapes#475fa1092fff7b497880b49ad05805fb
+<https://astrea.linkeddata.es/shapes#475fa1092fff7b497880b49ad05805fb> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       rdfs:label "address" ;
+                                                                       <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+                                                                       <http://www.w3.org/ns/shacl#name> "address" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <http://w3id.org/def/SolidityABI/address> ;
+                                                                       <http://www.w3.org/ns/shacl#pattern> ".*" .
+
+
+###  https://astrea.linkeddata.es/shapes#5ae7c9d9270248d008f7cf915859ac67
+<https://astrea.linkeddata.es/shapes#5ae7c9d9270248d008f7cf915859ac67> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       rdfs:label "has component" ;
+                                                                       <http://www.w3.org/ns/shacl#class> <http://w3id.org/def/SolidityABI/Component> ;
+                                                                       <http://www.w3.org/ns/shacl#name> "has component" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <http://w3id.org/def/SolidityABI/hasComponent> .
+
+
+###  https://astrea.linkeddata.es/shapes#510b8202c6f59a12ca3eb03297ff31fc
+<https://astrea.linkeddata.es/shapes#510b8202c6f59a12ca3eb03297ff31fc> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       rdfs:label "name error" ;
+                                                                       <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+                                                                       <http://www.w3.org/ns/shacl#name> "name error" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <http://w3id.org/def/SolidityABI/nameError> ;
+                                                                       <http://www.w3.org/ns/shacl#pattern> ".*" .
+
+
+###  https://astrea.linkeddata.es/shapes#7ac9f0c697b1bb0304ec8c10df80ff03
+<https://astrea.linkeddata.es/shapes#7ac9f0c697b1bb0304ec8c10df80ff03> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#NodeShape> ;
+                                                                       rdfs:label "Error" ;
+                                                                       <http://www.w3.org/ns/shacl#name> "Error" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+                                                                       <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#00464405c961ddcb8f3c7d13bd85907f> ,
+                                                                                                             <https://astrea.linkeddata.es/shapes#510b8202c6f59a12ca3eb03297ff31fc> ;
+                                                                       <http://www.w3.org/ns/shacl#targetClass> <http://w3id.org/def/SolidityABI/Error> .
+
+
+###  https://astrea.linkeddata.es/shapes#7f95b30435ac6f8b3e4e9e226bb81bb2
+<https://astrea.linkeddata.es/shapes#7f95b30435ac6f8b3e4e9e226bb81bb2> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#NodeShape> ;
+                                                                       rdfs:label "Event" ;
+                                                                       <http://www.w3.org/ns/shacl#name> "Event" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+                                                                       <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#0ab78461645c39a386f670d8c33e216a> ,
+                                                                                                             <https://astrea.linkeddata.es/shapes#302cf9443a7e6cae3f5abe764bf0b646> ,
+                                                                                                             <https://astrea.linkeddata.es/shapes#916d99f941b7307505bec78e99f3dc88> ;
+                                                                       <http://www.w3.org/ns/shacl#targetClass> <http://w3id.org/def/SolidityABI/Event> .
+
+
+###  https://astrea.linkeddata.es/shapes#82493bf73c1519c2354fbe61e11c3f44
+<https://astrea.linkeddata.es/shapes#82493bf73c1519c2354fbe61e11c3f44> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       rdfs:label "internal type parameter" ;
+                                                                       <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+                                                                       <http://www.w3.org/ns/shacl#name> "internal type parameter" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <http://w3id.org/def/SolidityABI/internalTypeParameter> ;
+                                                                       <http://www.w3.org/ns/shacl#pattern> ".*" .
+
+
+###  https://astrea.linkeddata.es/shapes#83987f8cac361f2e109a9fb26f32d0c1
+<https://astrea.linkeddata.es/shapes#83987f8cac361f2e109a9fb26f32d0c1> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       rdfs:label "is constant" ;
+                                                                       <http://www.w3.org/ns/shacl#datatype> xsd:boolean ;
+                                                                       <http://www.w3.org/ns/shacl#name> "is constant" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <http://w3id.org/def/SolidityABI/isConstant> ;
+                                                                       <http://www.w3.org/ns/shacl#pattern> "true|false|0|1" .
+
+
+###  https://astrea.linkeddata.es/shapes#9c3d21213fc76342abd4247b4bc3ce9e
+<https://astrea.linkeddata.es/shapes#9c3d21213fc76342abd4247b4bc3ce9e> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#NodeShape> ;
+                                                                       rdfs:label "Fallback" ;
+                                                                       <http://www.w3.org/ns/shacl#name> "Fallback" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+                                                                       <http://www.w3.org/ns/shacl#targetClass> <http://w3id.org/def/SolidityABI/Fallback> .
+
+
+###  https://astrea.linkeddata.es/shapes#9f45cab8ffb3d24c3fe1d3bf186f56a3
+<https://astrea.linkeddata.es/shapes#9f45cab8ffb3d24c3fe1d3bf186f56a3> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#NodeShape> ;
+                                                                       rdfs:label "Application Binary Interface" ;
+                                                                       <http://www.w3.org/ns/shacl#name> "Application Binary Interface" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#IRI> ;
+                                                                       <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#ea2967b1c2b5c85299189c1b7b96c6bb> ,
+                                                                                                             <https://astrea.linkeddata.es/shapes#1b15702dc05d3cd2114b7959d324ef2c> ,
+                                                                                                             <https://astrea.linkeddata.es/shapes#1b436c48231dd2a1dcceb66453003222> ,
+                                                                                                             <https://astrea.linkeddata.es/shapes#1ed3b8c2dee7578a0dd33b58cc8540f8> ,
+                                                                                                             <https://astrea.linkeddata.es/shapes#475fa1092fff7b497880b49ad05805fb> ;
+                                                                       <http://www.w3.org/ns/shacl#targetClass> <http://w3id.org/def/SolidityABI/ApplicationBinaryInterface> .
+
+
+###  https://astrea.linkeddata.es/shapes#91a7977c9476702a2515786eaa8852ad
+<https://astrea.linkeddata.es/shapes#91a7977c9476702a2515786eaa8852ad> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       rdfs:label "has method input" ;
+                                                                       <http://www.w3.org/ns/shacl#class> <http://w3id.org/def/SolidityABI/InputParameter> ;
+                                                                       <http://www.w3.org/ns/shacl#name> "has method input" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <http://w3id.org/def/SolidityABI/hasMethodInput> .
+
+
+###  https://astrea.linkeddata.es/shapes#916d99f941b7307505bec78e99f3dc88
+<https://astrea.linkeddata.es/shapes#916d99f941b7307505bec78e99f3dc88> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       rdfs:label "name event" ;
+                                                                       <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+                                                                       <http://www.w3.org/ns/shacl#name> "name event" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <http://w3id.org/def/SolidityABI/nameEvent> ;
+                                                                       <http://www.w3.org/ns/shacl#pattern> ".*" .
+
+
+###  https://astrea.linkeddata.es/shapes#96b320c31cd3fd8ada9379f2c7608460
+<https://astrea.linkeddata.es/shapes#96b320c31cd3fd8ada9379f2c7608460> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       rdfs:label "has state mutability" ;
+                                                                       <http://www.w3.org/ns/shacl#class> <http://w3id.org/def/SolidityABI/StateMutability> ;
+                                                                       <http://www.w3.org/ns/shacl#name> "has state mutability" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#BlankNodeOrIRI> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <http://w3id.org/def/SolidityABI/hasStateMutability> .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
