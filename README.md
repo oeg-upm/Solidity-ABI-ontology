@@ -1,1 +1,0 @@
-# Solidity-ABI-ontology
