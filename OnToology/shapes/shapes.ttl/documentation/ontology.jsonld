@@ -1,0 +1,1021 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "http://astrea.linkeddata.es/report",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/astrea#ShapeReport"
+  } ],
+  "https://w3id.org/def/astrea#contains" : [ {
+    "@id" : "https://astrea.linkeddata.es/shapes#a874a85a011651b4eee08f2e9367d1fd"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#aa3c4aa40c72ab6ae95cbc715794f634"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#ad19c161531d7a23e7f23ba32c8319d3"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#b246fef5d5761cd907fd3f9b1d695a99"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#b2fb19d597e0f7a4873bbdbbc931866c"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#bb4890292f27d3e20d9506a0a4c073d9"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#c6956a8731c9fbdce2d942c0a609f136"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#c883a0a00638501fa527e8f2513bcfd7"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#d2b02573271c31753dc7bda84ebfff11"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#d703817ff62d2a0c6922402eaa77fc87"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#e37b1e46180c2a24eb6f950776ae4567"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#ea2967b1c2b5c85299189c1b7b96c6bb"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#0ab78461645c39a386f670d8c33e216a"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#00464405c961ddcb8f3c7d13bd85907f"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#0540f65d2015d28f7285325bfc46c7a7"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#1b15702dc05d3cd2114b7959d324ef2c"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#1b436c48231dd2a1dcceb66453003222"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#1ed3b8c2dee7578a0dd33b58cc8540f8"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#15e35c4f5d76944a5343206929e8ed9a"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#20e8f8c22738bc9cf8f1e07a77ed306f"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#26f15b8fbf03722814248e75246c9012"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#302cf9443a7e6cae3f5abe764bf0b646"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#3189f6c9c7d8ccce27e4a44b4a1259e4"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#32a608d30bca1f895a3fc3d44f5dbd25"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#32d07b1cca899624a6cbbdd99407c96a"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#352d45ad6858ee0dd8f5cfe88547fb77"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#37f21f4d9a48333773238b4236b1bce4"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#475fa1092fff7b497880b49ad05805fb"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#5ae7c9d9270248d008f7cf915859ac67"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#510b8202c6f59a12ca3eb03297ff31fc"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#7ac9f0c697b1bb0304ec8c10df80ff03"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#7f95b30435ac6f8b3e4e9e226bb81bb2"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#82493bf73c1519c2354fbe61e11c3f44"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#83987f8cac361f2e109a9fb26f32d0c1"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#9c3d21213fc76342abd4247b4bc3ce9e"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#9f45cab8ffb3d24c3fe1d3bf186f56a3"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#91a7977c9476702a2515786eaa8852ad"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#916d99f941b7307505bec78e99f3dc88"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#96b320c31cd3fd8ada9379f2c7608460"
+  } ],
+  "https://w3id.org/def/astrea#generatedShapesFrom" : [ {
+    "@id" : "https://astrea.linkeddata.es/report/0620946147"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/shacl#NodeShape",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/ns/shacl#PropertyShape",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/ns/shacl#class",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/shacl#datatype",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/shacl#name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/shacl#nodeKind",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/shacl#path",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/shacl#pattern",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/shacl#property",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/shacl#targetClass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/report/0620946147",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/astrea#ReportEntry"
+  } ],
+  "https://w3id.org/def/astrea#message" : [ {
+    "@value" : "Shapes generated with no errors"
+  } ],
+  "https://w3id.org/def/astrea#statusCode" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#int",
+    "@value" : "200"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#00464405c961ddcb8f3c7d13bd85907f",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has error input"
+  } ],
+  "http://www.w3.org/ns/shacl#class" : [ {
+    "@id" : "http://w3id.org/def/SolidityABI/InputParameter"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "has error input"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#BlankNodeOrIRI"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "http://w3id.org/def/SolidityABI/hasErrorInput"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#0540f65d2015d28f7285325bfc46c7a7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "name method"
+  } ],
+  "http://www.w3.org/ns/shacl#datatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "name method"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#Literal"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "http://w3id.org/def/SolidityABI/nameMethod"
+  } ],
+  "http://www.w3.org/ns/shacl#pattern" : [ {
+    "@value" : ".*"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#0ab78461645c39a386f670d8c33e216a",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has event input"
+  } ],
+  "http://www.w3.org/ns/shacl#class" : [ {
+    "@id" : "http://w3id.org/def/SolidityABI/InputEvent"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "has event input"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#BlankNodeOrIRI"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "http://w3id.org/def/SolidityABI/hasEventInput"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#15e35c4f5d76944a5343206929e8ed9a",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#NodeShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Input Parameter"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "Input Parameter"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#IRI"
+  } ],
+  "http://www.w3.org/ns/shacl#targetClass" : [ {
+    "@id" : "http://w3id.org/def/SolidityABI/InputParameter"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#1b15702dc05d3cd2114b7959d324ef2c",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has event"
+  } ],
+  "http://www.w3.org/ns/shacl#class" : [ {
+    "@id" : "http://w3id.org/def/SolidityABI/Event"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "has event"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#BlankNodeOrIRI"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "http://w3id.org/def/SolidityABI/hasEvent"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#1b436c48231dd2a1dcceb66453003222",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has code"
+  } ],
+  "http://www.w3.org/ns/shacl#class" : [ {
+    "@id" : "http://w3id.org/def/SolidityOntology/contractImplementation"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "has code"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#BlankNodeOrIRI"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "http://w3id.org/def/SolidityABI/hasCode"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#1ed3b8c2dee7578a0dd33b58cc8540f8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has function"
+  } ],
+  "http://www.w3.org/ns/shacl#class" : [ {
+    "@id" : "http://w3id.org/def/SolidityABI/Method"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "has function"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#BlankNodeOrIRI"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "http://w3id.org/def/SolidityABI/hasFunction"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#20e8f8c22738bc9cf8f1e07a77ed306f",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "internal type component"
+  } ],
+  "http://www.w3.org/ns/shacl#datatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "internal type component"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#Literal"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "http://w3id.org/def/SolidityABI/internalTypeComponent"
+  } ],
+  "http://www.w3.org/ns/shacl#pattern" : [ {
+    "@value" : ".*"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#26f15b8fbf03722814248e75246c9012",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has sub component"
+  } ],
+  "http://www.w3.org/ns/shacl#class" : [ {
+    "@id" : "http://w3id.org/def/SolidityABI/Component"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "has sub component"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#BlankNodeOrIRI"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "http://w3id.org/def/SolidityABI/hasSubComponent"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#302cf9443a7e6cae3f5abe764bf0b646",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is anonymous"
+  } ],
+  "http://www.w3.org/ns/shacl#datatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "is anonymous"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#Literal"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "http://w3id.org/def/SolidityABI/isAnonymous"
+  } ],
+  "http://www.w3.org/ns/shacl#pattern" : [ {
+    "@value" : "true|false|0|1"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#3189f6c9c7d8ccce27e4a44b4a1259e4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#NodeShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Receive"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "Receive"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#IRI"
+  } ],
+  "http://www.w3.org/ns/shacl#targetClass" : [ {
+    "@id" : "http://w3id.org/def/SolidityABI/Receive"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#32a608d30bca1f895a3fc3d44f5dbd25",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "name parameter"
+  } ],
+  "http://www.w3.org/ns/shacl#datatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "name parameter"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#Literal"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "http://w3id.org/def/SolidityABI/nameParameter"
+  } ],
+  "http://www.w3.org/ns/shacl#pattern" : [ {
+    "@value" : ".*"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#32d07b1cca899624a6cbbdd99407c96a",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has method output"
+  } ],
+  "http://www.w3.org/ns/shacl#class" : [ {
+    "@id" : "http://w3id.org/def/SolidityABI/OutputParameter"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "has method output"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#BlankNodeOrIRI"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "http://w3id.org/def/SolidityABI/hasMethodOutput"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#352d45ad6858ee0dd8f5cfe88547fb77",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "name component"
+  } ],
+  "http://www.w3.org/ns/shacl#datatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "name component"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#Literal"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "http://w3id.org/def/SolidityABI/nameComponent"
+  } ],
+  "http://www.w3.org/ns/shacl#pattern" : [ {
+    "@value" : ".*"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#37f21f4d9a48333773238b4236b1bce4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "type parameter"
+  } ],
+  "http://www.w3.org/ns/shacl#datatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "type parameter"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#Literal"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "http://w3id.org/def/SolidityABI/typeParameter"
+  } ],
+  "http://www.w3.org/ns/shacl#pattern" : [ {
+    "@value" : ".*"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#475fa1092fff7b497880b49ad05805fb",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "address"
+  } ],
+  "http://www.w3.org/ns/shacl#datatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "address"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#Literal"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "http://w3id.org/def/SolidityABI/address"
+  } ],
+  "http://www.w3.org/ns/shacl#pattern" : [ {
+    "@value" : ".*"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#510b8202c6f59a12ca3eb03297ff31fc",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "name error"
+  } ],
+  "http://www.w3.org/ns/shacl#datatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "name error"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#Literal"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "http://w3id.org/def/SolidityABI/nameError"
+  } ],
+  "http://www.w3.org/ns/shacl#pattern" : [ {
+    "@value" : ".*"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#5ae7c9d9270248d008f7cf915859ac67",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has component"
+  } ],
+  "http://www.w3.org/ns/shacl#class" : [ {
+    "@id" : "http://w3id.org/def/SolidityABI/Component"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "has component"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#BlankNodeOrIRI"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "http://w3id.org/def/SolidityABI/hasComponent"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#7ac9f0c697b1bb0304ec8c10df80ff03",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#NodeShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Error"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "Error"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#IRI"
+  } ],
+  "http://www.w3.org/ns/shacl#property" : [ {
+    "@id" : "https://astrea.linkeddata.es/shapes#00464405c961ddcb8f3c7d13bd85907f"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#510b8202c6f59a12ca3eb03297ff31fc"
+  } ],
+  "http://www.w3.org/ns/shacl#targetClass" : [ {
+    "@id" : "http://w3id.org/def/SolidityABI/Error"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#7f95b30435ac6f8b3e4e9e226bb81bb2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#NodeShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Event"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "Event"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#IRI"
+  } ],
+  "http://www.w3.org/ns/shacl#property" : [ {
+    "@id" : "https://astrea.linkeddata.es/shapes#0ab78461645c39a386f670d8c33e216a"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#302cf9443a7e6cae3f5abe764bf0b646"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#916d99f941b7307505bec78e99f3dc88"
+  } ],
+  "http://www.w3.org/ns/shacl#targetClass" : [ {
+    "@id" : "http://w3id.org/def/SolidityABI/Event"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#82493bf73c1519c2354fbe61e11c3f44",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "internal type parameter"
+  } ],
+  "http://www.w3.org/ns/shacl#datatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "internal type parameter"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#Literal"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "http://w3id.org/def/SolidityABI/internalTypeParameter"
+  } ],
+  "http://www.w3.org/ns/shacl#pattern" : [ {
+    "@value" : ".*"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#83987f8cac361f2e109a9fb26f32d0c1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is constant"
+  } ],
+  "http://www.w3.org/ns/shacl#datatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "is constant"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#Literal"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "http://w3id.org/def/SolidityABI/isConstant"
+  } ],
+  "http://www.w3.org/ns/shacl#pattern" : [ {
+    "@value" : "true|false|0|1"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#916d99f941b7307505bec78e99f3dc88",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "name event"
+  } ],
+  "http://www.w3.org/ns/shacl#datatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "name event"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#Literal"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "http://w3id.org/def/SolidityABI/nameEvent"
+  } ],
+  "http://www.w3.org/ns/shacl#pattern" : [ {
+    "@value" : ".*"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#91a7977c9476702a2515786eaa8852ad",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has method input"
+  } ],
+  "http://www.w3.org/ns/shacl#class" : [ {
+    "@id" : "http://w3id.org/def/SolidityABI/InputParameter"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "has method input"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#BlankNodeOrIRI"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "http://w3id.org/def/SolidityABI/hasMethodInput"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#96b320c31cd3fd8ada9379f2c7608460",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has state mutability"
+  } ],
+  "http://www.w3.org/ns/shacl#class" : [ {
+    "@id" : "http://w3id.org/def/SolidityABI/StateMutability"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "has state mutability"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#BlankNodeOrIRI"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "http://w3id.org/def/SolidityABI/hasStateMutability"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#9c3d21213fc76342abd4247b4bc3ce9e",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#NodeShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Fallback"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "Fallback"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#IRI"
+  } ],
+  "http://www.w3.org/ns/shacl#targetClass" : [ {
+    "@id" : "http://w3id.org/def/SolidityABI/Fallback"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#9f45cab8ffb3d24c3fe1d3bf186f56a3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#NodeShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Application Binary Interface"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "Application Binary Interface"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#IRI"
+  } ],
+  "http://www.w3.org/ns/shacl#property" : [ {
+    "@id" : "https://astrea.linkeddata.es/shapes#ea2967b1c2b5c85299189c1b7b96c6bb"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#1b15702dc05d3cd2114b7959d324ef2c"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#1b436c48231dd2a1dcceb66453003222"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#1ed3b8c2dee7578a0dd33b58cc8540f8"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#475fa1092fff7b497880b49ad05805fb"
+  } ],
+  "http://www.w3.org/ns/shacl#targetClass" : [ {
+    "@id" : "http://w3id.org/def/SolidityABI/ApplicationBinaryInterface"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#a874a85a011651b4eee08f2e9367d1fd",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "indexed"
+  } ],
+  "http://www.w3.org/ns/shacl#datatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "indexed"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#Literal"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "http://w3id.org/def/SolidityABI/indexed"
+  } ],
+  "http://www.w3.org/ns/shacl#pattern" : [ {
+    "@value" : "true|false|0|1"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#aa3c4aa40c72ab6ae95cbc715794f634",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "type component"
+  } ],
+  "http://www.w3.org/ns/shacl#datatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "type component"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#Literal"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "http://w3id.org/def/SolidityABI/typeComponent"
+  } ],
+  "http://www.w3.org/ns/shacl#pattern" : [ {
+    "@value" : ".*"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#ad19c161531d7a23e7f23ba32c8319d3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#NodeShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Input Event"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "Input Event"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#IRI"
+  } ],
+  "http://www.w3.org/ns/shacl#property" : [ {
+    "@id" : "https://astrea.linkeddata.es/shapes#a874a85a011651b4eee08f2e9367d1fd"
+  } ],
+  "http://www.w3.org/ns/shacl#targetClass" : [ {
+    "@id" : "http://w3id.org/def/SolidityABI/InputEvent"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#b246fef5d5761cd907fd3f9b1d695a99",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#NodeShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Output Parameter"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "Output Parameter"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#IRI"
+  } ],
+  "http://www.w3.org/ns/shacl#targetClass" : [ {
+    "@id" : "http://w3id.org/def/SolidityABI/OutputParameter"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#b2fb19d597e0f7a4873bbdbbc931866c",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#NodeShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "State Mutability"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "State Mutability"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#IRI"
+  } ],
+  "http://www.w3.org/ns/shacl#targetClass" : [ {
+    "@id" : "http://w3id.org/def/SolidityABI/StateMutability"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#bb4890292f27d3e20d9506a0a4c073d9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#NodeShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "contract Implementation"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "contract Implementation"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#IRI"
+  } ],
+  "http://www.w3.org/ns/shacl#targetClass" : [ {
+    "@id" : "http://w3id.org/def/SolidityOntology/contractImplementation"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#c6956a8731c9fbdce2d942c0a609f136",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#NodeShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Constructor"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "Constructor"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#IRI"
+  } ],
+  "http://www.w3.org/ns/shacl#targetClass" : [ {
+    "@id" : "http://w3id.org/def/SolidityABI/Constructor"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#c883a0a00638501fa527e8f2513bcfd7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#NodeShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Method"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "Method"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#IRI"
+  } ],
+  "http://www.w3.org/ns/shacl#property" : [ {
+    "@id" : "https://astrea.linkeddata.es/shapes#0540f65d2015d28f7285325bfc46c7a7"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#32d07b1cca899624a6cbbdd99407c96a"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#83987f8cac361f2e109a9fb26f32d0c1"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#91a7977c9476702a2515786eaa8852ad"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#96b320c31cd3fd8ada9379f2c7608460"
+  } ],
+  "http://www.w3.org/ns/shacl#targetClass" : [ {
+    "@id" : "http://w3id.org/def/SolidityABI/Method"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#d2b02573271c31753dc7bda84ebfff11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#NodeShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Parameter"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "Parameter"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#IRI"
+  } ],
+  "http://www.w3.org/ns/shacl#property" : [ {
+    "@id" : "https://astrea.linkeddata.es/shapes#32a608d30bca1f895a3fc3d44f5dbd25"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#37f21f4d9a48333773238b4236b1bce4"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#5ae7c9d9270248d008f7cf915859ac67"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#82493bf73c1519c2354fbe61e11c3f44"
+  } ],
+  "http://www.w3.org/ns/shacl#targetClass" : [ {
+    "@id" : "http://w3id.org/def/SolidityABI/Parameter"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#d703817ff62d2a0c6922402eaa77fc87",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#NodeShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Component"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "Component"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#IRI"
+  } ],
+  "http://www.w3.org/ns/shacl#property" : [ {
+    "@id" : "https://astrea.linkeddata.es/shapes#aa3c4aa40c72ab6ae95cbc715794f634"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#20e8f8c22738bc9cf8f1e07a77ed306f"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#26f15b8fbf03722814248e75246c9012"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#352d45ad6858ee0dd8f5cfe88547fb77"
+  } ],
+  "http://www.w3.org/ns/shacl#targetClass" : [ {
+    "@id" : "http://w3id.org/def/SolidityABI/Component"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#e37b1e46180c2a24eb6f950776ae4567",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#NodeShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Function"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "Function"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#IRI"
+  } ],
+  "http://www.w3.org/ns/shacl#targetClass" : [ {
+    "@id" : "http://w3id.org/def/SolidityABI/Function"
+  } ]
+}, {
+  "@id" : "https://astrea.linkeddata.es/shapes#ea2967b1c2b5c85299189c1b7b96c6bb",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has error"
+  } ],
+  "http://www.w3.org/ns/shacl#class" : [ {
+    "@id" : "http://w3id.org/def/SolidityABI/Error"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "has error"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#BlankNodeOrIRI"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "http://w3id.org/def/SolidityABI/hasError"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/astrea#ReportEntry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/def/astrea#ShapeReport",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/def/astrea#contains",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/def/astrea#generatedShapesFrom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/def/astrea#message",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/def/astrea#statusCode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+} ]

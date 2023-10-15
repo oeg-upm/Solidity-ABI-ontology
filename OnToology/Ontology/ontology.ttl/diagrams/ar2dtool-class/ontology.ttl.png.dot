@@ -1,0 +1,30 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "abi:ApplicationBinaryInterface" "abi:Parameter" "abi:OutputParameter" "abi:Method" "abi:Event" "abi:StateMutability" "abi:InputEvent" "abi:Error" "sol:contractImplementation" "abi:Component" "abi:InputParameter" ; /*classes style*/
+	"abi:Method" -> "xsd:string" [ label = "abi:nameMethod" ];
+	"abi:Method" -> "xsd:boolean" [ label = "abi:isConstant" ];
+	"abi:ApplicationBinaryInterface" -> "abi:Method" [ label = "abi:hasFunction" ];
+	"abi:ApplicationBinaryInterface" -> "sol:contractImplementation" [ label = "abi:hasCode" ];
+	"abi:Event" -> "xsd:boolean" [ label = "abi:isAnonymous" ];
+	"abi:Parameter" -> "abi:Component" [ label = "abi:hasComponent" ];
+	"abi:Parameter" -> "xsd:string" [ label = "abi:internalTypeParameter" ];
+	"abi:Method" -> "abi:InputParameter" [ label = "abi:hasMethodInput" ];
+	"abi:ApplicationBinaryInterface" -> "xsd:string" [ label = "abi:address" ];
+	"abi:Error" -> "xsd:string" [ label = "abi:nameError" ];
+	"abi:ApplicationBinaryInterface" -> "abi:Event" [ label = "abi:hasEvent" ];
+	"abi:Parameter" -> "xsd:string" [ label = "abi:nameParameter" ];
+	"abi:Component" -> "abi:Component" [ label = "abi:hasSubComponent" ];
+	"abi:Component" -> "xsd:string" [ label = "abi:nameComponent" ];
+	"abi:Method" -> "abi:OutputParameter" [ label = "abi:hasMethodOutput" ];
+	"abi:Error" -> "abi:InputParameter" [ label = "abi:hasErrorInput" ];
+	"abi:Method" -> "abi:StateMutability" [ label = "abi:hasStateMutability" ];
+	"abi:InputEvent" -> "xsd:boolean" [ label = "abi:indexed" ];
+	"abi:Event" -> "abi:InputEvent" [ label = "abi:hasEventInput" ];
+	"abi:Parameter" -> "xsd:string" [ label = "abi:typeParameter" ];
+	"abi:ApplicationBinaryInterface" -> "abi:Error" [ label = "abi:hasError" ];
+	"abi:Component" -> "xsd:string" [ label = "abi:typeComponent" ];
+	"abi:Component" -> "xsd:string" [ label = "abi:internalTypeComponent" ];
+	"abi:Event" -> "xsd:string" [ label = "abi:nameEvent" ];
+
+}
