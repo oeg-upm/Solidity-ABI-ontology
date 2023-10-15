@@ -1,0 +1,342 @@
+@prefix :      <http://w3id.org/def/SolidityABI/> .
+@prefix sol:   <http://w3id.org/def/SolidityOntology/> .
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix afn:   <http://jena.apache.org/ARQ/function#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix abi:   <http://w3id.org/def/SolidityABI/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+<https://astrea.linkeddata.es/shapes#aa3c4aa40c72ab6ae95cbc715794f634>
+        a            sh:PropertyShape ;
+        rdfs:label   "type component" ;
+        sh:datatype  xsd:string ;
+        sh:name      "type component" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      abi:typeComponent ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#9c3d21213fc76342abd4247b4bc3ce9e>
+        a               sh:NodeShape ;
+        rdfs:label      "Fallback" ;
+        sh:name         "Fallback" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  abi:Fallback .
+
+<https://astrea.linkeddata.es/shapes#83987f8cac361f2e109a9fb26f32d0c1>
+        a            sh:PropertyShape ;
+        rdfs:label   "is constant" ;
+        sh:datatype  xsd:boolean ;
+        sh:name      "is constant" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      abi:isConstant ;
+        sh:pattern   "true|false|0|1" .
+
+<https://astrea.linkeddata.es/shapes#9f45cab8ffb3d24c3fe1d3bf186f56a3>
+        a               sh:NodeShape ;
+        rdfs:label      "Application Binary Interface" ;
+        sh:name         "Application Binary Interface" ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#1ed3b8c2dee7578a0dd33b58cc8540f8> , <https://astrea.linkeddata.es/shapes#475fa1092fff7b497880b49ad05805fb> , <https://astrea.linkeddata.es/shapes#1b436c48231dd2a1dcceb66453003222> , <https://astrea.linkeddata.es/shapes#1b15702dc05d3cd2114b7959d324ef2c> , <https://astrea.linkeddata.es/shapes#ea2967b1c2b5c85299189c1b7b96c6bb> ;
+        sh:targetClass  abi:ApplicationBinaryInterface .
+
+<https://astrea.linkeddata.es/shapes#7ac9f0c697b1bb0304ec8c10df80ff03>
+        a               sh:NodeShape ;
+        rdfs:label      "Error" ;
+        sh:name         "Error" ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#00464405c961ddcb8f3c7d13bd85907f> , <https://astrea.linkeddata.es/shapes#510b8202c6f59a12ca3eb03297ff31fc> ;
+        sh:targetClass  abi:Error .
+
+<https://astrea.linkeddata.es/shapes#352d45ad6858ee0dd8f5cfe88547fb77>
+        a            sh:PropertyShape ;
+        rdfs:label   "name component" ;
+        sh:datatype  xsd:string ;
+        sh:name      "name component" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      abi:nameComponent ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#bb4890292f27d3e20d9506a0a4c073d9>
+        a               sh:NodeShape ;
+        rdfs:label      "contract Implementation" ;
+        sh:name         "contract Implementation" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  sol:contractImplementation .
+
+<https://astrea.linkeddata.es/shapes#d2b02573271c31753dc7bda84ebfff11>
+        a               sh:NodeShape ;
+        rdfs:label      "Parameter" ;
+        sh:name         "Parameter" ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#5ae7c9d9270248d008f7cf915859ac67> , <https://astrea.linkeddata.es/shapes#32a608d30bca1f895a3fc3d44f5dbd25> , <https://astrea.linkeddata.es/shapes#37f21f4d9a48333773238b4236b1bce4> , <https://astrea.linkeddata.es/shapes#82493bf73c1519c2354fbe61e11c3f44> ;
+        sh:targetClass  abi:Parameter .
+
+<https://astrea.linkeddata.es/shapes#b2fb19d597e0f7a4873bbdbbc931866c>
+        a               sh:NodeShape ;
+        rdfs:label      "State Mutability" ;
+        sh:name         "State Mutability" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  abi:StateMutability .
+
+<https://astrea.linkeddata.es/report/0620946147>
+        a       <https://w3id.org/def/astrea#ReportEntry> ;
+        <https://w3id.org/def/astrea#message>
+                "Shapes generated with no errors" ;
+        <https://w3id.org/def/astrea#statusCode>
+                "200"^^xsd:int .
+
+<https://astrea.linkeddata.es/shapes#c883a0a00638501fa527e8f2513bcfd7>
+        a               sh:NodeShape ;
+        rdfs:label      "Method" ;
+        sh:name         "Method" ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#83987f8cac361f2e109a9fb26f32d0c1> , <https://astrea.linkeddata.es/shapes#0540f65d2015d28f7285325bfc46c7a7> , <https://astrea.linkeddata.es/shapes#32d07b1cca899624a6cbbdd99407c96a> , <https://astrea.linkeddata.es/shapes#91a7977c9476702a2515786eaa8852ad> , <https://astrea.linkeddata.es/shapes#96b320c31cd3fd8ada9379f2c7608460> ;
+        sh:targetClass  abi:Method .
+
+<https://astrea.linkeddata.es/shapes#475fa1092fff7b497880b49ad05805fb>
+        a            sh:PropertyShape ;
+        rdfs:label   "address" ;
+        sh:datatype  xsd:string ;
+        sh:name      "address" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      abi:address ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#3189f6c9c7d8ccce27e4a44b4a1259e4>
+        a               sh:NodeShape ;
+        rdfs:label      "Receive" ;
+        sh:name         "Receive" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  abi:Receive .
+
+<https://astrea.linkeddata.es/shapes#1ed3b8c2dee7578a0dd33b58cc8540f8>
+        a            sh:PropertyShape ;
+        rdfs:label   "has function" ;
+        sh:class     abi:Method ;
+        sh:name      "has function" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      abi:hasFunction .
+
+<https://astrea.linkeddata.es/shapes#37f21f4d9a48333773238b4236b1bce4>
+        a            sh:PropertyShape ;
+        rdfs:label   "type parameter" ;
+        sh:datatype  xsd:string ;
+        sh:name      "type parameter" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      abi:typeParameter ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#a874a85a011651b4eee08f2e9367d1fd>
+        a            sh:PropertyShape ;
+        rdfs:label   "indexed" ;
+        sh:datatype  xsd:boolean ;
+        sh:name      "indexed" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      abi:indexed ;
+        sh:pattern   "true|false|0|1" .
+
+<https://astrea.linkeddata.es/shapes#32d07b1cca899624a6cbbdd99407c96a>
+        a            sh:PropertyShape ;
+        rdfs:label   "has method output" ;
+        sh:class     abi:OutputParameter ;
+        sh:name      "has method output" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      abi:hasMethodOutput .
+
+<https://astrea.linkeddata.es/shapes#5ae7c9d9270248d008f7cf915859ac67>
+        a            sh:PropertyShape ;
+        rdfs:label   "has component" ;
+        sh:class     abi:Component ;
+        sh:name      "has component" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      abi:hasComponent .
+
+<https://astrea.linkeddata.es/shapes#ad19c161531d7a23e7f23ba32c8319d3>
+        a               sh:NodeShape ;
+        rdfs:label      "Input Event" ;
+        sh:name         "Input Event" ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#a874a85a011651b4eee08f2e9367d1fd> ;
+        sh:targetClass  abi:InputEvent .
+
+<https://astrea.linkeddata.es/shapes#302cf9443a7e6cae3f5abe764bf0b646>
+        a            sh:PropertyShape ;
+        rdfs:label   "is anonymous" ;
+        sh:datatype  xsd:boolean ;
+        sh:name      "is anonymous" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      abi:isAnonymous ;
+        sh:pattern   "true|false|0|1" .
+
+<https://astrea.linkeddata.es/shapes#96b320c31cd3fd8ada9379f2c7608460>
+        a            sh:PropertyShape ;
+        rdfs:label   "has state mutability" ;
+        sh:class     abi:StateMutability ;
+        sh:name      "has state mutability" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      abi:hasStateMutability .
+
+<https://astrea.linkeddata.es/shapes#20e8f8c22738bc9cf8f1e07a77ed306f>
+        a            sh:PropertyShape ;
+        rdfs:label   "internal type component" ;
+        sh:datatype  xsd:string ;
+        sh:name      "internal type component" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      abi:internalTypeComponent ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#b246fef5d5761cd907fd3f9b1d695a99>
+        a               sh:NodeShape ;
+        rdfs:label      "Output Parameter" ;
+        sh:name         "Output Parameter" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  abi:OutputParameter .
+
+<https://astrea.linkeddata.es/shapes#00464405c961ddcb8f3c7d13bd85907f>
+        a            sh:PropertyShape ;
+        rdfs:label   "has error input" ;
+        sh:class     abi:InputParameter ;
+        sh:name      "has error input" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      abi:hasErrorInput .
+
+<https://astrea.linkeddata.es/shapes#82493bf73c1519c2354fbe61e11c3f44>
+        a            sh:PropertyShape ;
+        rdfs:label   "internal type parameter" ;
+        sh:datatype  xsd:string ;
+        sh:name      "internal type parameter" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      abi:internalTypeParameter ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#91a7977c9476702a2515786eaa8852ad>
+        a            sh:PropertyShape ;
+        rdfs:label   "has method input" ;
+        sh:class     abi:InputParameter ;
+        sh:name      "has method input" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      abi:hasMethodInput .
+
+<https://astrea.linkeddata.es/shapes#7f95b30435ac6f8b3e4e9e226bb81bb2>
+        a               sh:NodeShape ;
+        rdfs:label      "Event" ;
+        sh:name         "Event" ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#0ab78461645c39a386f670d8c33e216a> , <https://astrea.linkeddata.es/shapes#302cf9443a7e6cae3f5abe764bf0b646> , <https://astrea.linkeddata.es/shapes#916d99f941b7307505bec78e99f3dc88> ;
+        sh:targetClass  abi:Event .
+
+<https://astrea.linkeddata.es/shapes#c6956a8731c9fbdce2d942c0a609f136>
+        a               sh:NodeShape ;
+        rdfs:label      "Constructor" ;
+        sh:name         "Constructor" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  abi:Constructor .
+
+<http://astrea.linkeddata.es/report>
+        a       <https://w3id.org/def/astrea#ShapeReport> ;
+        <https://w3id.org/def/astrea#contains>
+                <https://astrea.linkeddata.es/shapes#302cf9443a7e6cae3f5abe764bf0b646> , <https://astrea.linkeddata.es/shapes#1b436c48231dd2a1dcceb66453003222> , <https://astrea.linkeddata.es/shapes#3189f6c9c7d8ccce27e4a44b4a1259e4> , <https://astrea.linkeddata.es/shapes#00464405c961ddcb8f3c7d13bd85907f> , <https://astrea.linkeddata.es/shapes#82493bf73c1519c2354fbe61e11c3f44> , <https://astrea.linkeddata.es/shapes#aa3c4aa40c72ab6ae95cbc715794f634> , <https://astrea.linkeddata.es/shapes#d2b02573271c31753dc7bda84ebfff11> , <https://astrea.linkeddata.es/shapes#7f95b30435ac6f8b3e4e9e226bb81bb2> , <https://astrea.linkeddata.es/shapes#91a7977c9476702a2515786eaa8852ad> , <https://astrea.linkeddata.es/shapes#916d99f941b7307505bec78e99f3dc88> , <https://astrea.linkeddata.es/shapes#15e35c4f5d76944a5343206929e8ed9a> , <https://astrea.linkeddata.es/shapes#a874a85a011651b4eee08f2e9367d1fd> , <https://astrea.linkeddata.es/shapes#32d07b1cca899624a6cbbdd99407c96a> , <https://astrea.linkeddata.es/shapes#b2fb19d597e0f7a4873bbdbbc931866c> , <https://astrea.linkeddata.es/shapes#1ed3b8c2dee7578a0dd33b58cc8540f8> , <https://astrea.linkeddata.es/shapes#c883a0a00638501fa527e8f2513bcfd7> , <https://astrea.linkeddata.es/shapes#32a608d30bca1f895a3fc3d44f5dbd25> , <https://astrea.linkeddata.es/shapes#d703817ff62d2a0c6922402eaa77fc87> , <https://astrea.linkeddata.es/shapes#0540f65d2015d28f7285325bfc46c7a7> , <https://astrea.linkeddata.es/shapes#0ab78461645c39a386f670d8c33e216a> , <https://astrea.linkeddata.es/shapes#9f45cab8ffb3d24c3fe1d3bf186f56a3> , <https://astrea.linkeddata.es/shapes#20e8f8c22738bc9cf8f1e07a77ed306f> , <https://astrea.linkeddata.es/shapes#ad19c161531d7a23e7f23ba32c8319d3> , <https://astrea.linkeddata.es/shapes#9c3d21213fc76342abd4247b4bc3ce9e> , <https://astrea.linkeddata.es/shapes#475fa1092fff7b497880b49ad05805fb> , <https://astrea.linkeddata.es/shapes#7ac9f0c697b1bb0304ec8c10df80ff03> , <https://astrea.linkeddata.es/shapes#ea2967b1c2b5c85299189c1b7b96c6bb> , <https://astrea.linkeddata.es/shapes#b246fef5d5761cd907fd3f9b1d695a99> , <https://astrea.linkeddata.es/shapes#c6956a8731c9fbdce2d942c0a609f136> , <https://astrea.linkeddata.es/shapes#83987f8cac361f2e109a9fb26f32d0c1> , <https://astrea.linkeddata.es/shapes#37f21f4d9a48333773238b4236b1bce4> , <https://astrea.linkeddata.es/shapes#5ae7c9d9270248d008f7cf915859ac67> , <https://astrea.linkeddata.es/shapes#bb4890292f27d3e20d9506a0a4c073d9> , <https://astrea.linkeddata.es/shapes#510b8202c6f59a12ca3eb03297ff31fc> , <https://astrea.linkeddata.es/shapes#26f15b8fbf03722814248e75246c9012> , <https://astrea.linkeddata.es/shapes#96b320c31cd3fd8ada9379f2c7608460> , <https://astrea.linkeddata.es/shapes#352d45ad6858ee0dd8f5cfe88547fb77> , <https://astrea.linkeddata.es/shapes#e37b1e46180c2a24eb6f950776ae4567> , <https://astrea.linkeddata.es/shapes#1b15702dc05d3cd2114b7959d324ef2c> ;
+        <https://w3id.org/def/astrea#generatedShapesFrom>
+                <https://astrea.linkeddata.es/report/0620946147> .
+
+<https://astrea.linkeddata.es/shapes#32a608d30bca1f895a3fc3d44f5dbd25>
+        a            sh:PropertyShape ;
+        rdfs:label   "name parameter" ;
+        sh:datatype  xsd:string ;
+        sh:name      "name parameter" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      abi:nameParameter ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#d703817ff62d2a0c6922402eaa77fc87>
+        a               sh:NodeShape ;
+        rdfs:label      "Component" ;
+        sh:name         "Component" ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#26f15b8fbf03722814248e75246c9012> , <https://astrea.linkeddata.es/shapes#20e8f8c22738bc9cf8f1e07a77ed306f> , <https://astrea.linkeddata.es/shapes#aa3c4aa40c72ab6ae95cbc715794f634> , <https://astrea.linkeddata.es/shapes#352d45ad6858ee0dd8f5cfe88547fb77> ;
+        sh:targetClass  abi:Component .
+
+<https://astrea.linkeddata.es/shapes#e37b1e46180c2a24eb6f950776ae4567>
+        a               sh:NodeShape ;
+        rdfs:label      "Function" ;
+        sh:name         "Function" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  abi:Function .
+
+<https://astrea.linkeddata.es/shapes#26f15b8fbf03722814248e75246c9012>
+        a            sh:PropertyShape ;
+        rdfs:label   "has sub component" ;
+        sh:class     abi:Component ;
+        sh:name      "has sub component" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      abi:hasSubComponent .
+
+<https://astrea.linkeddata.es/shapes#15e35c4f5d76944a5343206929e8ed9a>
+        a               sh:NodeShape ;
+        rdfs:label      "Input Parameter" ;
+        sh:name         "Input Parameter" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  abi:InputParameter .
+
+<https://astrea.linkeddata.es/shapes#510b8202c6f59a12ca3eb03297ff31fc>
+        a            sh:PropertyShape ;
+        rdfs:label   "name error" ;
+        sh:datatype  xsd:string ;
+        sh:name      "name error" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      abi:nameError ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#1b436c48231dd2a1dcceb66453003222>
+        a            sh:PropertyShape ;
+        rdfs:label   "has code" ;
+        sh:class     sol:contractImplementation ;
+        sh:name      "has code" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      abi:hasCode .
+
+<https://astrea.linkeddata.es/shapes#0540f65d2015d28f7285325bfc46c7a7>
+        a            sh:PropertyShape ;
+        rdfs:label   "name method" ;
+        sh:datatype  xsd:string ;
+        sh:name      "name method" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      abi:nameMethod ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#1b15702dc05d3cd2114b7959d324ef2c>
+        a            sh:PropertyShape ;
+        rdfs:label   "has event" ;
+        sh:class     abi:Event ;
+        sh:name      "has event" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      abi:hasEvent .
+
+<https://astrea.linkeddata.es/shapes#ea2967b1c2b5c85299189c1b7b96c6bb>
+        a            sh:PropertyShape ;
+        rdfs:label   "has error" ;
+        sh:class     abi:Error ;
+        sh:name      "has error" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      abi:hasError .
+
+<https://astrea.linkeddata.es/shapes#0ab78461645c39a386f670d8c33e216a>
+        a            sh:PropertyShape ;
+        rdfs:label   "has event input" ;
+        sh:class     abi:InputEvent ;
+        sh:name      "has event input" ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      abi:hasEventInput .
+
+<https://astrea.linkeddata.es/shapes#916d99f941b7307505bec78e99f3dc88>
+        a            sh:PropertyShape ;
+        rdfs:label   "name event" ;
+        sh:datatype  xsd:string ;
+        sh:name      "name event" ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      abi:nameEvent ;
+        sh:pattern   ".*" .
