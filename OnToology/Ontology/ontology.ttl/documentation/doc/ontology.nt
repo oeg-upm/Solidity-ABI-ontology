@@ -1,0 +1,342 @@
+<http://w3id.org/def/SolidityABI/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://w3id.org/def/SolidityABI/> <http://purl.org/dc/elements/1.1/creator> "Juan Cano-Benito" .
+<http://w3id.org/def/SolidityABI/> <http://purl.org/dc/elements/1.1/creator> "http://www.garcia-castro.com/foaf.rdf#me" .
+<http://w3id.org/def/SolidityABI/> <http://purl.org/dc/elements/1.1/description> "Ontology code created by Chowlk" .
+<http://w3id.org/def/SolidityABI/> <http://purl.org/dc/elements/1.1/title> "Solidity ABI Ontology" .
+<http://w3id.org/def/SolidityABI/> <http://www.w3.org/2002/07/owl#versionInfo> "0.0.1" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/def/SolidityABI/hasCode
+<http://w3id.org/def/SolidityABI/hasCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/def/SolidityABI/hasCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/SolidityABI/ApplicationBinaryInterface> .
+<http://w3id.org/def/SolidityABI/hasCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/def/SolidityOntology/contractImplementation> .
+<http://w3id.org/def/SolidityABI/hasCode> <http://purl.org/dc/elements/1.1/description> "Relate the ABI to the representation of the source code" .
+<http://w3id.org/def/SolidityABI/hasCode> <http://www.w3.org/2000/01/rdf-schema#label> "has code" .
+# 
+# http://w3id.org/def/SolidityABI/hasComponent
+<http://w3id.org/def/SolidityABI/hasComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/def/SolidityABI/hasComponent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/SolidityABI/Parameter> .
+<http://w3id.org/def/SolidityABI/hasComponent> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/def/SolidityABI/Component> .
+<http://w3id.org/def/SolidityABI/hasComponent> <http://purl.org/dc/elements/1.1/description> "Relationship between the main application binary interface and its specific components" .
+<http://w3id.org/def/SolidityABI/hasComponent> <http://www.w3.org/2000/01/rdf-schema#label> "has component" .
+# 
+# http://w3id.org/def/SolidityABI/hasError
+<http://w3id.org/def/SolidityABI/hasError> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/def/SolidityABI/hasError> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/SolidityABI/ApplicationBinaryInterface> .
+<http://w3id.org/def/SolidityABI/hasError> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/def/SolidityABI/Error> .
+<http://w3id.org/def/SolidityABI/hasError> <http://purl.org/dc/elements/1.1/description> "Relationship between the ABI and its errors" .
+<http://w3id.org/def/SolidityABI/hasError> <http://www.w3.org/2000/01/rdf-schema#label> "has error" .
+# 
+# http://w3id.org/def/SolidityABI/hasErrorInput
+<http://w3id.org/def/SolidityABI/hasErrorInput> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/def/SolidityABI/hasErrorInput> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/SolidityABI/Error> .
+<http://w3id.org/def/SolidityABI/hasErrorInput> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/def/SolidityABI/InputParameter> .
+<http://w3id.org/def/SolidityABI/hasErrorInput> <http://purl.org/dc/elements/1.1/description> "Indicates which parameters are associated with a specific error" .
+<http://w3id.org/def/SolidityABI/hasErrorInput> <http://www.w3.org/2000/01/rdf-schema#label> "has error input" .
+# 
+# http://w3id.org/def/SolidityABI/hasEvent
+<http://w3id.org/def/SolidityABI/hasEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/def/SolidityABI/hasEvent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/SolidityABI/ApplicationBinaryInterface> .
+<http://w3id.org/def/SolidityABI/hasEvent> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/def/SolidityABI/Event> .
+<http://w3id.org/def/SolidityABI/hasEvent> <http://purl.org/dc/elements/1.1/description> "Relationship between the ABI and its events" .
+<http://w3id.org/def/SolidityABI/hasEvent> <http://www.w3.org/2000/01/rdf-schema#label> "has event" .
+# 
+# http://w3id.org/def/SolidityABI/hasEventInput
+<http://w3id.org/def/SolidityABI/hasEventInput> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/def/SolidityABI/hasEventInput> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/SolidityABI/Event> .
+<http://w3id.org/def/SolidityABI/hasEventInput> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/def/SolidityABI/InputEvent> .
+<http://w3id.org/def/SolidityABI/hasEventInput> <http://purl.org/dc/elements/1.1/description> "Denotes which input parameters are associated with a specific event" .
+<http://w3id.org/def/SolidityABI/hasEventInput> <http://www.w3.org/2000/01/rdf-schema#label> "has event input" .
+# 
+# http://w3id.org/def/SolidityABI/hasFunction
+<http://w3id.org/def/SolidityABI/hasFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/def/SolidityABI/hasFunction> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/SolidityABI/ApplicationBinaryInterface> .
+<http://w3id.org/def/SolidityABI/hasFunction> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/def/SolidityABI/Method> .
+<http://w3id.org/def/SolidityABI/hasFunction> <http://purl.org/dc/elements/1.1/description> "Relationship between the ABI and its functions" .
+<http://w3id.org/def/SolidityABI/hasFunction> <http://www.w3.org/2000/01/rdf-schema#label> "has function" .
+# 
+# http://w3id.org/def/SolidityABI/hasMethodInput
+<http://w3id.org/def/SolidityABI/hasMethodInput> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/def/SolidityABI/hasMethodInput> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/SolidityABI/Method> .
+<http://w3id.org/def/SolidityABI/hasMethodInput> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/def/SolidityABI/InputParameter> .
+<http://w3id.org/def/SolidityABI/hasMethodInput> <http://purl.org/dc/elements/1.1/description> "Binds a method to its input parameters" .
+<http://w3id.org/def/SolidityABI/hasMethodInput> <http://www.w3.org/2000/01/rdf-schema#label> "has method input" .
+# 
+# http://w3id.org/def/SolidityABI/hasMethodOutput
+<http://w3id.org/def/SolidityABI/hasMethodOutput> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/def/SolidityABI/hasMethodOutput> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/SolidityABI/Method> .
+<http://w3id.org/def/SolidityABI/hasMethodOutput> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/def/SolidityABI/OutputParameter> .
+<http://w3id.org/def/SolidityABI/hasMethodOutput> <http://purl.org/dc/elements/1.1/description> "Binds a method to its output parameters" .
+<http://w3id.org/def/SolidityABI/hasMethodOutput> <http://www.w3.org/2000/01/rdf-schema#label> "has method output" .
+# 
+# http://w3id.org/def/SolidityABI/hasStateMutability
+<http://w3id.org/def/SolidityABI/hasStateMutability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/def/SolidityABI/hasStateMutability> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/SolidityABI/Method> .
+<http://w3id.org/def/SolidityABI/hasStateMutability> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/def/SolidityABI/StateMutability> .
+<http://w3id.org/def/SolidityABI/hasStateMutability> <http://purl.org/dc/elements/1.1/description> "Indicates which state mutability has the method" .
+<http://w3id.org/def/SolidityABI/hasStateMutability> <http://www.w3.org/2000/01/rdf-schema#label> "has state mutability" .
+# 
+# http://w3id.org/def/SolidityABI/hasSubComponent
+<http://w3id.org/def/SolidityABI/hasSubComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/def/SolidityABI/hasSubComponent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/SolidityABI/Component> .
+<http://w3id.org/def/SolidityABI/hasSubComponent> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/def/SolidityABI/Component> .
+<http://w3id.org/def/SolidityABI/hasSubComponent> <http://purl.org/dc/elements/1.1/description> "Indicates that an abi:Component contains another component" .
+<http://w3id.org/def/SolidityABI/hasSubComponent> <http://www.w3.org/2000/01/rdf-schema#label> "has sub component" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/def/SolidityABI/address
+<http://w3id.org/def/SolidityABI/address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/def/SolidityABI/address> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/SolidityABI/ApplicationBinaryInterface> .
+<http://w3id.org/def/SolidityABI/address> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/def/SolidityABI/address> <http://purl.org/dc/elements/1.1/description> "The address of the contract on the blockchain" .
+<http://w3id.org/def/SolidityABI/address> <http://www.w3.org/2000/01/rdf-schema#label> "address" .
+# 
+# http://w3id.org/def/SolidityABI/indexed
+<http://w3id.org/def/SolidityABI/indexed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/def/SolidityABI/indexed> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/SolidityABI/InputEvent> .
+<http://w3id.org/def/SolidityABI/indexed> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://w3id.org/def/SolidityABI/indexed> <http://purl.org/dc/elements/1.1/description> "For events, indicates whether a parameter is indexed, which affects how logs are stored and searchable" .
+<http://w3id.org/def/SolidityABI/indexed> <http://www.w3.org/2000/01/rdf-schema#label> "indexed" .
+# 
+# http://w3id.org/def/SolidityABI/internalTypeComponent
+<http://w3id.org/def/SolidityABI/internalTypeComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/def/SolidityABI/internalTypeComponent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/SolidityABI/Component> .
+<http://w3id.org/def/SolidityABI/internalTypeComponent> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/def/SolidityABI/internalTypeComponent> <http://purl.org/dc/elements/1.1/description> "Internal type of the component" .
+<http://w3id.org/def/SolidityABI/internalTypeComponent> <http://www.w3.org/2000/01/rdf-schema#label> "internal type component" .
+# 
+# http://w3id.org/def/SolidityABI/internalTypeParameter
+<http://w3id.org/def/SolidityABI/internalTypeParameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/def/SolidityABI/internalTypeParameter> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/SolidityABI/Parameter> .
+<http://w3id.org/def/SolidityABI/internalTypeParameter> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/def/SolidityABI/internalTypeParameter> <http://purl.org/dc/elements/1.1/description> "Internal type of the parameter" .
+<http://w3id.org/def/SolidityABI/internalTypeParameter> <http://www.w3.org/2000/01/rdf-schema#label> "internal type parameter" .
+# 
+# http://w3id.org/def/SolidityABI/isAnonymous
+<http://w3id.org/def/SolidityABI/isAnonymous> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/def/SolidityABI/isAnonymous> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/SolidityABI/Event> .
+<http://w3id.org/def/SolidityABI/isAnonymous> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://w3id.org/def/SolidityABI/isAnonymous> <http://purl.org/dc/elements/1.1/description> "Indicates whether an event is anonymous, which affects how logs are recorded in Ethereum" .
+<http://w3id.org/def/SolidityABI/isAnonymous> <http://www.w3.org/2000/01/rdf-schema#label> "is anonymous" .
+# 
+# http://w3id.org/def/SolidityABI/isConstant
+<http://w3id.org/def/SolidityABI/isConstant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/def/SolidityABI/isConstant> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/SolidityABI/Method> .
+<http://w3id.org/def/SolidityABI/isConstant> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://w3id.org/def/SolidityABI/isConstant> <http://purl.org/dc/elements/1.1/description> "Indicates if a method is constant, that is, if it only reads data and does not modify the state" .
+<http://w3id.org/def/SolidityABI/isConstant> <http://www.w3.org/2000/01/rdf-schema#label> "is constant" .
+# 
+# http://w3id.org/def/SolidityABI/nameABI
+<http://w3id.org/def/SolidityABI/nameABI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/def/SolidityABI/nameABI> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/SolidityABI/ApplicationBinaryInterface> .
+<http://w3id.org/def/SolidityABI/nameABI> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/def/SolidityABI/nameABI> <http://www.w3.org/2000/01/rdf-schema#comment> "The name of the contract associated to an address" .
+<http://w3id.org/def/SolidityABI/nameABI> <http://www.w3.org/2000/01/rdf-schema#label> "name ABI" .
+# 
+# http://w3id.org/def/SolidityABI/nameComponent
+<http://w3id.org/def/SolidityABI/nameComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/def/SolidityABI/nameComponent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/SolidityABI/Component> .
+<http://w3id.org/def/SolidityABI/nameComponent> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/def/SolidityABI/nameComponent> <http://purl.org/dc/elements/1.1/description> "Name assigned to the component of the ABI" .
+<http://w3id.org/def/SolidityABI/nameComponent> <http://www.w3.org/2000/01/rdf-schema#label> "name component" .
+# 
+# http://w3id.org/def/SolidityABI/nameError
+<http://w3id.org/def/SolidityABI/nameError> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/def/SolidityABI/nameError> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/SolidityABI/Error> .
+<http://w3id.org/def/SolidityABI/nameError> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/def/SolidityABI/nameError> <http://purl.org/dc/elements/1.1/description> "Name of the error defined in the contract" .
+<http://w3id.org/def/SolidityABI/nameError> <http://www.w3.org/2000/01/rdf-schema#label> "name error" .
+# 
+# http://w3id.org/def/SolidityABI/nameEvent
+<http://w3id.org/def/SolidityABI/nameEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/def/SolidityABI/nameEvent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/SolidityABI/Event> .
+<http://w3id.org/def/SolidityABI/nameEvent> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/def/SolidityABI/nameEvent> <http://purl.org/dc/elements/1.1/description> "Name of the event defined in the contract" .
+<http://w3id.org/def/SolidityABI/nameEvent> <http://www.w3.org/2000/01/rdf-schema#label> "name event" .
+# 
+# http://w3id.org/def/SolidityABI/nameMethod
+<http://w3id.org/def/SolidityABI/nameMethod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/def/SolidityABI/nameMethod> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/SolidityABI/Method> .
+<http://w3id.org/def/SolidityABI/nameMethod> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/def/SolidityABI/nameMethod> <http://purl.org/dc/elements/1.1/description> "Name of a specific method in the contract" .
+<http://w3id.org/def/SolidityABI/nameMethod> <http://www.w3.org/2000/01/rdf-schema#label> "name method" .
+# 
+# http://w3id.org/def/SolidityABI/nameParameter
+<http://w3id.org/def/SolidityABI/nameParameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/def/SolidityABI/nameParameter> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/SolidityABI/Parameter> .
+<http://w3id.org/def/SolidityABI/nameParameter> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/def/SolidityABI/nameParameter> <http://purl.org/dc/elements/1.1/description> "Name of the parameter used in inputs" .
+<http://w3id.org/def/SolidityABI/nameParameter> <http://www.w3.org/2000/01/rdf-schema#label> "name parameter" .
+# 
+# http://w3id.org/def/SolidityABI/typeComponent
+<http://w3id.org/def/SolidityABI/typeComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/def/SolidityABI/typeComponent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/SolidityABI/Component> .
+<http://w3id.org/def/SolidityABI/typeComponent> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/def/SolidityABI/typeComponent> <http://purl.org/dc/elements/1.1/description> "Data type of the component (e.g. uint256, address)" .
+<http://w3id.org/def/SolidityABI/typeComponent> <http://www.w3.org/2000/01/rdf-schema#label> "type component" .
+# 
+# http://w3id.org/def/SolidityABI/typeParameter
+<http://w3id.org/def/SolidityABI/typeParameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/def/SolidityABI/typeParameter> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/SolidityABI/Parameter> .
+<http://w3id.org/def/SolidityABI/typeParameter> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/def/SolidityABI/typeParameter> <http://purl.org/dc/elements/1.1/description> "Data type of the parameter (e.g. uint256, address)" .
+<http://w3id.org/def/SolidityABI/typeParameter> <http://www.w3.org/2000/01/rdf-schema#label> "type parameter" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/def/SolidityABI/ApplicationBinaryInterface
+<http://w3id.org/def/SolidityABI/ApplicationBinaryInterface> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/SolidityABI/ApplicationBinaryInterface> <http://purl.org/dc/elements/1.1/description> "The main interface that defines how to interact with a contract (knows as ABI)" .
+<http://w3id.org/def/SolidityABI/ApplicationBinaryInterface> <http://www.w3.org/2000/01/rdf-schema#label> "Application Binary Interface" .
+# 
+# http://w3id.org/def/SolidityABI/Component
+<http://w3id.org/def/SolidityABI/Component> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/SolidityABI/Component> <http://purl.org/dc/elements/1.1/description> "Represents an ABI component" .
+<http://w3id.org/def/SolidityABI/Component> <http://www.w3.org/2000/01/rdf-schema#label> "Component" .
+# 
+# http://w3id.org/def/SolidityABI/Constructor
+<http://w3id.org/def/SolidityABI/Constructor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/SolidityABI/Constructor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/SolidityABI/Method> .
+<http://w3id.org/def/SolidityABI/Constructor> <http://purl.org/dc/elements/1.1/description> "Defines the function that is executed when a contract is deployed" .
+<http://w3id.org/def/SolidityABI/Constructor> <http://www.w3.org/2000/01/rdf-schema#label> "Constructor" .
+# 
+# http://w3id.org/def/SolidityABI/Error
+<http://w3id.org/def/SolidityABI/Error> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/SolidityABI/Error> <http://purl.org/dc/elements/1.1/description> "Defines specific errors that a contract may emit" .
+<http://w3id.org/def/SolidityABI/Error> <http://www.w3.org/2000/01/rdf-schema#label> "Error" .
+# 
+# http://w3id.org/def/SolidityABI/Event
+<http://w3id.org/def/SolidityABI/Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/SolidityABI/Event> <http://purl.org/dc/elements/1.1/description> "Contracts in Ethereum can emit events to record notable activities" .
+<http://w3id.org/def/SolidityABI/Event> <http://www.w3.org/2000/01/rdf-schema#label> "Event" .
+# 
+# http://w3id.org/def/SolidityABI/Fallback
+<http://w3id.org/def/SolidityABI/Fallback> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/SolidityABI/Fallback> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/SolidityABI/Method> .
+<http://w3id.org/def/SolidityABI/Fallback> <http://purl.org/dc/elements/1.1/description> "A function that executes if no other function matches or if no data is provided in a transaction" .
+<http://w3id.org/def/SolidityABI/Fallback> <http://www.w3.org/2000/01/rdf-schema#label> "Fallback" .
+# 
+# http://w3id.org/def/SolidityABI/Function
+<http://w3id.org/def/SolidityABI/Function> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/SolidityABI/Function> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/SolidityABI/Method> .
+<http://w3id.org/def/SolidityABI/Function> <http://purl.org/dc/elements/1.1/description> "Specifies a typical function in a contract that can have inputs and outputs and can change the state of the contract" .
+<http://w3id.org/def/SolidityABI/Function> <http://www.w3.org/2000/01/rdf-schema#label> "Function" .
+# 
+# http://w3id.org/def/SolidityABI/InputEvent
+<http://w3id.org/def/SolidityABI/InputEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/SolidityABI/InputEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/SolidityABI/Parameter> .
+<http://w3id.org/def/SolidityABI/InputEvent> <http://purl.org/dc/elements/1.1/description> "Represent specific input parameters for events" .
+<http://w3id.org/def/SolidityABI/InputEvent> <http://www.w3.org/2000/01/rdf-schema#label> "Input Event" .
+# 
+# http://w3id.org/def/SolidityABI/InputParameter
+<http://w3id.org/def/SolidityABI/InputParameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/SolidityABI/InputParameter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/SolidityABI/Parameter> .
+<http://w3id.org/def/SolidityABI/InputParameter> <http://purl.org/dc/elements/1.1/description> "Represent specific input parameters" .
+<http://w3id.org/def/SolidityABI/InputParameter> <http://www.w3.org/2000/01/rdf-schema#label> "Input Parameter" .
+# 
+# http://w3id.org/def/SolidityABI/Method
+<http://w3id.org/def/SolidityABI/Method> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/SolidityABI/Method> <http://purl.org/dc/elements/1.1/description> "Represents a specific function inside a smart contract" .
+<http://w3id.org/def/SolidityABI/Method> <http://www.w3.org/2000/01/rdf-schema#label> "Method" .
+# 
+# http://w3id.org/def/SolidityABI/OutputParameter
+<http://w3id.org/def/SolidityABI/OutputParameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/SolidityABI/OutputParameter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/SolidityABI/Parameter> .
+<http://w3id.org/def/SolidityABI/OutputParameter> <http://purl.org/dc/elements/1.1/description> "Represent specific output parameters" .
+<http://w3id.org/def/SolidityABI/OutputParameter> <http://www.w3.org/2000/01/rdf-schema#label> "Output Parameter" .
+# 
+# http://w3id.org/def/SolidityABI/Parameter
+<http://w3id.org/def/SolidityABI/Parameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/SolidityABI/Parameter> <http://purl.org/dc/elements/1.1/description> "Details the types and names of parameters used in functions and events" .
+<http://w3id.org/def/SolidityABI/Parameter> <http://www.w3.org/2000/01/rdf-schema#label> "Parameter" .
+# 
+# http://w3id.org/def/SolidityABI/Receive
+<http://w3id.org/def/SolidityABI/Receive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/SolidityABI/Receive> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/SolidityABI/Method> .
+<http://w3id.org/def/SolidityABI/Receive> <http://purl.org/dc/elements/1.1/description> "A special function that is executed when Ether is sent to a contract without additional data" .
+<http://w3id.org/def/SolidityABI/Receive> <http://www.w3.org/2000/01/rdf-schema#label> "Receive" .
+# 
+# http://w3id.org/def/SolidityABI/StateMutability
+<http://w3id.org/def/SolidityABI/StateMutability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/SolidityABI/StateMutability> <http://purl.org/dc/elements/1.1/description> "Indicates how a function interacts with the contract storage, determining whether it modifies the state or simply reads the state" .
+<http://w3id.org/def/SolidityABI/StateMutability> <http://www.w3.org/2000/01/rdf-schema#label> "State Mutability" .
+# 
+# http://w3id.org/def/SolidityOntology/contractImplementation
+<http://w3id.org/def/SolidityOntology/contractImplementation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/SolidityOntology/contractImplementation> <http://purl.org/dc/elements/1.1/description> "Represents the contract implementation (Solidity ontology)" .
+<http://w3id.org/def/SolidityOntology/contractImplementation> <http://www.w3.org/2000/01/rdf-schema#label> "contract Implementation" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/def/SolidityABI/NonPayable
+<http://w3id.org/def/SolidityABI/NonPayable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/SolidityABI/NonPayable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/def/SolidityABI/StateMutability> .
+<http://w3id.org/def/SolidityABI/NonPayable> <http://purl.org/dc/elements/1.1/description> "Denotes that a function cannot receive Ether" .
+<http://w3id.org/def/SolidityABI/NonPayable> <http://www.w3.org/2000/01/rdf-schema#label> "Non Payable" .
+# 
+# http://w3id.org/def/SolidityABI/Payable
+<http://w3id.org/def/SolidityABI/Payable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/SolidityABI/Payable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/def/SolidityABI/StateMutability> .
+<http://w3id.org/def/SolidityABI/Payable> <http://purl.org/dc/elements/1.1/description> "Denotes that a function can receive Ether along with its invocation" .
+<http://w3id.org/def/SolidityABI/Payable> <http://www.w3.org/2000/01/rdf-schema#label> "Payable" .
+# 
+# http://w3id.org/def/SolidityABI/Pure
+<http://w3id.org/def/SolidityABI/Pure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/SolidityABI/Pure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/def/SolidityABI/StateMutability> .
+<http://w3id.org/def/SolidityABI/Pure> <http://purl.org/dc/elements/1.1/description> "Denotes that a function does not read or write data to the contract; it is purely computational" .
+<http://w3id.org/def/SolidityABI/Pure> <http://www.w3.org/2000/01/rdf-schema#label> "Pure" .
+# 
+# http://w3id.org/def/SolidityABI/View
+<http://w3id.org/def/SolidityABI/View> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://w3id.org/def/SolidityABI/View> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/def/SolidityABI/StateMutability> .
+<http://w3id.org/def/SolidityABI/View> <http://purl.org/dc/elements/1.1/description> "Denotes that a function only reads data from the contract but does not modify its state" .
+<http://w3id.org/def/SolidityABI/View> <http://www.w3.org/2000/01/rdf-schema#label> "View" .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

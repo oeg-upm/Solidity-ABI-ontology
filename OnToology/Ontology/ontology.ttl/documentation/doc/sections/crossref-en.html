@@ -1,0 +1,1247 @@
+<h2 id="crossreference" class="list">Cross-reference for Solidity ABI Ontology classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by Solidity ABI Ontology.
+<div xmlns:extra="https://w3id.org/extra#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     id="classes">
+   <h3 id="classes-headline" class="list">Classes</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#ApplicationBinaryInterface"
+            title="http://w3id.org/def/SolidityABI/ApplicationBinaryInterface">Application Binary Interface</a>
+      </li>
+      <li>
+         <a href="#Component" title="http://w3id.org/def/SolidityABI/Component">Component</a>
+      </li>
+      <li>
+         <a href="#Constructor" title="http://w3id.org/def/SolidityABI/Constructor">Constructor</a>
+      </li>
+      <li>
+         <a href="#http://w3id.org/def/SolidityOntology/contractImplementation"
+            title="http://w3id.org/def/SolidityOntology/contractImplementation">contract Implementation</a>
+      </li>
+      <li>
+         <a href="#Error" title="http://w3id.org/def/SolidityABI/Error">Error</a>
+      </li>
+      <li>
+         <a href="#Event" title="http://w3id.org/def/SolidityABI/Event">Event</a>
+      </li>
+      <li>
+         <a href="#Fallback" title="http://w3id.org/def/SolidityABI/Fallback">Fallback</a>
+      </li>
+      <li>
+         <a href="#Function" title="http://w3id.org/def/SolidityABI/Function">Function</a>
+      </li>
+      <li>
+         <a href="#InputEvent" title="http://w3id.org/def/SolidityABI/InputEvent">Input Event</a>
+      </li>
+      <li>
+         <a href="#InputParameter" title="http://w3id.org/def/SolidityABI/InputParameter">Input Parameter</a>
+      </li>
+      <li>
+         <a href="#Method" title="http://w3id.org/def/SolidityABI/Method">Method</a>
+      </li>
+      <li>
+         <a href="#OutputParameter" title="http://w3id.org/def/SolidityABI/OutputParameter">Output Parameter</a>
+      </li>
+      <li>
+         <a href="#Parameter" title="http://w3id.org/def/SolidityABI/Parameter">Parameter</a>
+      </li>
+      <li>
+         <a href="#Receive" title="http://w3id.org/def/SolidityABI/Receive">Receive</a>
+      </li>
+      <li>
+         <a href="#StateMutability" title="http://w3id.org/def/SolidityABI/StateMutability">State Mutability</a>
+      </li>
+   </ul>
+   <div class="entity" id="ApplicationBinaryInterface">
+      <h3>Application Binary Interface<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/def/SolidityABI/ApplicationBinaryInterface</p>
+      <div class="info">
+         <span class="markdown">The main interface that defines how to interact with a contract (knows as ABI)</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#address" title="http://w3id.org/def/SolidityABI/address">address</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasCode" title="http://w3id.org/def/SolidityABI/hasCode">has code</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasError" title="http://w3id.org/def/SolidityABI/hasError">has error</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasEvent" title="http://w3id.org/def/SolidityABI/hasEvent">has event</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasFunction" title="http://w3id.org/def/SolidityABI/hasFunction">has function</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#nameABI" title="http://w3id.org/def/SolidityABI/nameABI">name ABI</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Component">
+      <h3>Component<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/def/SolidityABI/Component</p>
+      <div class="info">
+         <span class="markdown">Represents an ABI component</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasSubComponent" title="http://w3id.org/def/SolidityABI/hasSubComponent">has sub component</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#internalTypeComponent"
+               title="http://w3id.org/def/SolidityABI/internalTypeComponent">internal type component</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#nameComponent" title="http://w3id.org/def/SolidityABI/nameComponent">name component</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#typeComponent" title="http://w3id.org/def/SolidityABI/typeComponent">type component</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasComponent" title="http://w3id.org/def/SolidityABI/hasComponent">has component</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasSubComponent" title="http://w3id.org/def/SolidityABI/hasSubComponent">has sub component</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Constructor">
+      <h3>Constructor<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/def/SolidityABI/Constructor</p>
+      <div class="info">
+         <span class="markdown">Defines the function that is executed when a contract is deployed</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Method" title="http://w3id.org/def/SolidityABI/Method">Method</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://w3id.org/def/SolidityOntology/contractImplementation">
+      <h3>contract Implementation<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/def/SolidityOntology/contractImplementation</p>
+      <div class="info">
+         <span class="markdown">Represents the contract implementation (Solidity ontology)</span>
+      </div>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasCode" title="http://w3id.org/def/SolidityABI/hasCode">has code</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Error">
+      <h3>Error<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/def/SolidityABI/Error</p>
+      <div class="info">
+         <span class="markdown">Defines specific errors that a contract may emit</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasErrorInput" title="http://w3id.org/def/SolidityABI/hasErrorInput">has error input</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#nameError" title="http://w3id.org/def/SolidityABI/nameError">name error</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasError" title="http://w3id.org/def/SolidityABI/hasError">has error</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Event">
+      <h3>Event<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/def/SolidityABI/Event</p>
+      <div class="info">
+         <span class="markdown">Contracts in Ethereum can emit events to record notable activities</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasEventInput" title="http://w3id.org/def/SolidityABI/hasEventInput">has event input</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isAnonymous" title="http://w3id.org/def/SolidityABI/isAnonymous">is anonymous</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#nameEvent" title="http://w3id.org/def/SolidityABI/nameEvent">name event</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasEvent" title="http://w3id.org/def/SolidityABI/hasEvent">has event</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Fallback">
+      <h3>Fallback<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/def/SolidityABI/Fallback</p>
+      <div class="info">
+         <span class="markdown">A function that executes if no other function matches or if no data is provided in a transaction</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Method" title="http://w3id.org/def/SolidityABI/Method">Method</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Function">
+      <h3>Function<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/def/SolidityABI/Function</p>
+      <div class="info">
+         <span class="markdown">Specifies a typical function in a contract that can have inputs and outputs and can change the state of the contract</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Method" title="http://w3id.org/def/SolidityABI/Method">Method</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="InputEvent">
+      <h3>Input Event<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/def/SolidityABI/InputEvent</p>
+      <div class="info">
+         <span class="markdown">Represent specific input parameters for events</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Parameter" title="http://w3id.org/def/SolidityABI/Parameter">Parameter</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#indexed" title="http://w3id.org/def/SolidityABI/indexed">indexed</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasEventInput" title="http://w3id.org/def/SolidityABI/hasEventInput">has event input</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="InputParameter">
+      <h3>Input Parameter<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/def/SolidityABI/InputParameter</p>
+      <div class="info">
+         <span class="markdown">Represent specific input parameters</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Parameter" title="http://w3id.org/def/SolidityABI/Parameter">Parameter</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasErrorInput" title="http://w3id.org/def/SolidityABI/hasErrorInput">has error input</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasMethodInput" title="http://w3id.org/def/SolidityABI/hasMethodInput">has method input</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Method">
+      <h3>Method<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/def/SolidityABI/Method</p>
+      <div class="info">
+         <span class="markdown">Represents a specific function inside a smart contract</span>
+      </div>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#Constructor" title="http://w3id.org/def/SolidityABI/Constructor">Constructor</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Fallback" title="http://w3id.org/def/SolidityABI/Fallback">Fallback</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Function" title="http://w3id.org/def/SolidityABI/Function">Function</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Receive" title="http://w3id.org/def/SolidityABI/Receive">Receive</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasMethodInput" title="http://w3id.org/def/SolidityABI/hasMethodInput">has method input</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasMethodOutput" title="http://w3id.org/def/SolidityABI/hasMethodOutput">has method output</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasStateMutability"
+               title="http://w3id.org/def/SolidityABI/hasStateMutability">has state mutability</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isConstant" title="http://w3id.org/def/SolidityABI/isConstant">is constant</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#nameMethod" title="http://w3id.org/def/SolidityABI/nameMethod">name method</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasFunction" title="http://w3id.org/def/SolidityABI/hasFunction">has function</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="OutputParameter">
+      <h3>Output Parameter<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/def/SolidityABI/OutputParameter</p>
+      <div class="info">
+         <span class="markdown">Represent specific output parameters</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Parameter" title="http://w3id.org/def/SolidityABI/Parameter">Parameter</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasMethodOutput" title="http://w3id.org/def/SolidityABI/hasMethodOutput">has method output</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Parameter">
+      <h3>Parameter<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/def/SolidityABI/Parameter</p>
+      <div class="info">
+         <span class="markdown">Details the types and names of parameters used in functions and events</span>
+      </div>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#InputEvent" title="http://w3id.org/def/SolidityABI/InputEvent">Input Event</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#InputParameter" title="http://w3id.org/def/SolidityABI/InputParameter">Input Parameter</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#OutputParameter" title="http://w3id.org/def/SolidityABI/OutputParameter">Output Parameter</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasComponent" title="http://w3id.org/def/SolidityABI/hasComponent">has component</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#internalTypeParameter"
+               title="http://w3id.org/def/SolidityABI/internalTypeParameter">internal type parameter</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#nameParameter" title="http://w3id.org/def/SolidityABI/nameParameter">name parameter</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#typeParameter" title="http://w3id.org/def/SolidityABI/typeParameter">type parameter</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Receive">
+      <h3>Receive<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/def/SolidityABI/Receive</p>
+      <div class="info">
+         <span class="markdown">A special function that is executed when Ether is sent to a contract without additional data</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Method" title="http://w3id.org/def/SolidityABI/Method">Method</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="StateMutability">
+      <h3>State Mutability<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/def/SolidityABI/StateMutability</p>
+      <div class="info">
+         <span class="markdown">Indicates how a function interacts with the contract storage, determining whether it modifies the state or simply reads the state</span>
+      </div>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasStateMutability"
+               title="http://w3id.org/def/SolidityABI/hasStateMutability">has state mutability</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#NonPayable" title="http://w3id.org/def/SolidityABI/NonPayable">Non Payable</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Payable" title="http://w3id.org/def/SolidityABI/Payable">Payable</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Pure" title="http://w3id.org/def/SolidityABI/Pure">Pure</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#View" title="http://w3id.org/def/SolidityABI/View">View</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div xmlns:extra="https://w3id.org/extra#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     id="objectproperties">
+   <h3 id="properties" class="list">Object Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#hasCode" title="http://w3id.org/def/SolidityABI/hasCode">has code</a>
+      </li>
+      <li>
+         <a href="#hasComponent" title="http://w3id.org/def/SolidityABI/hasComponent">has component</a>
+      </li>
+      <li>
+         <a href="#hasError" title="http://w3id.org/def/SolidityABI/hasError">has error</a>
+      </li>
+      <li>
+         <a href="#hasErrorInput" title="http://w3id.org/def/SolidityABI/hasErrorInput">has error input</a>
+      </li>
+      <li>
+         <a href="#hasEvent" title="http://w3id.org/def/SolidityABI/hasEvent">has event</a>
+      </li>
+      <li>
+         <a href="#hasEventInput" title="http://w3id.org/def/SolidityABI/hasEventInput">has event input</a>
+      </li>
+      <li>
+         <a href="#hasFunction" title="http://w3id.org/def/SolidityABI/hasFunction">has function</a>
+      </li>
+      <li>
+         <a href="#hasMethodInput" title="http://w3id.org/def/SolidityABI/hasMethodInput">has method input</a>
+      </li>
+      <li>
+         <a href="#hasMethodOutput" title="http://w3id.org/def/SolidityABI/hasMethodOutput">has method output</a>
+      </li>
+      <li>
+         <a href="#hasStateMutability"
+            title="http://w3id.org/def/SolidityABI/hasStateMutability">has state mutability</a>
+      </li>
+      <li>
+         <a href="#hasSubComponent" title="http://w3id.org/def/SolidityABI/hasSubComponent">has sub component</a>
+      </li>
+   </ul>
+   <div class="entity" id="hasCode">
+      <h3>has code<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/def/SolidityABI/hasCode</p>
+      <div class="info">
+         <span class="markdown">Relate the ABI to the representation of the source code</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ApplicationBinaryInterface"
+                  title="http://w3id.org/def/SolidityABI/ApplicationBinaryInterface">Application Binary Interface</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://w3id.org/def/SolidityOntology/contractImplementation"
+                  title="http://w3id.org/def/SolidityOntology/contractImplementation">contract Implementation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasComponent">
+      <h3>has component<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/def/SolidityABI/hasComponent</p>
+      <div class="info">
+         <span class="markdown">Relationship between the main application binary interface and its specific components</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Parameter" title="http://w3id.org/def/SolidityABI/Parameter">Parameter</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Component" title="http://w3id.org/def/SolidityABI/Component">Component</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasError">
+      <h3>has error<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/def/SolidityABI/hasError</p>
+      <div class="info">
+         <span class="markdown">Relationship between the ABI and its errors</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ApplicationBinaryInterface"
+                  title="http://w3id.org/def/SolidityABI/ApplicationBinaryInterface">Application Binary Interface</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Error" title="http://w3id.org/def/SolidityABI/Error">Error</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasErrorInput">
+      <h3>has error input<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/def/SolidityABI/hasErrorInput</p>
+      <div class="info">
+         <span class="markdown">Indicates which parameters are associated with a specific error</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Error" title="http://w3id.org/def/SolidityABI/Error">Error</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#InputParameter" title="http://w3id.org/def/SolidityABI/InputParameter">Input Parameter</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasEvent">
+      <h3>has event<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/def/SolidityABI/hasEvent</p>
+      <div class="info">
+         <span class="markdown">Relationship between the ABI and its events</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ApplicationBinaryInterface"
+                  title="http://w3id.org/def/SolidityABI/ApplicationBinaryInterface">Application Binary Interface</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Event" title="http://w3id.org/def/SolidityABI/Event">Event</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasEventInput">
+      <h3>has event input<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/def/SolidityABI/hasEventInput</p>
+      <div class="info">
+         <span class="markdown">Denotes which input parameters are associated with a specific event</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Event" title="http://w3id.org/def/SolidityABI/Event">Event</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#InputEvent" title="http://w3id.org/def/SolidityABI/InputEvent">Input Event</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasFunction">
+      <h3>has function<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/def/SolidityABI/hasFunction</p>
+      <div class="info">
+         <span class="markdown">Relationship between the ABI and its functions</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ApplicationBinaryInterface"
+                  title="http://w3id.org/def/SolidityABI/ApplicationBinaryInterface">Application Binary Interface</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Method" title="http://w3id.org/def/SolidityABI/Method">Method</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasMethodInput">
+      <h3>has method input<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/def/SolidityABI/hasMethodInput</p>
+      <div class="info">
+         <span class="markdown">Binds a method to its input parameters</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Method" title="http://w3id.org/def/SolidityABI/Method">Method</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#InputParameter" title="http://w3id.org/def/SolidityABI/InputParameter">Input Parameter</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasMethodOutput">
+      <h3>has method output<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/def/SolidityABI/hasMethodOutput</p>
+      <div class="info">
+         <span class="markdown">Binds a method to its output parameters</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Method" title="http://w3id.org/def/SolidityABI/Method">Method</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#OutputParameter" title="http://w3id.org/def/SolidityABI/OutputParameter">Output Parameter</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasStateMutability">
+      <h3>has state mutability<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/def/SolidityABI/hasStateMutability</p>
+      <div class="info">
+         <span class="markdown">Indicates which state mutability has the method</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Method" title="http://w3id.org/def/SolidityABI/Method">Method</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#StateMutability" title="http://w3id.org/def/SolidityABI/StateMutability">State Mutability</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasSubComponent">
+      <h3>has sub component<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/def/SolidityABI/hasSubComponent</p>
+      <div class="info">
+         <span class="markdown">Indicates that an abi:Component contains another component</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Component" title="http://w3id.org/def/SolidityABI/Component">Component</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Component" title="http://w3id.org/def/SolidityABI/Component">Component</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div xmlns:extra="https://w3id.org/extra#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     id="dataproperties">
+   <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#address" title="http://w3id.org/def/SolidityABI/address">address</a>
+      </li>
+      <li>
+         <a href="#indexed" title="http://w3id.org/def/SolidityABI/indexed">indexed</a>
+      </li>
+      <li>
+         <a href="#internalTypeComponent"
+            title="http://w3id.org/def/SolidityABI/internalTypeComponent">internal type component</a>
+      </li>
+      <li>
+         <a href="#internalTypeParameter"
+            title="http://w3id.org/def/SolidityABI/internalTypeParameter">internal type parameter</a>
+      </li>
+      <li>
+         <a href="#isAnonymous" title="http://w3id.org/def/SolidityABI/isAnonymous">is anonymous</a>
+      </li>
+      <li>
+         <a href="#isConstant" title="http://w3id.org/def/SolidityABI/isConstant">is constant</a>
+      </li>
+      <li>
+         <a href="#nameABI" title="http://w3id.org/def/SolidityABI/nameABI">name ABI</a>
+      </li>
+      <li>
+         <a href="#nameComponent" title="http://w3id.org/def/SolidityABI/nameComponent">name component</a>
+      </li>
+      <li>
+         <a href="#nameError" title="http://w3id.org/def/SolidityABI/nameError">name error</a>
+      </li>
+      <li>
+         <a href="#nameEvent" title="http://w3id.org/def/SolidityABI/nameEvent">name event</a>
+      </li>
+      <li>
+         <a href="#nameMethod" title="http://w3id.org/def/SolidityABI/nameMethod">name method</a>
+      </li>
+      <li>
+         <a href="#nameParameter" title="http://w3id.org/def/SolidityABI/nameParameter">name parameter</a>
+      </li>
+      <li>
+         <a href="#typeComponent" title="http://w3id.org/def/SolidityABI/typeComponent">type component</a>
+      </li>
+      <li>
+         <a href="#typeParameter" title="http://w3id.org/def/SolidityABI/typeParameter">type parameter</a>
+      </li>
+   </ul>
+   <div class="entity" id="address">
+      <h3>address<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/def/SolidityABI/address</p>
+      <div class="info">
+         <span class="markdown">The address of the contract on the blockchain</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ApplicationBinaryInterface"
+                  title="http://w3id.org/def/SolidityABI/ApplicationBinaryInterface">Application Binary Interface</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="indexed">
+      <h3>indexed<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/def/SolidityABI/indexed</p>
+      <div class="info">
+         <span class="markdown">For events, indicates whether a parameter is indexed, which affects how logs are stored and searchable</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#InputEvent" title="http://w3id.org/def/SolidityABI/InputEvent">Input Event</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#boolean"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#boolean">boolean</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="internalTypeComponent">
+      <h3>internal type component<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/def/SolidityABI/internalTypeComponent</p>
+      <div class="info">
+         <span class="markdown">Internal type of the component</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Component" title="http://w3id.org/def/SolidityABI/Component">Component</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="internalTypeParameter">
+      <h3>internal type parameter<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/def/SolidityABI/internalTypeParameter</p>
+      <div class="info">
+         <span class="markdown">Internal type of the parameter</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Parameter" title="http://w3id.org/def/SolidityABI/Parameter">Parameter</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isAnonymous">
+      <h3>is anonymous<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/def/SolidityABI/isAnonymous</p>
+      <div class="info">
+         <span class="markdown">Indicates whether an event is anonymous, which affects how logs are recorded in Ethereum</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Event" title="http://w3id.org/def/SolidityABI/Event">Event</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#boolean"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#boolean">boolean</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isConstant">
+      <h3>is constant<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/def/SolidityABI/isConstant</p>
+      <div class="info">
+         <span class="markdown">Indicates if a method is constant, that is, if it only reads data and does not modify the state</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Method" title="http://w3id.org/def/SolidityABI/Method">Method</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#boolean"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#boolean">boolean</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="nameABI">
+      <h3>name ABI<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/def/SolidityABI/nameABI</p>
+      <div class="comment">
+         <span class="markdown">The name of the contract associated to an address</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ApplicationBinaryInterface"
+                  title="http://w3id.org/def/SolidityABI/ApplicationBinaryInterface">Application Binary Interface</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="nameComponent">
+      <h3>name component<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/def/SolidityABI/nameComponent</p>
+      <div class="info">
+         <span class="markdown">Name assigned to the component of the ABI</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Component" title="http://w3id.org/def/SolidityABI/Component">Component</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="nameError">
+      <h3>name error<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/def/SolidityABI/nameError</p>
+      <div class="info">
+         <span class="markdown">Name of the error defined in the contract</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Error" title="http://w3id.org/def/SolidityABI/Error">Error</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="nameEvent">
+      <h3>name event<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/def/SolidityABI/nameEvent</p>
+      <div class="info">
+         <span class="markdown">Name of the event defined in the contract</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Event" title="http://w3id.org/def/SolidityABI/Event">Event</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="nameMethod">
+      <h3>name method<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/def/SolidityABI/nameMethod</p>
+      <div class="info">
+         <span class="markdown">Name of a specific method in the contract</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Method" title="http://w3id.org/def/SolidityABI/Method">Method</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="nameParameter">
+      <h3>name parameter<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/def/SolidityABI/nameParameter</p>
+      <div class="info">
+         <span class="markdown">Name of the parameter used in inputs</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Parameter" title="http://w3id.org/def/SolidityABI/Parameter">Parameter</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="typeComponent">
+      <h3>type component<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/def/SolidityABI/typeComponent</p>
+      <div class="info">
+         <span class="markdown">Data type of the component (e.g. uint256, address)</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Component" title="http://w3id.org/def/SolidityABI/Component">Component</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="typeParameter">
+      <h3>type parameter<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/def/SolidityABI/typeParameter</p>
+      <div class="info">
+         <span class="markdown">Data type of the parameter (e.g. uint256, address)</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Parameter" title="http://w3id.org/def/SolidityABI/Parameter">Parameter</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div xmlns:extra="https://w3id.org/extra#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     id="namedindividuals">
+   <h3 id="namedindividuals" class="list">Named Individuals</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#NonPayable" title="http://w3id.org/def/SolidityABI/NonPayable">Non Payable</a>
+      </li>
+      <li>
+         <a href="#Payable" title="http://w3id.org/def/SolidityABI/Payable">Payable</a>
+      </li>
+      <li>
+         <a href="#Pure" title="http://w3id.org/def/SolidityABI/Pure">Pure</a>
+      </li>
+      <li>
+         <a href="#View" title="http://w3id.org/def/SolidityABI/View">View</a>
+      </li>
+   </ul>
+   <div class="entity" id="NonPayable">
+      <h3>Non Payable<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/def/SolidityABI/NonPayable</p>
+      <div class="info">
+         <span class="markdown">Denotes that a function cannot receive Ether</span>
+      </div>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#StateMutability" title="http://w3id.org/def/SolidityABI/StateMutability">State Mutability</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Payable">
+      <h3>Payable<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/def/SolidityABI/Payable</p>
+      <div class="info">
+         <span class="markdown">Denotes that a function can receive Ether along with its invocation</span>
+      </div>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#StateMutability" title="http://w3id.org/def/SolidityABI/StateMutability">State Mutability</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Pure">
+      <h3>Pure<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/def/SolidityABI/Pure</p>
+      <div class="info">
+         <span class="markdown">Denotes that a function does not read or write data to the contract; it is purely computational</span>
+      </div>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#StateMutability" title="http://w3id.org/def/SolidityABI/StateMutability">State Mutability</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="View">
+      <h3>View<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/def/SolidityABI/View</p>
+      <div class="info">
+         <span class="markdown">Denotes that a function only reads data from the contract but does not modify its state</span>
+      </div>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#StateMutability" title="http://w3id.org/def/SolidityABI/StateMutability">State Mutability</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
+</div>
+</div>

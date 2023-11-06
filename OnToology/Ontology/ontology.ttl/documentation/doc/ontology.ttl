@@ -1,0 +1,373 @@
+@prefix : <http://w3id.org/def/SolidityABI/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://w3id.org/def/SolidityABI/> .
+
+<http://w3id.org/def/SolidityABI/> rdf:type owl:Ontology ;
+                                    <http://purl.org/dc/elements/1.1/creator> "Juan Cano-Benito" ,
+                                                                              "http://www.garcia-castro.com/foaf.rdf#me" ;
+                                    <http://purl.org/dc/elements/1.1/description> "Ontology code created by Chowlk" ;
+                                    <http://purl.org/dc/elements/1.1/title> "Solidity ABI Ontology" ;
+                                    owl:versionInfo "0.0.1" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://w3id.org/def/SolidityABI/hasCode
+:hasCode rdf:type owl:ObjectProperty ;
+         rdfs:domain :ApplicationBinaryInterface ;
+         rdfs:range <http://w3id.org/def/SolidityOntology/contractImplementation> ;
+         <http://purl.org/dc/elements/1.1/description> "Relate the ABI to the representation of the source code" ;
+         rdfs:label "has code" .
+
+
+###  http://w3id.org/def/SolidityABI/hasComponent
+:hasComponent rdf:type owl:ObjectProperty ;
+              rdfs:domain :Parameter ;
+              rdfs:range :Component ;
+              <http://purl.org/dc/elements/1.1/description> "Relationship between the main application binary interface and its specific components" ;
+              rdfs:label "has component" .
+
+
+###  http://w3id.org/def/SolidityABI/hasError
+:hasError rdf:type owl:ObjectProperty ;
+          rdfs:domain :ApplicationBinaryInterface ;
+          rdfs:range :Error ;
+          <http://purl.org/dc/elements/1.1/description> "Relationship between the ABI and its errors" ;
+          rdfs:label "has error" .
+
+
+###  http://w3id.org/def/SolidityABI/hasErrorInput
+:hasErrorInput rdf:type owl:ObjectProperty ;
+               rdfs:domain :Error ;
+               rdfs:range :InputParameter ;
+               <http://purl.org/dc/elements/1.1/description> "Indicates which parameters are associated with a specific error" ;
+               rdfs:label "has error input" .
+
+
+###  http://w3id.org/def/SolidityABI/hasEvent
+:hasEvent rdf:type owl:ObjectProperty ;
+          rdfs:domain :ApplicationBinaryInterface ;
+          rdfs:range :Event ;
+          <http://purl.org/dc/elements/1.1/description> "Relationship between the ABI and its events" ;
+          rdfs:label "has event" .
+
+
+###  http://w3id.org/def/SolidityABI/hasEventInput
+:hasEventInput rdf:type owl:ObjectProperty ;
+               rdfs:domain :Event ;
+               rdfs:range :InputEvent ;
+               <http://purl.org/dc/elements/1.1/description> "Denotes which input parameters are associated with a specific event" ;
+               rdfs:label "has event input" .
+
+
+###  http://w3id.org/def/SolidityABI/hasFunction
+:hasFunction rdf:type owl:ObjectProperty ;
+             rdfs:domain :ApplicationBinaryInterface ;
+             rdfs:range :Method ;
+             <http://purl.org/dc/elements/1.1/description> "Relationship between the ABI and its functions" ;
+             rdfs:label "has function" .
+
+
+###  http://w3id.org/def/SolidityABI/hasMethodInput
+:hasMethodInput rdf:type owl:ObjectProperty ;
+                rdfs:domain :Method ;
+                rdfs:range :InputParameter ;
+                <http://purl.org/dc/elements/1.1/description> "Binds a method to its input parameters" ;
+                rdfs:label "has method input" .
+
+
+###  http://w3id.org/def/SolidityABI/hasMethodOutput
+:hasMethodOutput rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Method ;
+                 rdfs:range :OutputParameter ;
+                 <http://purl.org/dc/elements/1.1/description> "Binds a method to its output parameters" ;
+                 rdfs:label "has method output" .
+
+
+###  http://w3id.org/def/SolidityABI/hasStateMutability
+:hasStateMutability rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Method ;
+                    rdfs:range :StateMutability ;
+                    <http://purl.org/dc/elements/1.1/description> "Indicates which state mutability has the method" ;
+                    rdfs:label "has state mutability" .
+
+
+###  http://w3id.org/def/SolidityABI/hasSubComponent
+:hasSubComponent rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Component ;
+                 rdfs:range :Component ;
+                 <http://purl.org/dc/elements/1.1/description> "Indicates that an abi:Component contains another component" ;
+                 rdfs:label "has sub component" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://w3id.org/def/SolidityABI/address
+:address rdf:type owl:DatatypeProperty ;
+         rdfs:domain :ApplicationBinaryInterface ;
+         rdfs:range xsd:string ;
+         <http://purl.org/dc/elements/1.1/description> "The address of the contract on the blockchain" ;
+         rdfs:label "address" .
+
+
+###  http://w3id.org/def/SolidityABI/indexed
+:indexed rdf:type owl:DatatypeProperty ;
+         rdfs:domain :InputEvent ;
+         rdfs:range xsd:boolean ;
+         <http://purl.org/dc/elements/1.1/description> "For events, indicates whether a parameter is indexed, which affects how logs are stored and searchable" ;
+         rdfs:label "indexed" .
+
+
+###  http://w3id.org/def/SolidityABI/internalTypeComponent
+:internalTypeComponent rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :Component ;
+                       rdfs:range xsd:string ;
+                       <http://purl.org/dc/elements/1.1/description> "Internal type of the component" ;
+                       rdfs:label "internal type component" .
+
+
+###  http://w3id.org/def/SolidityABI/internalTypeParameter
+:internalTypeParameter rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :Parameter ;
+                       rdfs:range xsd:string ;
+                       <http://purl.org/dc/elements/1.1/description> "Internal type of the parameter" ;
+                       rdfs:label "internal type parameter" .
+
+
+###  http://w3id.org/def/SolidityABI/isAnonymous
+:isAnonymous rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Event ;
+             rdfs:range xsd:boolean ;
+             <http://purl.org/dc/elements/1.1/description> "Indicates whether an event is anonymous, which affects how logs are recorded in Ethereum" ;
+             rdfs:label "is anonymous" .
+
+
+###  http://w3id.org/def/SolidityABI/isConstant
+:isConstant rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Method ;
+            rdfs:range xsd:boolean ;
+            <http://purl.org/dc/elements/1.1/description> "Indicates if a method is constant, that is, if it only reads data and does not modify the state" ;
+            rdfs:label "is constant" .
+
+
+###  http://w3id.org/def/SolidityABI/nameABI
+:nameABI rdf:type owl:DatatypeProperty ;
+         rdfs:domain :ApplicationBinaryInterface ;
+         rdfs:range xsd:string ;
+         rdfs:comment "The name of the contract associated to an address" ;
+         rdfs:label "name ABI" .
+
+
+###  http://w3id.org/def/SolidityABI/nameComponent
+:nameComponent rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Component ;
+               rdfs:range xsd:string ;
+               <http://purl.org/dc/elements/1.1/description> "Name assigned to the component of the ABI" ;
+               rdfs:label "name component" .
+
+
+###  http://w3id.org/def/SolidityABI/nameError
+:nameError rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Error ;
+           rdfs:range xsd:string ;
+           <http://purl.org/dc/elements/1.1/description> "Name of the error defined in the contract" ;
+           rdfs:label "name error" .
+
+
+###  http://w3id.org/def/SolidityABI/nameEvent
+:nameEvent rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Event ;
+           rdfs:range xsd:string ;
+           <http://purl.org/dc/elements/1.1/description> "Name of the event defined in the contract" ;
+           rdfs:label "name event" .
+
+
+###  http://w3id.org/def/SolidityABI/nameMethod
+:nameMethod rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Method ;
+            rdfs:range xsd:string ;
+            <http://purl.org/dc/elements/1.1/description> "Name of a specific method in the contract" ;
+            rdfs:label "name method" .
+
+
+###  http://w3id.org/def/SolidityABI/nameParameter
+:nameParameter rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Parameter ;
+               rdfs:range xsd:string ;
+               <http://purl.org/dc/elements/1.1/description> "Name of the parameter used in inputs" ;
+               rdfs:label "name parameter" .
+
+
+###  http://w3id.org/def/SolidityABI/typeComponent
+:typeComponent rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Component ;
+               rdfs:range xsd:string ;
+               <http://purl.org/dc/elements/1.1/description> "Data type of the component (e.g. uint256, address)" ;
+               rdfs:label "type component" .
+
+
+###  http://w3id.org/def/SolidityABI/typeParameter
+:typeParameter rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Parameter ;
+               rdfs:range xsd:string ;
+               <http://purl.org/dc/elements/1.1/description> "Data type of the parameter (e.g. uint256, address)" ;
+               rdfs:label "type parameter" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://w3id.org/def/SolidityABI/ApplicationBinaryInterface
+:ApplicationBinaryInterface rdf:type owl:Class ;
+                            <http://purl.org/dc/elements/1.1/description> "The main interface that defines how to interact with a contract (knows as ABI)" ;
+                            rdfs:label "Application Binary Interface" .
+
+
+###  http://w3id.org/def/SolidityABI/Component
+:Component rdf:type owl:Class ;
+           <http://purl.org/dc/elements/1.1/description> "Represents an ABI component" ;
+           rdfs:label "Component" .
+
+
+###  http://w3id.org/def/SolidityABI/Constructor
+:Constructor rdf:type owl:Class ;
+             rdfs:subClassOf :Method ;
+             <http://purl.org/dc/elements/1.1/description> "Defines the function that is executed when a contract is deployed" ;
+             rdfs:label "Constructor" .
+
+
+###  http://w3id.org/def/SolidityABI/Error
+:Error rdf:type owl:Class ;
+       <http://purl.org/dc/elements/1.1/description> "Defines specific errors that a contract may emit" ;
+       rdfs:label "Error" .
+
+
+###  http://w3id.org/def/SolidityABI/Event
+:Event rdf:type owl:Class ;
+       <http://purl.org/dc/elements/1.1/description> "Contracts in Ethereum can emit events to record notable activities" ;
+       rdfs:label "Event" .
+
+
+###  http://w3id.org/def/SolidityABI/Fallback
+:Fallback rdf:type owl:Class ;
+          rdfs:subClassOf :Method ;
+          <http://purl.org/dc/elements/1.1/description> "A function that executes if no other function matches or if no data is provided in a transaction" ;
+          rdfs:label "Fallback" .
+
+
+###  http://w3id.org/def/SolidityABI/Function
+:Function rdf:type owl:Class ;
+          rdfs:subClassOf :Method ;
+          <http://purl.org/dc/elements/1.1/description> "Specifies a typical function in a contract that can have inputs and outputs and can change the state of the contract" ;
+          rdfs:label "Function" .
+
+
+###  http://w3id.org/def/SolidityABI/InputEvent
+:InputEvent rdf:type owl:Class ;
+            rdfs:subClassOf :Parameter ;
+            <http://purl.org/dc/elements/1.1/description> "Represent specific input parameters for events" ;
+            rdfs:label "Input Event" .
+
+
+###  http://w3id.org/def/SolidityABI/InputParameter
+:InputParameter rdf:type owl:Class ;
+                rdfs:subClassOf :Parameter ;
+                <http://purl.org/dc/elements/1.1/description> "Represent specific input parameters" ;
+                rdfs:label "Input Parameter" .
+
+
+###  http://w3id.org/def/SolidityABI/Method
+:Method rdf:type owl:Class ;
+        <http://purl.org/dc/elements/1.1/description> "Represents a specific function inside a smart contract" ;
+        rdfs:label "Method" .
+
+
+###  http://w3id.org/def/SolidityABI/OutputParameter
+:OutputParameter rdf:type owl:Class ;
+                 rdfs:subClassOf :Parameter ;
+                 <http://purl.org/dc/elements/1.1/description> "Represent specific output parameters" ;
+                 rdfs:label "Output Parameter" .
+
+
+###  http://w3id.org/def/SolidityABI/Parameter
+:Parameter rdf:type owl:Class ;
+           <http://purl.org/dc/elements/1.1/description> "Details the types and names of parameters used in functions and events" ;
+           rdfs:label "Parameter" .
+
+
+###  http://w3id.org/def/SolidityABI/Receive
+:Receive rdf:type owl:Class ;
+         rdfs:subClassOf :Method ;
+         <http://purl.org/dc/elements/1.1/description> "A special function that is executed when Ether is sent to a contract without additional data" ;
+         rdfs:label "Receive" .
+
+
+###  http://w3id.org/def/SolidityABI/StateMutability
+:StateMutability rdf:type owl:Class ;
+                 <http://purl.org/dc/elements/1.1/description> "Indicates how a function interacts with the contract storage, determining whether it modifies the state or simply reads the state" ;
+                 rdfs:label "State Mutability" .
+
+
+###  http://w3id.org/def/SolidityOntology/contractImplementation
+<http://w3id.org/def/SolidityOntology/contractImplementation> rdf:type owl:Class ;
+                                                              <http://purl.org/dc/elements/1.1/description> "Represents the contract implementation (Solidity ontology)" ;
+                                                              rdfs:label "contract Implementation" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://w3id.org/def/SolidityABI/NonPayable
+:NonPayable rdf:type owl:NamedIndividual ,
+                     :StateMutability ;
+            <http://purl.org/dc/elements/1.1/description> "Denotes that a function cannot receive Ether" ;
+            rdfs:label "Non Payable" .
+
+
+###  http://w3id.org/def/SolidityABI/Payable
+:Payable rdf:type owl:NamedIndividual ,
+                  :StateMutability ;
+         <http://purl.org/dc/elements/1.1/description> "Denotes that a function can receive Ether along with its invocation" ;
+         rdfs:label "Payable" .
+
+
+###  http://w3id.org/def/SolidityABI/Pure
+:Pure rdf:type owl:NamedIndividual ,
+               :StateMutability ;
+      <http://purl.org/dc/elements/1.1/description> "Denotes that a function does not read or write data to the contract; it is purely computational" ;
+      rdfs:label "Pure" .
+
+
+###  http://w3id.org/def/SolidityABI/View
+:View rdf:type owl:NamedIndividual ,
+               :StateMutability ;
+      <http://purl.org/dc/elements/1.1/description> "Denotes that a function only reads data from the contract but does not modify its state" ;
+      rdfs:label "View" .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
