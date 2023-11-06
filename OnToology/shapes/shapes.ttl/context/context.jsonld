@@ -48,6 +48,9 @@
     "PropertyShape" : {
       "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
     },
+    "description" : {
+      "@id" : "http://www.w3.org/ns/shacl#description"
+    },
     "ShapeReport" : {
       "@id" : "https://w3id.org/def/astrea#ShapeReport"
     }

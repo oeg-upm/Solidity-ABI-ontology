@@ -1,6 +1,6 @@
 <http://w3id.org/def/SolidityABI/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <http://w3id.org/def/SolidityABI/> <http://purl.org/dc/elements/1.1/creator> "Juan Cano-Benito" .
-<http://w3id.org/def/SolidityABI/> <http://purl.org/dc/elements/1.1/creator> "Raúl García Castro" .
+<http://w3id.org/def/SolidityABI/> <http://purl.org/dc/elements/1.1/creator> "http://www.garcia-castro.com/foaf.rdf#me" .
 <http://w3id.org/def/SolidityABI/> <http://purl.org/dc/elements/1.1/description> "Ontology code created by Chowlk" .
 <http://w3id.org/def/SolidityABI/> <http://purl.org/dc/elements/1.1/title> "Solidity ABI Ontology" .
 <http://w3id.org/def/SolidityABI/> <http://www.w3.org/2002/07/owl#versionInfo> "0.0.1" .
@@ -158,6 +158,13 @@
 <http://w3id.org/def/SolidityABI/isConstant> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
 <http://w3id.org/def/SolidityABI/isConstant> <http://purl.org/dc/elements/1.1/description> "Indicates if a method is constant, that is, if it only reads data and does not modify the state" .
 <http://w3id.org/def/SolidityABI/isConstant> <http://www.w3.org/2000/01/rdf-schema#label> "is constant" .
+# 
+# http://w3id.org/def/SolidityABI/nameABI
+<http://w3id.org/def/SolidityABI/nameABI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/def/SolidityABI/nameABI> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/SolidityABI/ApplicationBinaryInterface> .
+<http://w3id.org/def/SolidityABI/nameABI> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://w3id.org/def/SolidityABI/nameABI> <http://www.w3.org/2000/01/rdf-schema#comment> "The name of the contract associated to an address" .
+<http://w3id.org/def/SolidityABI/nameABI> <http://www.w3.org/2000/01/rdf-schema#label> "name ABI" .
 # 
 # http://w3id.org/def/SolidityABI/nameComponent
 <http://w3id.org/def/SolidityABI/nameComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .

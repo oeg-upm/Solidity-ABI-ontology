@@ -13,7 +13,7 @@
   "http://purl.org/dc/elements/1.1/creator" : [ {
     "@value" : "Juan Cano-Benito"
   }, {
-    "@value" : "Raúl García Castro"
+    "@value" : "http://www.garcia-castro.com/foaf.rdf#me"
   } ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Ontology code created by Chowlk"
@@ -473,6 +473,21 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/SolidityABI/nameABI",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The name of the contract associated to an address"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/def/SolidityABI/ApplicationBinaryInterface"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "name ABI"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "http://w3id.org/def/SolidityABI/nameComponent",

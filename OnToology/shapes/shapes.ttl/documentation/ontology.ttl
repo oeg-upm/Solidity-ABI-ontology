@@ -20,6 +20,10 @@
 <http://www.w3.org/ns/shacl#datatype> rdf:type owl:AnnotationProperty .
 
 
+###  http://www.w3.org/ns/shacl#description
+<http://www.w3.org/ns/shacl#description> rdf:type owl:AnnotationProperty .
+
+
 ###  http://www.w3.org/ns/shacl#name
 <http://www.w3.org/ns/shacl#name> rdf:type owl:AnnotationProperty .
 
@@ -115,6 +119,7 @@
                                                                             <https://astrea.linkeddata.es/shapes#352d45ad6858ee0dd8f5cfe88547fb77> ,
                                                                             <https://astrea.linkeddata.es/shapes#37f21f4d9a48333773238b4236b1bce4> ,
                                                                             <https://astrea.linkeddata.es/shapes#475fa1092fff7b497880b49ad05805fb> ,
+                                                                            <https://astrea.linkeddata.es/shapes#47518971e862c00815f62b686afe5cde> ,
                                                                             <https://astrea.linkeddata.es/shapes#5ae7c9d9270248d008f7cf915859ac67> ,
                                                                             <https://astrea.linkeddata.es/shapes#510b8202c6f59a12ca3eb03297ff31fc> ,
                                                                             <https://astrea.linkeddata.es/shapes#7ac9f0c697b1bb0304ec8c10df80ff03> ,
@@ -428,6 +433,19 @@
                                                                        <http://www.w3.org/ns/shacl#pattern> ".*" .
 
 
+###  https://astrea.linkeddata.es/shapes#47518971e862c00815f62b686afe5cde
+<https://astrea.linkeddata.es/shapes#47518971e862c00815f62b686afe5cde> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.w3.org/ns/shacl#PropertyShape> ;
+                                                                       rdfs:label "The name of the contract associated to an address" ,
+                                                                                  "name ABI" ;
+                                                                       <http://www.w3.org/ns/shacl#datatype> xsd:string ;
+                                                                       <http://www.w3.org/ns/shacl#description> "The name of the contract associated to an address" ;
+                                                                       <http://www.w3.org/ns/shacl#name> "name ABI" ;
+                                                                       <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> ;
+                                                                       <http://www.w3.org/ns/shacl#path> <http://w3id.org/def/SolidityABI/nameABI> ;
+                                                                       <http://www.w3.org/ns/shacl#pattern> ".*" .
+
+
 ###  https://astrea.linkeddata.es/shapes#5ae7c9d9270248d008f7cf915859ac67
 <https://astrea.linkeddata.es/shapes#5ae7c9d9270248d008f7cf915859ac67> rdf:type owl:NamedIndividual ,
                                                                                 <http://www.w3.org/ns/shacl#PropertyShape> ;
@@ -513,7 +531,8 @@
                                                                                                              <https://astrea.linkeddata.es/shapes#1b15702dc05d3cd2114b7959d324ef2c> ,
                                                                                                              <https://astrea.linkeddata.es/shapes#1b436c48231dd2a1dcceb66453003222> ,
                                                                                                              <https://astrea.linkeddata.es/shapes#1ed3b8c2dee7578a0dd33b58cc8540f8> ,
-                                                                                                             <https://astrea.linkeddata.es/shapes#475fa1092fff7b497880b49ad05805fb> ;
+                                                                                                             <https://astrea.linkeddata.es/shapes#475fa1092fff7b497880b49ad05805fb> ,
+                                                                                                             <https://astrea.linkeddata.es/shapes#47518971e862c00815f62b686afe5cde> ;
                                                                        <http://www.w3.org/ns/shacl#targetClass> <http://w3id.org/def/SolidityABI/ApplicationBinaryInterface> .
 
 

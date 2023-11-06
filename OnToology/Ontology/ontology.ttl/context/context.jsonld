@@ -82,6 +82,10 @@
       "@id" : "http://w3id.org/def/SolidityABI/typeComponent",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
+    "nameABI" : {
+      "@id" : "http://w3id.org/def/SolidityABI/nameABI",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
     "Parameter" : {
       "@id" : "http://w3id.org/def/SolidityABI/Parameter"
     },
@@ -119,6 +123,9 @@
     "hasError" : {
       "@id" : "http://w3id.org/def/SolidityABI/hasError",
       "@type" : "@id"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
     },
     "contractImplementation" : {
       "@id" : "http://w3id.org/def/SolidityOntology/contractImplementation"
