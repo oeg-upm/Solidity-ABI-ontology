@@ -4,6 +4,10 @@
          "@id":"https://w3id.org/def/SolidityABI/address",
          "@type":"http://www.w3.org/2001/XMLSchema#string"
       },
+      "name":{
+         "@id":"https://w3id.org/def/SolidityABI/nameABI",
+         "@type":"http://www.w3.org/2001/XMLSchema#string"
+      },
       "hasFunction":{
          "@id":"https://w3id.org/def/SolidityABI/hasFunction",
          "@type":"@vocab",
