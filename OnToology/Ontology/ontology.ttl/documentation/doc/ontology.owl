@@ -9,7 +9,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://w3id.org/def/SolidityABI/">
         <dc:creator>Juan Cano-Benito</dc:creator>
-        <dc:creator>Raúl García Castro</dc:creator>
+        <dc:creator>http://www.garcia-castro.com/foaf.rdf#me</dc:creator>
         <dc:description>Ontology code created by Chowlk</dc:description>
         <dc:title>Solidity ABI Ontology</dc:title>
         <owl:versionInfo>0.0.1</owl:versionInfo>
@@ -274,6 +274,18 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
         <dc:description>Indicates if a method is constant, that is, if it only reads data and does not modify the state</dc:description>
         <rdfs:label>is constant</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/def/SolidityABI/nameABI -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/def/SolidityABI/nameABI">
+        <rdfs:domain rdf:resource="http://w3id.org/def/SolidityABI/ApplicationBinaryInterface"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>The name of the contract associated to an address</rdfs:comment>
+        <rdfs:label>name ABI</rdfs:label>
     </owl:DatatypeProperty>
     
 

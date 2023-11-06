@@ -38,6 +38,13 @@
     
 
 
+    <!-- http://www.w3.org/ns/shacl#description -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/shacl#description"/>
+    
+
+
     <!-- http://www.w3.org/ns/shacl#name -->
 
 
@@ -193,6 +200,7 @@
         <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#352d45ad6858ee0dd8f5cfe88547fb77"/>
         <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#37f21f4d9a48333773238b4236b1bce4"/>
         <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#475fa1092fff7b497880b49ad05805fb"/>
+        <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#47518971e862c00815f62b686afe5cde"/>
         <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#5ae7c9d9270248d008f7cf915859ac67"/>
         <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#510b8202c6f59a12ca3eb03297ff31fc"/>
         <astrea:contains rdf:resource="https://astrea.linkeddata.es/shapes#7ac9f0c697b1bb0304ec8c10df80ff03"/>
@@ -624,6 +632,23 @@
     
 
 
+    <!-- https://astrea.linkeddata.es/shapes#47518971e862c00815f62b686afe5cde -->
+
+
+    <NamedIndividual rdf:about="https://astrea.linkeddata.es/shapes#47518971e862c00815f62b686afe5cde">
+        <rdf:type rdf:resource="http://www.w3.org/ns/shacl#PropertyShape"/>
+        <rdfs:label>The name of the contract associated to an address</rdfs:label>
+        <rdfs:label>name ABI</rdfs:label>
+        <shacl:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <shacl:description>The name of the contract associated to an address</shacl:description>
+        <shacl:name>name ABI</shacl:name>
+        <shacl:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <shacl:path rdf:resource="http://w3id.org/def/SolidityABI/nameABI"/>
+        <shacl:pattern>.*</shacl:pattern>
+    </NamedIndividual>
+    
+
+
     <!-- https://astrea.linkeddata.es/shapes#5ae7c9d9270248d008f7cf915859ac67 -->
 
 
@@ -740,6 +765,7 @@
         <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#1b436c48231dd2a1dcceb66453003222"/>
         <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#1ed3b8c2dee7578a0dd33b58cc8540f8"/>
         <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#475fa1092fff7b497880b49ad05805fb"/>
+        <shacl:property rdf:resource="https://astrea.linkeddata.es/shapes#47518971e862c00815f62b686afe5cde"/>
         <shacl:targetClass rdf:resource="http://w3id.org/def/SolidityABI/ApplicationBinaryInterface"/>
     </NamedIndividual>
     

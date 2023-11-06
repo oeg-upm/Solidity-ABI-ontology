@@ -64,6 +64,8 @@
   }, {
     "@id" : "https://astrea.linkeddata.es/shapes#475fa1092fff7b497880b49ad05805fb"
   }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#47518971e862c00815f62b686afe5cde"
+  }, {
     "@id" : "https://astrea.linkeddata.es/shapes#5ae7c9d9270248d008f7cf915859ac67"
   }, {
     "@id" : "https://astrea.linkeddata.es/shapes#510b8202c6f59a12ca3eb03297ff31fc"
@@ -100,6 +102,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://www.w3.org/ns/shacl#datatype",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/shacl#description",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://www.w3.org/ns/shacl#name",
@@ -460,6 +465,35 @@
     "@value" : ".*"
   } ]
 }, {
+  "@id" : "https://astrea.linkeddata.es/shapes#47518971e862c00815f62b686afe5cde",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "The name of the contract associated to an address"
+  }, {
+    "@value" : "name ABI"
+  } ],
+  "http://www.w3.org/ns/shacl#datatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/ns/shacl#description" : [ {
+    "@value" : "The name of the contract associated to an address"
+  } ],
+  "http://www.w3.org/ns/shacl#name" : [ {
+    "@value" : "name ABI"
+  } ],
+  "http://www.w3.org/ns/shacl#nodeKind" : [ {
+    "@id" : "http://www.w3.org/ns/shacl#Literal"
+  } ],
+  "http://www.w3.org/ns/shacl#path" : [ {
+    "@id" : "http://w3id.org/def/SolidityABI/nameABI"
+  } ],
+  "http://www.w3.org/ns/shacl#pattern" : [ {
+    "@value" : ".*"
+  } ]
+}, {
   "@id" : "https://astrea.linkeddata.es/shapes#475fa1092fff7b497880b49ad05805fb",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
@@ -733,6 +767,8 @@
     "@id" : "https://astrea.linkeddata.es/shapes#1ed3b8c2dee7578a0dd33b58cc8540f8"
   }, {
     "@id" : "https://astrea.linkeddata.es/shapes#475fa1092fff7b497880b49ad05805fb"
+  }, {
+    "@id" : "https://astrea.linkeddata.es/shapes#47518971e862c00815f62b686afe5cde"
   } ],
   "http://www.w3.org/ns/shacl#targetClass" : [ {
     "@id" : "http://w3id.org/def/SolidityABI/ApplicationBinaryInterface"

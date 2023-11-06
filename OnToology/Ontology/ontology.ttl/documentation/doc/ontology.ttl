@@ -8,7 +8,7 @@
 
 <http://w3id.org/def/SolidityABI/> rdf:type owl:Ontology ;
                                     <http://purl.org/dc/elements/1.1/creator> "Juan Cano-Benito" ,
-                                                                              "Raúl García Castro" ;
+                                                                              "http://www.garcia-castro.com/foaf.rdf#me" ;
                                     <http://purl.org/dc/elements/1.1/description> "Ontology code created by Chowlk" ;
                                     <http://purl.org/dc/elements/1.1/title> "Solidity ABI Ontology" ;
                                     owl:versionInfo "0.0.1" .
@@ -171,6 +171,14 @@
             rdfs:range xsd:boolean ;
             <http://purl.org/dc/elements/1.1/description> "Indicates if a method is constant, that is, if it only reads data and does not modify the state" ;
             rdfs:label "is constant" .
+
+
+###  http://w3id.org/def/SolidityABI/nameABI
+:nameABI rdf:type owl:DatatypeProperty ;
+         rdfs:domain :ApplicationBinaryInterface ;
+         rdfs:range xsd:string ;
+         rdfs:comment "The name of the contract associated to an address" ;
+         rdfs:label "name ABI" .
 
 
 ###  http://w3id.org/def/SolidityABI/nameComponent

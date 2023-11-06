@@ -14,6 +14,9 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # http://www.w3.org/ns/shacl#datatype
 <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://www.w3.org/ns/shacl#description
+<http://www.w3.org/ns/shacl#description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://www.w3.org/ns/shacl#name
 <http://www.w3.org/ns/shacl#name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
@@ -105,6 +108,7 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#352d45ad6858ee0dd8f5cfe88547fb77> .
 <http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#37f21f4d9a48333773238b4236b1bce4> .
 <http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#475fa1092fff7b497880b49ad05805fb> .
+<http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#47518971e862c00815f62b686afe5cde> .
 <http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#5ae7c9d9270248d008f7cf915859ac67> .
 <http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#510b8202c6f59a12ca3eb03297ff31fc> .
 <http://astrea.linkeddata.es/report> <https://w3id.org/def/astrea#contains> <https://astrea.linkeddata.es/shapes#7ac9f0c697b1bb0304ec8c10df80ff03> .
@@ -388,6 +392,18 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://astrea.linkeddata.es/shapes#475fa1092fff7b497880b49ad05805fb> <http://www.w3.org/ns/shacl#path> <http://w3id.org/def/SolidityABI/address> .
 <https://astrea.linkeddata.es/shapes#475fa1092fff7b497880b49ad05805fb> <http://www.w3.org/ns/shacl#pattern> ".*" .
 # 
+# https://astrea.linkeddata.es/shapes#47518971e862c00815f62b686afe5cde
+<https://astrea.linkeddata.es/shapes#47518971e862c00815f62b686afe5cde> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://astrea.linkeddata.es/shapes#47518971e862c00815f62b686afe5cde> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
+<https://astrea.linkeddata.es/shapes#47518971e862c00815f62b686afe5cde> <http://www.w3.org/2000/01/rdf-schema#label> "The name of the contract associated to an address" .
+<https://astrea.linkeddata.es/shapes#47518971e862c00815f62b686afe5cde> <http://www.w3.org/2000/01/rdf-schema#label> "name ABI" .
+<https://astrea.linkeddata.es/shapes#47518971e862c00815f62b686afe5cde> <http://www.w3.org/ns/shacl#datatype> <http://www.w3.org/2001/XMLSchema#string> .
+<https://astrea.linkeddata.es/shapes#47518971e862c00815f62b686afe5cde> <http://www.w3.org/ns/shacl#description> "The name of the contract associated to an address" .
+<https://astrea.linkeddata.es/shapes#47518971e862c00815f62b686afe5cde> <http://www.w3.org/ns/shacl#name> "name ABI" .
+<https://astrea.linkeddata.es/shapes#47518971e862c00815f62b686afe5cde> <http://www.w3.org/ns/shacl#nodeKind> <http://www.w3.org/ns/shacl#Literal> .
+<https://astrea.linkeddata.es/shapes#47518971e862c00815f62b686afe5cde> <http://www.w3.org/ns/shacl#path> <http://w3id.org/def/SolidityABI/nameABI> .
+<https://astrea.linkeddata.es/shapes#47518971e862c00815f62b686afe5cde> <http://www.w3.org/ns/shacl#pattern> ".*" .
+# 
 # https://astrea.linkeddata.es/shapes#5ae7c9d9270248d008f7cf915859ac67
 <https://astrea.linkeddata.es/shapes#5ae7c9d9270248d008f7cf915859ac67> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://astrea.linkeddata.es/shapes#5ae7c9d9270248d008f7cf915859ac67> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/shacl#PropertyShape> .
@@ -467,6 +483,7 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://astrea.linkeddata.es/shapes#9f45cab8ffb3d24c3fe1d3bf186f56a3> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#1b436c48231dd2a1dcceb66453003222> .
 <https://astrea.linkeddata.es/shapes#9f45cab8ffb3d24c3fe1d3bf186f56a3> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#1ed3b8c2dee7578a0dd33b58cc8540f8> .
 <https://astrea.linkeddata.es/shapes#9f45cab8ffb3d24c3fe1d3bf186f56a3> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#475fa1092fff7b497880b49ad05805fb> .
+<https://astrea.linkeddata.es/shapes#9f45cab8ffb3d24c3fe1d3bf186f56a3> <http://www.w3.org/ns/shacl#property> <https://astrea.linkeddata.es/shapes#47518971e862c00815f62b686afe5cde> .
 <https://astrea.linkeddata.es/shapes#9f45cab8ffb3d24c3fe1d3bf186f56a3> <http://www.w3.org/ns/shacl#targetClass> <http://w3id.org/def/SolidityABI/ApplicationBinaryInterface> .
 # 
 # https://astrea.linkeddata.es/shapes#91a7977c9476702a2515786eaa8852ad
