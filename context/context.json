@@ -10,7 +10,7 @@
       },
       "hasFunction":{
          "@id":"https://w3id.org/def/SolidityABI/hasFunction",
-         "@type":"@vocab",
+         "@type":"@id",
          "@context":{
             "name":{
                "@id":"https://w3id.org/def/SolidityABI/nameMethod",
