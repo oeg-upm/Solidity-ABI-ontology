@@ -8,7 +8,16 @@
   "@id" : "http://purl.org/dc/elements/1.1/title",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://w3id.org/def/SolidityABI/",
+  "@id" : "http://w3id.org/def/Solidity#SmartContract",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Represents the contract implementation (Solidity ontology)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Smart Contract"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/SolidityABI#",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/elements/1.1/creator" : [ {
     "@value" : "Juan Cano-Benito"
@@ -16,7 +25,7 @@
     "@value" : "http://www.garcia-castro.com/foaf.rdf#me"
   } ],
   "http://purl.org/dc/elements/1.1/description" : [ {
-    "@value" : "Ontology code created by Chowlk"
+    "@value" : "This ontology aims to represent the ABI of a Solidity smart contract in Ethereum"
   } ],
   "http://purl.org/dc/elements/1.1/title" : [ {
     "@value" : "Solidity ABI Ontology"
@@ -25,7 +34,7 @@
     "@value" : "0.0.1"
   } ]
 }, {
-  "@id" : "http://w3id.org/def/SolidityABI/ApplicationBinaryInterface",
+  "@id" : "http://w3id.org/def/SolidityABI#ApplicationBinaryInterface",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "The main interface that defines how to interact with a contract (knows as ABI)"
@@ -34,7 +43,7 @@
     "@value" : "Application Binary Interface"
   } ]
 }, {
-  "@id" : "http://w3id.org/def/SolidityABI/Component",
+  "@id" : "http://w3id.org/def/SolidityABI#Component",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Represents an ABI component"
@@ -43,7 +52,7 @@
     "@value" : "Component"
   } ]
 }, {
-  "@id" : "http://w3id.org/def/SolidityABI/Constructor",
+  "@id" : "http://w3id.org/def/SolidityABI#Constructor",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Defines the function that is executed when a contract is deployed"
@@ -52,10 +61,10 @@
     "@value" : "Constructor"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://w3id.org/def/SolidityABI/Method"
+    "@id" : "http://w3id.org/def/SolidityABI#Method"
   } ]
 }, {
-  "@id" : "http://w3id.org/def/SolidityABI/Error",
+  "@id" : "http://w3id.org/def/SolidityABI#Error",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Defines specific errors that a contract may emit"
@@ -64,7 +73,7 @@
     "@value" : "Error"
   } ]
 }, {
-  "@id" : "http://w3id.org/def/SolidityABI/Event",
+  "@id" : "http://w3id.org/def/SolidityABI#Event",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Contracts in Ethereum can emit events to record notable activities"
@@ -73,7 +82,7 @@
     "@value" : "Event"
   } ]
 }, {
-  "@id" : "http://w3id.org/def/SolidityABI/Fallback",
+  "@id" : "http://w3id.org/def/SolidityABI#Fallback",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "A function that executes if no other function matches or if no data is provided in a transaction"
@@ -82,10 +91,10 @@
     "@value" : "Fallback"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://w3id.org/def/SolidityABI/Method"
+    "@id" : "http://w3id.org/def/SolidityABI#Method"
   } ]
 }, {
-  "@id" : "http://w3id.org/def/SolidityABI/Function",
+  "@id" : "http://w3id.org/def/SolidityABI#Function",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Specifies a typical function in a contract that can have inputs and outputs and can change the state of the contract"
@@ -94,10 +103,10 @@
     "@value" : "Function"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://w3id.org/def/SolidityABI/Method"
+    "@id" : "http://w3id.org/def/SolidityABI#Method"
   } ]
 }, {
-  "@id" : "http://w3id.org/def/SolidityABI/InputEvent",
+  "@id" : "http://w3id.org/def/SolidityABI#InputEvent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Represent specific input parameters for events"
@@ -106,10 +115,10 @@
     "@value" : "Input Event"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://w3id.org/def/SolidityABI/Parameter"
+    "@id" : "http://w3id.org/def/SolidityABI#Parameter"
   } ]
 }, {
-  "@id" : "http://w3id.org/def/SolidityABI/InputParameter",
+  "@id" : "http://w3id.org/def/SolidityABI#InputParameter",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Represent specific input parameters"
@@ -118,10 +127,10 @@
     "@value" : "Input Parameter"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://w3id.org/def/SolidityABI/Parameter"
+    "@id" : "http://w3id.org/def/SolidityABI#Parameter"
   } ]
 }, {
-  "@id" : "http://w3id.org/def/SolidityABI/Method",
+  "@id" : "http://w3id.org/def/SolidityABI#Method",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Represents a specific function inside a smart contract"
@@ -130,19 +139,19 @@
     "@value" : "Method"
   } ]
 }, {
-  "@id" : "http://w3id.org/def/SolidityABI/NonPayable",
+  "@id" : "http://w3id.org/def/SolidityABI#NonPayable",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Denotes that a function cannot receive Ether"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://w3id.org/def/SolidityABI/StateMutability"
+    "@id" : "http://w3id.org/def/SolidityABI#StateMutability"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Non Payable"
   } ]
 }, {
-  "@id" : "http://w3id.org/def/SolidityABI/OutputParameter",
+  "@id" : "http://w3id.org/def/SolidityABI#OutputParameter",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Represent specific output parameters"
@@ -151,10 +160,10 @@
     "@value" : "Output Parameter"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://w3id.org/def/SolidityABI/Parameter"
+    "@id" : "http://w3id.org/def/SolidityABI#Parameter"
   } ]
 }, {
-  "@id" : "http://w3id.org/def/SolidityABI/Parameter",
+  "@id" : "http://w3id.org/def/SolidityABI#Parameter",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Details the types and names of parameters used in functions and events"
@@ -163,31 +172,31 @@
     "@value" : "Parameter"
   } ]
 }, {
-  "@id" : "http://w3id.org/def/SolidityABI/Payable",
+  "@id" : "http://w3id.org/def/SolidityABI#Payable",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Denotes that a function can receive Ether along with its invocation"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://w3id.org/def/SolidityABI/StateMutability"
+    "@id" : "http://w3id.org/def/SolidityABI#StateMutability"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Payable"
   } ]
 }, {
-  "@id" : "http://w3id.org/def/SolidityABI/Pure",
+  "@id" : "http://w3id.org/def/SolidityABI#Pure",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Denotes that a function does not read or write data to the contract; it is purely computational"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://w3id.org/def/SolidityABI/StateMutability"
+    "@id" : "http://w3id.org/def/SolidityABI#StateMutability"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Pure"
   } ]
 }, {
-  "@id" : "http://w3id.org/def/SolidityABI/Receive",
+  "@id" : "http://w3id.org/def/SolidityABI#Receive",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "A special function that is executed when Ether is sent to a contract without additional data"
@@ -196,10 +205,10 @@
     "@value" : "Receive"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://w3id.org/def/SolidityABI/Method"
+    "@id" : "http://w3id.org/def/SolidityABI#Method"
   } ]
 }, {
-  "@id" : "http://w3id.org/def/SolidityABI/StateMutability",
+  "@id" : "http://w3id.org/def/SolidityABI#StateMutability",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Indicates how a function interacts with the contract storage, determining whether it modifies the state or simply reads the state"
@@ -208,25 +217,25 @@
     "@value" : "State Mutability"
   } ]
 }, {
-  "@id" : "http://w3id.org/def/SolidityABI/View",
+  "@id" : "http://w3id.org/def/SolidityABI#View",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Denotes that a function only reads data from the contract but does not modify its state"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://w3id.org/def/SolidityABI/StateMutability"
+    "@id" : "http://w3id.org/def/SolidityABI#StateMutability"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "View"
   } ]
 }, {
-  "@id" : "http://w3id.org/def/SolidityABI/address",
+  "@id" : "http://w3id.org/def/SolidityABI#address",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "The address of the contract on the blockchain"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/def/SolidityABI/ApplicationBinaryInterface"
+    "@id" : "http://w3id.org/def/SolidityABI#ApplicationBinaryInterface"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "address"
@@ -235,178 +244,178 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://w3id.org/def/SolidityABI/hasCode",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://purl.org/dc/elements/1.1/description" : [ {
-    "@value" : "Relate the ABI to the representation of the source code"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/def/SolidityABI/ApplicationBinaryInterface"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "has code"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://w3id.org/def/SolidityOntology/contractImplementation"
-  } ]
-}, {
-  "@id" : "http://w3id.org/def/SolidityABI/hasComponent",
+  "@id" : "http://w3id.org/def/SolidityABI#hasComponent",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Relationship between the main application binary interface and its specific components"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/def/SolidityABI/Parameter"
+    "@id" : "http://w3id.org/def/SolidityABI#Parameter"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has component"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://w3id.org/def/SolidityABI/Component"
+    "@id" : "http://w3id.org/def/SolidityABI#Component"
   } ]
 }, {
-  "@id" : "http://w3id.org/def/SolidityABI/hasError",
+  "@id" : "http://w3id.org/def/SolidityABI#hasError",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Relationship between the ABI and its errors"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/def/SolidityABI/ApplicationBinaryInterface"
+    "@id" : "http://w3id.org/def/SolidityABI#ApplicationBinaryInterface"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has error"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://w3id.org/def/SolidityABI/Error"
+    "@id" : "http://w3id.org/def/SolidityABI#Error"
   } ]
 }, {
-  "@id" : "http://w3id.org/def/SolidityABI/hasErrorInput",
+  "@id" : "http://w3id.org/def/SolidityABI#hasErrorInputParameter",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Indicates which parameters are associated with a specific error"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/def/SolidityABI/Error"
+    "@id" : "http://w3id.org/def/SolidityABI#Error"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "has error input"
+    "@value" : "has error input parameter"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://w3id.org/def/SolidityABI/InputParameter"
+    "@id" : "http://w3id.org/def/SolidityABI#InputParameter"
   } ]
 }, {
-  "@id" : "http://w3id.org/def/SolidityABI/hasEvent",
+  "@id" : "http://w3id.org/def/SolidityABI#hasEvent",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Relationship between the ABI and its events"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/def/SolidityABI/ApplicationBinaryInterface"
+    "@id" : "http://w3id.org/def/SolidityABI#ApplicationBinaryInterface"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has event"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://w3id.org/def/SolidityABI/Event"
+    "@id" : "http://w3id.org/def/SolidityABI#Event"
   } ]
 }, {
-  "@id" : "http://w3id.org/def/SolidityABI/hasEventInput",
+  "@id" : "http://w3id.org/def/SolidityABI#hasEventInputParameter",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Denotes which input parameters are associated with a specific event"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/def/SolidityABI/Event"
+    "@id" : "http://w3id.org/def/SolidityABI#Event"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "has event input"
+    "@value" : "has event input parameter"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://w3id.org/def/SolidityABI/InputEvent"
+    "@id" : "http://w3id.org/def/SolidityABI#InputEvent"
   } ]
 }, {
-  "@id" : "http://w3id.org/def/SolidityABI/hasFunction",
+  "@id" : "http://w3id.org/def/SolidityABI#hasImplementation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Relate the ABI to the representation of the source code"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/def/SolidityABI#ApplicationBinaryInterface"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has implementation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://w3id.org/def/Solidity#SmartContract"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/SolidityABI#hasMethod",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Relationship between the ABI and its functions"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/def/SolidityABI/ApplicationBinaryInterface"
+    "@id" : "http://w3id.org/def/SolidityABI#ApplicationBinaryInterface"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "has function"
+    "@value" : "has method"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://w3id.org/def/SolidityABI/Method"
+    "@id" : "http://w3id.org/def/SolidityABI#Method"
   } ]
 }, {
-  "@id" : "http://w3id.org/def/SolidityABI/hasMethodInput",
+  "@id" : "http://w3id.org/def/SolidityABI#hasMethodInputParameter",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Binds a method to its input parameters"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/def/SolidityABI/Method"
+    "@id" : "http://w3id.org/def/SolidityABI#Method"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "has method input"
+    "@value" : "has method input parameter"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://w3id.org/def/SolidityABI/InputParameter"
+    "@id" : "http://w3id.org/def/SolidityABI#InputParameter"
   } ]
 }, {
-  "@id" : "http://w3id.org/def/SolidityABI/hasMethodOutput",
+  "@id" : "http://w3id.org/def/SolidityABI#hasMethodOutputParameter",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Binds a method to its output parameters"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/def/SolidityABI/Method"
+    "@id" : "http://w3id.org/def/SolidityABI#Method"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "has method output"
+    "@value" : "has method output parameter"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://w3id.org/def/SolidityABI/OutputParameter"
+    "@id" : "http://w3id.org/def/SolidityABI#OutputParameter"
   } ]
 }, {
-  "@id" : "http://w3id.org/def/SolidityABI/hasStateMutability",
+  "@id" : "http://w3id.org/def/SolidityABI#hasStateMutability",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Indicates which state mutability has the method"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/def/SolidityABI/Method"
+    "@id" : "http://w3id.org/def/SolidityABI#Method"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has state mutability"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://w3id.org/def/SolidityABI/StateMutability"
+    "@id" : "http://w3id.org/def/SolidityABI#StateMutability"
   } ]
 }, {
-  "@id" : "http://w3id.org/def/SolidityABI/hasSubComponent",
+  "@id" : "http://w3id.org/def/SolidityABI#hasSubComponent",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Indicates that an abi:Component contains another component"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/def/SolidityABI/Component"
+    "@id" : "http://w3id.org/def/SolidityABI#Component"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has sub component"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://w3id.org/def/SolidityABI/Component"
+    "@id" : "http://w3id.org/def/SolidityABI#Component"
   } ]
 }, {
-  "@id" : "http://w3id.org/def/SolidityABI/indexed",
+  "@id" : "http://w3id.org/def/SolidityABI#indexed",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "For events, indicates whether a parameter is indexed, which affects how logs are stored and searchable"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/def/SolidityABI/InputEvent"
+    "@id" : "http://w3id.org/def/SolidityABI#InputEvent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "indexed"
@@ -415,43 +424,25 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
-  "@id" : "http://w3id.org/def/SolidityABI/internalTypeComponent",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/elements/1.1/description" : [ {
-    "@value" : "Internal type of the component"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/def/SolidityABI/Component"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "internal type component"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ]
-}, {
-  "@id" : "http://w3id.org/def/SolidityABI/internalTypeParameter",
+  "@id" : "http://w3id.org/def/SolidityABI#internalType",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Internal type of the parameter"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/def/SolidityABI/Parameter"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "internal type parameter"
+    "@value" : "internal type"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://w3id.org/def/SolidityABI/isAnonymous",
+  "@id" : "http://w3id.org/def/SolidityABI#isAnonymous",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Indicates whether an event is anonymous, which affects how logs are recorded in Ethereum"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/def/SolidityABI/Event"
+    "@id" : "http://w3id.org/def/SolidityABI#Event"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "is anonymous"
@@ -460,13 +451,13 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
-  "@id" : "http://w3id.org/def/SolidityABI/isConstant",
+  "@id" : "http://w3id.org/def/SolidityABI#isConstant",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Indicates if a method is constant, that is, if it only reads data and does not modify the state"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/def/SolidityABI/Method"
+    "@id" : "http://w3id.org/def/SolidityABI#Method"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "is constant"
@@ -475,132 +466,27 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
-  "@id" : "http://w3id.org/def/SolidityABI/nameABI",
+  "@id" : "http://w3id.org/def/SolidityABI#name",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The name of the contract associated to an address"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/def/SolidityABI/ApplicationBinaryInterface"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "name ABI"
+    "@value" : "name"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://w3id.org/def/SolidityABI/nameComponent",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/elements/1.1/description" : [ {
-    "@value" : "Name assigned to the component of the ABI"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/def/SolidityABI/Component"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "name component"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ]
-}, {
-  "@id" : "http://w3id.org/def/SolidityABI/nameError",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/elements/1.1/description" : [ {
-    "@value" : "Name of the error defined in the contract"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/def/SolidityABI/Error"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "name error"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ]
-}, {
-  "@id" : "http://w3id.org/def/SolidityABI/nameEvent",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/elements/1.1/description" : [ {
-    "@value" : "Name of the event defined in the contract"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/def/SolidityABI/Event"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "name event"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ]
-}, {
-  "@id" : "http://w3id.org/def/SolidityABI/nameMethod",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/elements/1.1/description" : [ {
-    "@value" : "Name of a specific method in the contract"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/def/SolidityABI/Method"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "name method"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ]
-}, {
-  "@id" : "http://w3id.org/def/SolidityABI/nameParameter",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/elements/1.1/description" : [ {
-    "@value" : "Name of the parameter used in inputs"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/def/SolidityABI/Parameter"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "name parameter"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ]
-}, {
-  "@id" : "http://w3id.org/def/SolidityABI/typeComponent",
+  "@id" : "http://w3id.org/def/SolidityABI#type",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Data type of the component (e.g. uint256, address)"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/def/SolidityABI/Component"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "type component"
+    "@value" : "type"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ]
-}, {
-  "@id" : "http://w3id.org/def/SolidityABI/typeParameter",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/elements/1.1/description" : [ {
-    "@value" : "Data type of the parameter (e.g. uint256, address)"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/def/SolidityABI/Parameter"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "type parameter"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ]
-}, {
-  "@id" : "http://w3id.org/def/SolidityOntology/contractImplementation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/elements/1.1/description" : [ {
-    "@value" : "Represents the contract implementation (Solidity ontology)"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "contract Implementation"
   } ]
 } ]

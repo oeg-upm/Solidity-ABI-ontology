@@ -1,31 +1,24 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1501"
-node [shape = rectangle, color="orange"]; "abi:ApplicationBinaryInterface" "abi:Parameter" "abi:OutputParameter" "abi:Method" "abi:Event" "abi:StateMutability" "abi:InputEvent" "abi:Error" "sol:contractImplementation" "abi:Component" "abi:InputParameter" ; /*classes style*/
-	"abi:Method" -> "xsd:string" [ label = "abi:nameMethod" ];
-	"abi:Event" -> "xsd:boolean" [ label = "abi:isAnonymous" ];
-	"abi:Parameter" -> "xsd:string" [ label = "abi:internalTypeParameter" ];
-	"abi:Method" -> "abi:InputParameter" [ label = "abi:hasMethodInput" ];
-	"abi:Error" -> "xsd:string" [ label = "abi:nameError" ];
-	"abi:ApplicationBinaryInterface" -> "abi:Event" [ label = "abi:hasEvent" ];
-	"abi:Parameter" -> "xsd:string" [ label = "abi:nameParameter" ];
-	"abi:Component" -> "abi:Component" [ label = "abi:hasSubComponent" ];
-	"abi:Error" -> "abi:InputParameter" [ label = "abi:hasErrorInput" ];
-	"abi:Component" -> "xsd:string" [ label = "abi:typeComponent" ];
-	"abi:Method" -> "xsd:boolean" [ label = "abi:isConstant" ];
-	"abi:ApplicationBinaryInterface" -> "abi:Method" [ label = "abi:hasFunction" ];
-	"abi:ApplicationBinaryInterface" -> "sol:contractImplementation" [ label = "abi:hasCode" ];
-	"abi:Parameter" -> "abi:Component" [ label = "abi:hasComponent" ];
-	"abi:ApplicationBinaryInterface" -> "xsd:string" [ label = "abi:address" ];
-	"abi:Component" -> "xsd:string" [ label = "abi:nameComponent" ];
-	"abi:Method" -> "abi:OutputParameter" [ label = "abi:hasMethodOutput" ];
-	"abi:Method" -> "abi:StateMutability" [ label = "abi:hasStateMutability" ];
-	"abi:InputEvent" -> "xsd:boolean" [ label = "abi:indexed" ];
-	"abi:Event" -> "abi:InputEvent" [ label = "abi:hasEventInput" ];
-	"abi:Parameter" -> "xsd:string" [ label = "abi:typeParameter" ];
-	"abi:ApplicationBinaryInterface" -> "abi:Error" [ label = "abi:hasError" ];
-	"abi:Component" -> "xsd:string" [ label = "abi:internalTypeComponent" ];
-	"abi:Event" -> "xsd:string" [ label = "abi:nameEvent" ];
-	"abi:ApplicationBinaryInterface" -> "xsd:string" [ label = "abi:nameABI" ];
+node [shape = rectangle, color="orange"]; "base:Parameter" "base:OutputParameter" "base:Method" "http://w3id.org/def/Solidity#SmartContract" "base:ApplicationBinaryInterface" "base:StateMutability" "base:Error" "base:Event" "base:Component" "base:InputParameter" "base:InputEvent" ; /*classes style*/
+	"base:Method" -> "base:InputParameter" [ label = "base:hasMethodInputParameter" ];
+	"base:Method" -> "base:OutputParameter" [ label = "base:hasMethodOutputParameter" ];
+	"owl:Thing" -> "xsd:string" [ label = "base:type" ];
+	"base:Parameter" -> "base:Component" [ label = "base:hasComponent" ];
+	"owl:Thing" -> "xsd:string" [ label = "base:internalType" ];
+	"base:ApplicationBinaryInterface" -> "http://w3id.org/def/Solidity#SmartContract" [ label = "base:hasImplementation" ];
+	"base:Event" -> "xsd:boolean" [ label = "base:isAnonymous" ];
+	"base:ApplicationBinaryInterface" -> "base:Event" [ label = "base:hasEvent" ];
+	"base:InputEvent" -> "xsd:boolean" [ label = "base:indexed" ];
+	"base:ApplicationBinaryInterface" -> "xsd:string" [ label = "base:address" ];
+	"base:Event" -> "base:InputEvent" [ label = "base:hasEventInputParameter" ];
+	"base:ApplicationBinaryInterface" -> "base:Error" [ label = "base:hasError" ];
+	"base:Component" -> "base:Component" [ label = "base:hasSubComponent" ];
+	"owl:Thing" -> "xsd:string" [ label = "base:name" ];
+	"base:Method" -> "base:StateMutability" [ label = "base:hasStateMutability" ];
+	"base:Method" -> "xsd:boolean" [ label = "base:isConstant" ];
+	"base:Error" -> "base:InputParameter" [ label = "base:hasErrorInputParameter" ];
+	"base:ApplicationBinaryInterface" -> "base:Method" [ label = "base:hasMethod" ];
 
 }
