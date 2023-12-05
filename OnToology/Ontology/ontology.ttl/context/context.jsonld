@@ -1,167 +1,139 @@
 {
   "@context" : {
-    "nameMethod" : {
-      "@id" : "http://w3id.org/def/SolidityABI/nameMethod",
-      "@type" : "http://www.w3.org/2001/XMLSchema#string"
-    },
-    "hasCode" : {
-      "@id" : "http://w3id.org/def/SolidityABI/hasCode",
-      "@type" : "@id"
-    },
-    "nameParameter" : {
-      "@id" : "http://w3id.org/def/SolidityABI/nameParameter",
-      "@type" : "http://www.w3.org/2001/XMLSchema#string"
-    },
     "Constructor" : {
-      "@id" : "http://w3id.org/def/SolidityABI/Constructor"
-    },
-    "internalTypeParameter" : {
-      "@id" : "http://w3id.org/def/SolidityABI/internalTypeParameter",
-      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+      "@id" : "http://w3id.org/def/SolidityABI#Constructor"
     },
     "versionInfo" : {
       "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
     },
     "isAnonymous" : {
-      "@id" : "http://w3id.org/def/SolidityABI/isAnonymous",
+      "@id" : "http://w3id.org/def/SolidityABI#isAnonymous",
       "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
     },
     "isConstant" : {
-      "@id" : "http://w3id.org/def/SolidityABI/isConstant",
+      "@id" : "http://w3id.org/def/SolidityABI#isConstant",
       "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
     },
     "ApplicationBinaryInterface" : {
-      "@id" : "http://w3id.org/def/SolidityABI/ApplicationBinaryInterface"
+      "@id" : "http://w3id.org/def/SolidityABI#ApplicationBinaryInterface"
+    },
+    "hasImplementation" : {
+      "@id" : "http://w3id.org/def/SolidityABI#hasImplementation",
+      "@type" : "@id"
     },
     "Fallback" : {
-      "@id" : "http://w3id.org/def/SolidityABI/Fallback"
+      "@id" : "http://w3id.org/def/SolidityABI#Fallback"
     },
     "hasEvent" : {
-      "@id" : "http://w3id.org/def/SolidityABI/hasEvent",
+      "@id" : "http://w3id.org/def/SolidityABI#hasEvent",
+      "@type" : "@id"
+    },
+    "hasEventInputParameter" : {
+      "@id" : "http://w3id.org/def/SolidityABI#hasEventInputParameter",
       "@type" : "@id"
     },
     "indexed" : {
-      "@id" : "http://w3id.org/def/SolidityABI/indexed",
+      "@id" : "http://w3id.org/def/SolidityABI#indexed",
       "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
     },
-    "nameComponent" : {
-      "@id" : "http://w3id.org/def/SolidityABI/nameComponent",
+    "internalType" : {
+      "@id" : "http://w3id.org/def/SolidityABI#internalType",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
-    },
-    "hasMethodInput" : {
-      "@id" : "http://w3id.org/def/SolidityABI/hasMethodInput",
-      "@type" : "@id"
     },
     "label" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
     },
-    "hasMethodOutput" : {
-      "@id" : "http://w3id.org/def/SolidityABI/hasMethodOutput",
+    "hasErrorInputParameter" : {
+      "@id" : "http://w3id.org/def/SolidityABI#hasErrorInputParameter",
       "@type" : "@id"
     },
     "InputEvent" : {
-      "@id" : "http://w3id.org/def/SolidityABI/InputEvent"
+      "@id" : "http://w3id.org/def/SolidityABI#InputEvent"
     },
     "Event" : {
-      "@id" : "http://w3id.org/def/SolidityABI/Event"
+      "@id" : "http://w3id.org/def/SolidityABI#Event"
     },
     "creator" : {
       "@id" : "http://purl.org/dc/elements/1.1/creator"
     },
+    "name" : {
+      "@id" : "http://w3id.org/def/SolidityABI#name",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
     "address" : {
-      "@id" : "http://w3id.org/def/SolidityABI/address",
+      "@id" : "http://w3id.org/def/SolidityABI#address",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "InputParameter" : {
-      "@id" : "http://w3id.org/def/SolidityABI/InputParameter"
+      "@id" : "http://w3id.org/def/SolidityABI#InputParameter"
     },
     "Method" : {
-      "@id" : "http://w3id.org/def/SolidityABI/Method"
-    },
-    "typeComponent" : {
-      "@id" : "http://w3id.org/def/SolidityABI/typeComponent",
-      "@type" : "http://www.w3.org/2001/XMLSchema#string"
-    },
-    "nameABI" : {
-      "@id" : "http://w3id.org/def/SolidityABI/nameABI",
-      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+      "@id" : "http://w3id.org/def/SolidityABI#Method"
     },
     "Parameter" : {
-      "@id" : "http://w3id.org/def/SolidityABI/Parameter"
+      "@id" : "http://w3id.org/def/SolidityABI#Parameter"
     },
     "OutputParameter" : {
-      "@id" : "http://w3id.org/def/SolidityABI/OutputParameter"
-    },
-    "hasErrorInput" : {
-      "@id" : "http://w3id.org/def/SolidityABI/hasErrorInput",
-      "@type" : "@id"
-    },
-    "hasFunction" : {
-      "@id" : "http://w3id.org/def/SolidityABI/hasFunction",
-      "@type" : "@id"
+      "@id" : "http://w3id.org/def/SolidityABI#OutputParameter"
     },
     "title" : {
       "@id" : "http://purl.org/dc/elements/1.1/title"
     },
-    "internalTypeComponent" : {
-      "@id" : "http://w3id.org/def/SolidityABI/internalTypeComponent",
+    "type" : {
+      "@id" : "http://w3id.org/def/SolidityABI#type",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
-    "hasEventInput" : {
-      "@id" : "http://w3id.org/def/SolidityABI/hasEventInput",
-      "@type" : "@id"
+    "SmartContract" : {
+      "@id" : "http://w3id.org/def/Solidity#SmartContract"
     },
     "Component" : {
-      "@id" : "http://w3id.org/def/SolidityABI/Component"
+      "@id" : "http://w3id.org/def/SolidityABI#Component"
+    },
+    "hasMethodInputParameter" : {
+      "@id" : "http://w3id.org/def/SolidityABI#hasMethodInputParameter",
+      "@type" : "@id"
     },
     "Error" : {
-      "@id" : "http://w3id.org/def/SolidityABI/Error"
+      "@id" : "http://w3id.org/def/SolidityABI#Error"
     },
     "Function" : {
-      "@id" : "http://w3id.org/def/SolidityABI/Function"
+      "@id" : "http://w3id.org/def/SolidityABI#Function"
     },
     "hasError" : {
-      "@id" : "http://w3id.org/def/SolidityABI/hasError",
+      "@id" : "http://w3id.org/def/SolidityABI#hasError",
       "@type" : "@id"
     },
     "comment" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
     },
-    "contractImplementation" : {
-      "@id" : "http://w3id.org/def/SolidityOntology/contractImplementation"
-    },
     "hasComponent" : {
-      "@id" : "http://w3id.org/def/SolidityABI/hasComponent",
+      "@id" : "http://w3id.org/def/SolidityABI#hasComponent",
       "@type" : "@id"
     },
-    "typeParameter" : {
-      "@id" : "http://w3id.org/def/SolidityABI/typeParameter",
-      "@type" : "http://www.w3.org/2001/XMLSchema#string"
-    },
     "Receive" : {
-      "@id" : "http://w3id.org/def/SolidityABI/Receive"
+      "@id" : "http://w3id.org/def/SolidityABI#Receive"
     },
-    "nameEvent" : {
-      "@id" : "http://w3id.org/def/SolidityABI/nameEvent",
-      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    "hasMethod" : {
+      "@id" : "http://w3id.org/def/SolidityABI#hasMethod",
+      "@type" : "@id"
     },
     "hasSubComponent" : {
-      "@id" : "http://w3id.org/def/SolidityABI/hasSubComponent",
+      "@id" : "http://w3id.org/def/SolidityABI#hasSubComponent",
+      "@type" : "@id"
+    },
+    "hasMethodOutputParameter" : {
+      "@id" : "http://w3id.org/def/SolidityABI#hasMethodOutputParameter",
       "@type" : "@id"
     },
     "hasStateMutability" : {
-      "@id" : "http://w3id.org/def/SolidityABI/hasStateMutability",
+      "@id" : "http://w3id.org/def/SolidityABI#hasStateMutability",
       "@type" : "@id"
     },
     "description" : {
       "@id" : "http://purl.org/dc/elements/1.1/description"
     },
     "StateMutability" : {
-      "@id" : "http://w3id.org/def/SolidityABI/StateMutability"
-    },
-    "nameError" : {
-      "@id" : "http://w3id.org/def/SolidityABI/nameError",
-      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+      "@id" : "http://w3id.org/def/SolidityABI#StateMutability"
     }
   }
 }
