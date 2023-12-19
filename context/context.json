@@ -9,7 +9,7 @@
          "@type":"http://www.w3.org/2001/XMLSchema#string"
       },
       "hasFunction":{
-         "@id":"https://w3id.org/def/SolidityABI/hasFunction",
+         "@id":"https://w3id.org/def/SolidityABI/hasMethod",
          "@type":"@id",
          "@context":{
             "name":{
