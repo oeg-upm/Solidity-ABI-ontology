@@ -5,7 +5,7 @@
          "@type":"http://www.w3.org/2001/XMLSchema#string"
       },
       "name":{
-         "@id":"https://w3id.org/def/SolidityABI/nameABI",
+         "@id":"https://w3id.org/def/SolidityABI/name",
          "@type":"http://www.w3.org/2001/XMLSchema#string"
       },
       "hasFunction":{
@@ -13,7 +13,7 @@
          "@type":"@id",
          "@context":{
             "name":{
-               "@id":"https://w3id.org/def/SolidityABI/nameMethod",
+               "@id":"https://w3id.org/def/SolidityABI/name",
                "@type":"http://www.w3.org/2001/XMLSchema#string"
             },
             "isConstant":{
@@ -29,19 +29,19 @@
             "nonpayable":"https://w3id.org/def/SolidityABI/NonPayable",
             "payable":"https://w3id.org/def/SolidityABI/Payable",
             "hasInput":{
-               "@id":"https://w3id.org/def/SolidityABI/hasMethodInput",
+               "@id":"https://w3id.org/def/SolidityABI/hasMethodInputParameter",
                "@type":"@id",
                "@context":{
                   "name":{
-                     "@id":"https://w3id.org/def/SolidityABI/nameParameter",
+                     "@id":"https://w3id.org/def/SolidityABI/name",
                      "@type":"http://www.w3.org/2001/XMLSchema#string"
                   },
                   "type":{
-                     "@id":"https://w3id.org/def/SolidityABI/typeParameter",
+                     "@id":"https://w3id.org/def/SolidityABI/type",
                      "@type":"http://www.w3.org/2001/XMLSchema#string"
                   },
                   "internalType":{
-                     "@id":"https://w3id.org/def/SolidityABI/internalTypeParameter",
+                     "@id":"https://w3id.org/def/SolidityABI/internalType",
                      "@type":"http://www.w3.org/2001/XMLSchema#string"
                   },
                   "hasComponent":{
@@ -49,15 +49,15 @@
                      "@type":"@id",
                      "@context":{
                         "name":{
-                           "@id":"https://w3id.org/def/SolidityABI/nameComponent",
+                           "@id":"https://w3id.org/def/SolidityABI/name",
                            "@type":"http://www.w3.org/2001/XMLSchema#string"
                         },
                         "type":{
-                           "@id":"https://w3id.org/def/SolidityABI/typeComponent",
+                           "@id":"https://w3id.org/def/SolidityABI/type",
                            "@type":"http://www.w3.org/2001/XMLSchema#string"
                         },
                         "internalType":{
-                           "@id":"https://w3id.org/def/SolidityABI/internalTypeComponent",
+                           "@id":"https://w3id.org/def/SolidityABI/internalType",
                            "@type":"http://www.w3.org/2001/XMLSchema#string"
                         },
                         "hasSubComponent":{
@@ -65,15 +65,15 @@
                            "@type":"@id",
                            "@context":{
                               "name":{
-                                 "@id":"https://w3id.org/def/SolidityABI/nameComponent",
+                                 "@id":"https://w3id.org/def/SolidityABI/name",
                                  "@type":"http://www.w3.org/2001/XMLSchema#string"
                               },
                               "type":{
-                                 "@id":"https://w3id.org/def/SolidityABI/typeComponent",
+                                 "@id":"https://w3id.org/def/SolidityABI/type",
                                  "@type":"http://www.w3.org/2001/XMLSchema#string"
                               },
                               "internalType":{
-                                 "@id":"https://w3id.org/def/SolidityABI/internalTypeComponent",
+                                 "@id":"https://w3id.org/def/SolidityABI/internalType",
                                  "@type":"http://www.w3.org/2001/XMLSchema#string"
                               },
                               "hasSubComponent":{
@@ -81,15 +81,15 @@
                                  "@type":"@id",
                                  "@context":{
                                     "name":{
-                                       "@id":"https://w3id.org/def/SolidityABI/nameComponent",
+                                       "@id":"https://w3id.org/def/SolidityABI/name",
                                        "@type":"http://www.w3.org/2001/XMLSchema#string"
                                     },
                                     "type":{
-                                       "@id":"https://w3id.org/def/SolidityABI/typeComponent",
+                                       "@id":"https://w3id.org/def/SolidityABI/type",
                                        "@type":"http://www.w3.org/2001/XMLSchema#string"
                                     },
                                     "internalType":{
-                                       "@id":"https://w3id.org/def/SolidityABI/internalTypeComponent",
+                                       "@id":"https://w3id.org/def/SolidityABI/internalType",
                                        "@type":"http://www.w3.org/2001/XMLSchema#string"
                                     }
                                  }
@@ -101,19 +101,19 @@
                }
             },
             "hasOutput":{
-               "@id":"https://w3id.org/def/SolidityABI/hasMethodOutput",
+               "@id":"https://w3id.org/def/SolidityABI/hasMethodOutputParameter",
                "@type":"@id",
                "@context":{
                   "name":{
-                     "@id":"https://w3id.org/def/SolidityABI/nameParameter",
+                     "@id":"https://w3id.org/def/SolidityABI/name",
                      "@type":"http://www.w3.org/2001/XMLSchema#string"
                   },
                   "type":{
-                     "@id":"https://w3id.org/def/SolidityABI/typeParameter",
+                     "@id":"https://w3id.org/def/SolidityABI/type",
                      "@type":"http://www.w3.org/2001/XMLSchema#string"
                   },
                   "internalType":{
-                     "@id":"https://w3id.org/def/SolidityABI/internalTypeParameter",
+                     "@id":"https://w3id.org/def/SolidityABI/internalType",
                      "@type":"http://www.w3.org/2001/XMLSchema#string"
                   },
                   "hasComponent":{
@@ -121,15 +121,15 @@
                      "@type":"@id",
                      "@context":{
                         "name":{
-                           "@id":"https://w3id.org/def/SolidityABI/nameComponent",
+                           "@id":"https://w3id.org/def/SolidityABI/name",
                            "@type":"http://www.w3.org/2001/XMLSchema#string"
                         },
                         "type":{
-                           "@id":"https://w3id.org/def/SolidityABI/typeComponent",
+                           "@id":"https://w3id.org/def/SolidityABI/type",
                            "@type":"http://www.w3.org/2001/XMLSchema#string"
                         },
                         "internalType":{
-                           "@id":"https://w3id.org/def/SolidityABI/internalTypeComponent",
+                           "@id":"https://w3id.org/def/SolidityABI/internalType",
                            "@type":"http://www.w3.org/2001/XMLSchema#string"
                         },
                         "hasSubComponent":{
@@ -137,15 +137,15 @@
                            "@type":"@id",
                            "@context":{
                               "name":{
-                                 "@id":"https://w3id.org/def/SolidityABI/nameComponent",
+                                 "@id":"https://w3id.org/def/SolidityABI/name",
                                  "@type":"http://www.w3.org/2001/XMLSchema#string"
                               },
                               "type":{
-                                 "@id":"https://w3id.org/def/SolidityABI/typeComponent",
+                                 "@id":"https://w3id.org/def/SolidityABI/type",
                                  "@type":"http://www.w3.org/2001/XMLSchema#string"
                               },
                               "internalType":{
-                                 "@id":"https://w3id.org/def/SolidityABI/internalTypeComponent",
+                                 "@id":"https://w3id.org/def/SolidityABI/internalType",
                                  "@type":"http://www.w3.org/2001/XMLSchema#string"
                               },
                               "hasSubComponent":{
@@ -153,15 +153,15 @@
                                  "@type":"@id",
                                  "@context":{
                                     "name":{
-                                       "@id":"https://w3id.org/def/SolidityABI/nameComponent",
+                                       "@id":"https://w3id.org/def/SolidityABI/name",
                                        "@type":"http://www.w3.org/2001/XMLSchema#string"
                                     },
                                     "type":{
-                                       "@id":"https://w3id.org/def/SolidityABI/typeComponent",
+                                       "@id":"https://w3id.org/def/SolidityABI/type",
                                        "@type":"http://www.w3.org/2001/XMLSchema#string"
                                     },
                                     "internalType":{
-                                       "@id":"https://w3id.org/def/SolidityABI/internalTypeComponent",
+                                       "@id":"https://w3id.org/def/SolidityABI/internalType",
                                        "@type":"http://www.w3.org/2001/XMLSchema#string"
                                     }
                                  }
@@ -195,11 +195,11 @@
                "@type":"@id",
                "@context":{
                   "name":{
-                     "@id":"https://w3id.org/def/SolidityABI/nameParameter",
+                     "@id":"https://w3id.org/def/SolidityABI/name",
                      "@type":"http://www.w3.org/2001/XMLSchema#string"
                   },
                   "type":{
-                     "@id":"https://w3id.org/def/SolidityABI/typeParameter",
+                     "@id":"https://w3id.org/def/SolidityABI/type",
                      "@type":"http://www.w3.org/2001/XMLSchema#string"
                   },
                   "indexed":{
@@ -207,7 +207,7 @@
                      "@type":"http://www.w3.org/2001/XMLSchema#boolean"
                   },
                   "internalType":{
-                     "@id":"https://w3id.org/def/SolidityABI/internalTypeParameter",
+                     "@id":"https://w3id.org/def/SolidityABI/internalType",
                      "@type":"http://www.w3.org/2001/XMLSchema#string"
                   },
                   "hasComponent":{
@@ -215,15 +215,15 @@
                      "@type":"@id",
                      "@context":{
                         "name":{
-                           "@id":"https://w3id.org/def/SolidityABI/nameComponent",
+                           "@id":"https://w3id.org/def/SolidityABI/name",
                            "@type":"http://www.w3.org/2001/XMLSchema#string"
                         },
                         "type":{
-                           "@id":"https://w3id.org/def/SolidityABI/typeComponent",
+                           "@id":"https://w3id.org/def/SolidityABI/type",
                            "@type":"http://www.w3.org/2001/XMLSchema#string"
                         },
                         "internalType":{
-                           "@id":"https://w3id.org/def/SolidityABI/internalTypeComponent",
+                           "@id":"https://w3id.org/def/SolidityABI/internalType",
                            "@type":"http://www.w3.org/2001/XMLSchema#string"
                         },
                         "hasSubComponent":{
@@ -231,15 +231,15 @@
                            "@type":"@id",
                            "@context":{
                               "name":{
-                                 "@id":"https://w3id.org/def/SolidityABI/nameComponent",
+                                 "@id":"https://w3id.org/def/SolidityABI/name",
                                  "@type":"http://www.w3.org/2001/XMLSchema#string"
                               },
                               "type":{
-                                 "@id":"https://w3id.org/def/SolidityABI/typeComponent",
+                                 "@id":"https://w3id.org/def/SolidityABI/type",
                                  "@type":"http://www.w3.org/2001/XMLSchema#string"
                               },
                               "internalType":{
-                                 "@id":"https://w3id.org/def/SolidityABI/internalTypeComponent",
+                                 "@id":"https://w3id.org/def/SolidityABI/internalType",
                                  "@type":"http://www.w3.org/2001/XMLSchema#string"
                               },
                               "hasSubComponent":{
@@ -247,15 +247,15 @@
                                  "@type":"@id",
                                  "@context":{
                                     "name":{
-                                       "@id":"https://w3id.org/def/SolidityABI/nameComponent",
+                                       "@id":"https://w3id.org/def/SolidityABI/name",
                                        "@type":"http://www.w3.org/2001/XMLSchema#string"
                                     },
                                     "type":{
-                                       "@id":"https://w3id.org/def/SolidityABI/typeComponent",
+                                       "@id":"https://w3id.org/def/SolidityABI/type",
                                        "@type":"http://www.w3.org/2001/XMLSchema#string"
                                     },
                                     "internalType":{
-                                       "@id":"https://w3id.org/def/SolidityABI/internalTypeComponent",
+                                       "@id":"https://w3id.org/def/SolidityABI/internalType",
                                        "@type":"http://www.w3.org/2001/XMLSchema#string"
                                     }
                                  }
@@ -273,7 +273,7 @@
          "@type":"@id",
          "@context":{
             "name":{
-               "@id":"https://w3id.org/def/SolidityABI/nameError",
+               "@id":"https://w3id.org/def/SolidityABI/name",
                "@type":"http://www.w3.org/2001/XMLSchema#string"
             },
             "hasInput":{
@@ -281,15 +281,15 @@
                "@type":"@id",
                "@context":{
                   "name":{
-                     "@id":"https://w3id.org/def/SolidityABI/nameParameter",
+                     "@id":"https://w3id.org/def/SolidityABI/name",
                      "@type":"http://www.w3.org/2001/XMLSchema#string"
                   },
                   "type":{
-                     "@id":"https://w3id.org/def/SolidityABI/typeParameter",
+                     "@id":"https://w3id.org/def/SolidityABI/type",
                      "@type":"http://www.w3.org/2001/XMLSchema#string"
                   },
                   "internalType":{
-                     "@id":"https://w3id.org/def/SolidityABI/internalTypeParameter",
+                     "@id":"https://w3id.org/def/SolidityABI/internalType",
                      "@type":"http://www.w3.org/2001/XMLSchema#string"
                   },
                   "hasComponent":{
@@ -297,15 +297,15 @@
                      "@type":"@id",
                      "@context":{
                         "name":{
-                           "@id":"https://w3id.org/def/SolidityABI/nameComponent",
+                           "@id":"https://w3id.org/def/SolidityABI/name",
                            "@type":"http://www.w3.org/2001/XMLSchema#string"
                         },
                         "type":{
-                           "@id":"https://w3id.org/def/SolidityABI/typeComponent",
+                           "@id":"https://w3id.org/def/SolidityABI/type",
                            "@type":"http://www.w3.org/2001/XMLSchema#string"
                         },
                         "internalType":{
-                           "@id":"https://w3id.org/def/SolidityABI/internalTypeComponent",
+                           "@id":"https://w3id.org/def/SolidityABI/internalType",
                            "@type":"http://www.w3.org/2001/XMLSchema#string"
                         },
                         "hasSubComponent":{
@@ -313,15 +313,15 @@
                            "@type":"@id",
                            "@context":{
                               "name":{
-                                 "@id":"https://w3id.org/def/SolidityABI/nameComponent",
+                                 "@id":"https://w3id.org/def/SolidityABI/name",
                                  "@type":"http://www.w3.org/2001/XMLSchema#string"
                               },
                               "type":{
-                                 "@id":"https://w3id.org/def/SolidityABI/typeComponent",
+                                 "@id":"https://w3id.org/def/SolidityABI/type",
                                  "@type":"http://www.w3.org/2001/XMLSchema#string"
                               },
                               "internalType":{
-                                 "@id":"https://w3id.org/def/SolidityABI/internalTypeComponent",
+                                 "@id":"https://w3id.org/def/SolidityABI/internalType",
                                  "@type":"http://www.w3.org/2001/XMLSchema#string"
                               },
                               "hasSubComponent":{
@@ -329,15 +329,15 @@
                                  "@type":"@id",
                                  "@context":{
                                     "name":{
-                                       "@id":"https://w3id.org/def/SolidityABI/nameComponent",
+                                       "@id":"https://w3id.org/def/SolidityABI/name",
                                        "@type":"http://www.w3.org/2001/XMLSchema#string"
                                     },
                                     "type":{
-                                       "@id":"https://w3id.org/def/SolidityABI/typeComponent",
+                                       "@id":"https://w3id.org/def/SolidityABI/type",
                                        "@type":"http://www.w3.org/2001/XMLSchema#string"
                                     },
                                     "internalType":{
-                                       "@id":"https://w3id.org/def/SolidityABI/internalTypeComponent",
+                                       "@id":"https://w3id.org/def/SolidityABI/internalType",
                                        "@type":"http://www.w3.org/2001/XMLSchema#string"
                                     }
                                  }
@@ -349,6 +349,10 @@
                }
             }
          }
+      },
+      "hasImplementation":{
+         "@id":"https://w3id.org/def/SolidityABI/hasImplementation",
+         "@type":"@vocab"
       }
    }
 }
