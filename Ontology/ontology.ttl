@@ -14,6 +14,7 @@
                                                "http://www.garcia-castro.com/foaf.rdf#me" ;
                                     dc:description "This ontology aims to represent the ABI of a Solidity smart contract in Ethereum" ;
                                     dc:title "Solidity ABI Ontology" ;
+                                    <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/cc-by4.0> ;
                                     owl:versionInfo "0.0.1" .
 
 #################################################################
